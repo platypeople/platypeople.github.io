@@ -2961,6 +2961,146 @@
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/236_Trained Showdragon.png"
 			}
+		},
+		{
+			"name": "Fan",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Fan ",
+			"collector_number": "6",
+			"image_uris": {
+				"en": "https://platypeople.github.io/sets/POP2-files/img/6_Fan.png"
+			}
+		},
+		{
+			"name": "Performer",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Performer ",
+			"collector_number": "3",
+			"image_uris": {
+				"en": "https://platypeople.github.io/sets/POP2-files/img/3_Performer.png"
+			}
+		},
+		{
+			"name": "Noble",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Noble ",
+			"collector_number": "5",
+			"image_uris": {
+				"en": "https://platypeople.github.io/sets/POP2-files/img/5_Noble.png"
+			}
+		},
+		{
+			"name": "Servo",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Artifact Creature — Servo ",
+			"collector_number": "12",
+			"image_uris": {
+				"en": "https://platypeople.github.io/sets/POP2-files/img/12_Servo.png"
+			}
+		},
+		{
+			"name": "Fan",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Fan ",
+			"collector_number": "7",
+			"image_uris": {
+				"en": "https://platypeople.github.io/sets/POP2-files/img/7_Fan.png"
+			}
+		},
+		{
+			"name": "Fan",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Fan ",
+			"collector_number": "8",
+			"image_uris": {
+				"en": "https://platypeople.github.io/sets/POP2-files/img/8_Fan.png"
+			}
+		},
+		{
+			"name": "Fan",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Fan ",
+			"collector_number": "9",
+			"image_uris": {
+				"en": "https://platypeople.github.io/sets/POP2-files/img/9_Fan.png"
+			}
+		},
+		{
+			"name": "Mutant",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Mutant ",
+			"collector_number": "4",
+			"image_uris": {
+				"en": "https://platypeople.github.io/sets/POP2-files/img/4_Mutant.png"
+			}
+		},
+		{
+			"name": "Elemental",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Elemental ",
+			"collector_number": "11",
+			"image_uris": {
+				"en": "https://platypeople.github.io/sets/POP2-files/img/11_Elemental.png"
+			}
+		},
+		{
+			"name": "Illusion",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Illusion ",
+			"collector_number": "2",
+			"image_uris": {
+				"en": "https://platypeople.github.io/sets/POP2-files/img/2_Illusion.png"
+			}
+		},
+		{
+			"name": "Everywhere",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Land",
+			"collector_number": "14",
+			"image_uris": {
+				"en": "https://platypeople.github.io/sets/POP2-files/img/14_Everywhere.png"
+			}
+		},
+		{
+			"name": "Treasure",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Artifact — Treasure ",
+			"collector_number": "13",
+			"image_uris": {
+				"en": "https://platypeople.github.io/sets/POP2-files/img/13_Treasure.png"
+			}
+		},
+		{
+			"name": "Centaur",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Centaur ",
+			"collector_number": "10",
+			"image_uris": {
+				"en": "https://platypeople.github.io/sets/POP2-files/img/10_Centaur.png"
+			}
+		},
+		{
+			"name": "The Stage",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token — Reminder",
+			"collector_number": "1",
+			"image_uris": {
+				"en": "https://platypeople.github.io/sets/POP2-files/img/1_The Stage.png"
+			}
 		}
 	]
 [RareSlot(1)]
@@ -3495,8 +3635,8 @@
 10 Thriving Moor
 10 Thriving Heath
 10 Thriving Grove
-10 Swamp
-10 Plains
-10 Mountain
-10 Forest
-10 Island
+25 Swamp
+25 Plains
+25 Mountain
+25 Forest
+25 Island
