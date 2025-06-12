@@ -112,7 +112,7 @@ def generateHTML(setCode):
 			gap: 2px;
 			padding-left: 5%;
 			padding-right: 5%;
-			padding-bottom: 3%;
+			padding-bottom: 1%;
 			justify-items: center;
 			max-width: 1200px;
 		}
@@ -244,6 +244,9 @@ def generateHTML(setCode):
 
 	# Loop over each image and create an img tag for each one
 	for card in cards:
+		if 'a->' in card:
+			html_content += f'<div id="{card[3:]}" class="anchor"></div>\n'
+			continue
 		#F: originally, in list_to_list.py, the card names were all stitched with a number and a _ (or a number and t_ if it's a token)
 		#F: Since list_to_list.py was retrofitted by me to make the master_list output into a .json file, that process must be done here instead
 		#F: Using a JSON file for SET-list *is* slightly overkill, but it makes the card_num assignment easier.
@@ -448,7 +451,7 @@ def generateHTML(setCode):
 		sidebar_img.src = document.getElementById(id).src;
 		rotated_img.src = document.getElementById(id).src.replace("_back", "_front");
 
-		if (horizontal && sidebar_img.src.includes("_front"))
+		if (horizontal && !sidebar_img.src.includes("_back"))
 		{
 			rotated_img.style.display = "block";
 			sidebar_img.style.filter = "blur(2px) brightness(0.7)";
