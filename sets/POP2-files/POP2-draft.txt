@@ -1,4 +1,4 @@
-ï»¿[CustomCards]
+[CustomCards]
 	[
 		{
 			"name": "Action Close-Up",
@@ -24,7 +24,7 @@
 			"name": "Cloistered Harmonizer",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{G}",
-			"type": "Creature â€” Spirit Monk ",
+			"type": "Creature — Spirit Monk",
 			"collector_number": "163",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/163_Cloistered Harmonizer.png"
@@ -44,7 +44,7 @@
 			"name": "Devrinn, Pitch Perfect",
 			"rarity": "uncommon",
 			"mana_cost": "{3}{U}",
-			"type": "Legendary Planeswalker â€” Devrinn ",
+			"type": "Legendary Planeswalker — Devrinn",
 			"collector_number": "48",
 			"back": {
 				"name": "",
@@ -61,7 +61,7 @@
 			"name": "Boma, Miss Worldwide",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{G}{U}",
-			"type": "Legendary Creature â€” Human Artificer ",
+			"type": "Legendary Creature — Human Artificer",
 			"collector_number": "203",
 			"back": {
 				"name": "",
@@ -88,7 +88,7 @@
 			"name": "Stage Manager",
 			"rarity": "common",
 			"mana_cost": "{3}{W}",
-			"type": "Creature â€” Human Advisor ",
+			"type": "Creature — Human Advisor",
 			"collector_number": "34",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/34_Stage Manager.png"
@@ -118,7 +118,7 @@
 			"name": "Silencer of Critics",
 			"rarity": "rare",
 			"mana_cost": "{1}{W}",
-			"type": "Creature â€” Human Wizard Bard ",
+			"type": "Creature — Human Wizard Bard",
 			"collector_number": "32",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/32_Silencer of Critics.png"
@@ -158,7 +158,7 @@
 			"name": "Festival Greeter",
 			"rarity": "common",
 			"mana_cost": "{2}{W}",
-			"type": "Creature â€” Human Performer ",
+			"type": "Creature — Human Performer",
 			"collector_number": "17",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/17_Festival Greeter.png"
@@ -168,7 +168,7 @@
 			"name": "Swooping Socialite",
 			"rarity": "common",
 			"mana_cost": "{3}{U}",
-			"type": "Creature â€” Bird Bard ",
+			"type": "Creature — Bird Bard",
 			"collector_number": "76",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/76_Swooping Socialite.png"
@@ -187,7 +187,7 @@
 		{
 			"name": "Blazing Spotlight",
 			"rarity": "common",
-			"mana_cost": "{1}{S}{R}",
+			"mana_cost": "{1}{V}{R}",
 			"type": "Instant",
 			"collector_number": "122",
 			"image_uris": {
@@ -198,7 +198,7 @@
 			"name": "Posthumous Hologram",
 			"rarity": "common",
 			"mana_cost": "{2}{B}",
-			"type": "Creature â€” Illusion Bard ",
+			"type": "Creature — Illusion Bard",
 			"collector_number": "108",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/108_Posthumous Hologram.png"
@@ -218,7 +218,7 @@
 			"name": "Brooding Ascetic",
 			"rarity": "common",
 			"mana_cost": "{1}{B}",
-			"type": "Creature â€” Vampire Bard ",
+			"type": "Creature — Vampire Bard",
 			"collector_number": "80",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/80_Brooding Ascetic.png"
@@ -248,7 +248,7 @@
 			"name": "Kaleidoscamp",
 			"rarity": "rare",
 			"mana_cost": "{G}",
-			"type": "Creature â€” Elemental ",
+			"type": "Creature — Elemental",
 			"collector_number": "175",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/175_Kaleidoscamp.png"
@@ -258,7 +258,7 @@
 			"name": "Beloved PrismaVeteran",
 			"rarity": "common",
 			"mana_cost": "{5}{W}{W}",
-			"type": "Creature â€” Angel Bard ",
+			"type": "Creature — Angel Bard",
 			"collector_number": "4",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/4_Beloved PrismaVeteran.png"
@@ -268,7 +268,7 @@
 			"name": "Recurrent Virus",
 			"rarity": "common",
 			"mana_cost": "{3}{G}",
-			"type": "Creature â€” Elemental Spider ",
+			"type": "Creature — Elemental Spider",
 			"collector_number": "189",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/189_Recurrent Virus.png"
@@ -278,7 +278,7 @@
 			"name": "Kaleidomeleon",
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
-			"type": "Creature â€” Lizard ",
+			"type": "Creature — Lizard",
 			"collector_number": "174",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/174_Kaleidomeleon.png"
@@ -288,7 +288,7 @@
 			"name": "Hip Choreographer",
 			"rarity": "common",
 			"mana_cost": "{2}{R}",
-			"type": "Creature â€” Human Monk ",
+			"type": "Creature — Human Monk",
 			"collector_number": "129",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/129_Hip Choreographer.png"
@@ -297,7 +297,7 @@
 		{
 			"name": "Finishing Touches",
 			"rarity": "common",
-			"mana_cost": "{2}{S}{U}",
+			"mana_cost": "{2}{V}{U}",
 			"type": "Instant",
 			"collector_number": "54",
 			"image_uris": {
@@ -307,7 +307,7 @@
 		{
 			"name": "Unplug",
 			"rarity": "common",
-			"mana_cost": "{1}{S}{B}",
+			"mana_cost": "{1}{V}{B}",
 			"type": "Sorcery",
 			"collector_number": "115",
 			"image_uris": {
@@ -317,7 +317,7 @@
 		{
 			"name": "Automated Backup",
 			"rarity": "common",
-			"mana_cost": "{2}{S}{W}",
+			"mana_cost": "{2}{V}{W}",
 			"type": "Sorcery",
 			"collector_number": "3",
 			"image_uris": {
@@ -327,7 +327,7 @@
 		{
 			"name": "Overwhelm the Network",
 			"rarity": "common",
-			"mana_cost": "{S}{G}",
+			"mana_cost": "{V}{G}",
 			"type": "Instant",
 			"collector_number": "184",
 			"image_uris": {
@@ -368,7 +368,7 @@
 			"name": "Bravi, the City Alive",
 			"rarity": "uncommon",
 			"mana_cost": "{6}{G}{G}",
-			"type": "Legendary Creature â€” Giant ",
+			"type": "Legendary Creature — Giant",
 			"collector_number": "160",
 			"back": {
 				"name": "",
@@ -385,7 +385,7 @@
 			"name": "Ravek Glade Busker",
 			"rarity": "common",
 			"mana_cost": "{2}{W}",
-			"type": "Creature â€” Human Monk Bard ",
+			"type": "Creature — Human Monk Bard",
 			"collector_number": "30",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/30_Ravek Glade Busker.png"
@@ -395,7 +395,7 @@
 			"name": "Bright-Eyed Insurgent",
 			"rarity": "common",
 			"mana_cost": "{G}",
-			"type": "Creature â€” Human Rogue ",
+			"type": "Creature — Human Rogue",
 			"collector_number": "161",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/161_Bright-Eyed Insurgent.png"
@@ -415,7 +415,7 @@
 			"name": "Shy First-Timers",
 			"rarity": "common",
 			"mana_cost": "{4}{U}",
-			"type": "Creature â€” Human Elf Bard ",
+			"type": "Creature — Human Elf Bard",
 			"collector_number": "71",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/71_Shy First-Timers.png"
@@ -425,7 +425,7 @@
 			"name": "Brutish Bodyguard",
 			"rarity": "common",
 			"mana_cost": "{2}{G}",
-			"type": "Creature â€” Cyclops ",
+			"type": "Creature — Cyclops",
 			"collector_number": "162",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/162_Brutish Bodyguard.png"
@@ -435,7 +435,7 @@
 			"name": "Stage Invaders",
 			"rarity": "common",
 			"mana_cost": "{3}{B}",
-			"type": "Creature â€” Mob ",
+			"type": "Creature — Mob",
 			"collector_number": "112",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/112_Stage Invaders.png"
@@ -465,7 +465,7 @@
 			"name": "Lightshow Technician",
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
-			"type": "Creature â€” Elf Artificer ",
+			"type": "Creature — Elf Artificer",
 			"collector_number": "178",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/178_Lightshow Technician.png"
@@ -475,7 +475,7 @@
 			"name": "Prismclaw Regent",
 			"rarity": "common",
 			"mana_cost": "{5}{G}{G}",
-			"type": "Creature â€” Elemental Cat ",
+			"type": "Creature — Elemental Cat",
 			"collector_number": "187",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/187_Prismclaw Regent.png"
@@ -485,7 +485,7 @@
 			"name": "Drumset Duo",
 			"rarity": "common",
 			"mana_cost": "{4}{G}",
-			"type": "Creature â€” Human Spirit Bard ",
+			"type": "Creature — Human Spirit Bard",
 			"collector_number": "166",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/166_Drumset Duo.png"
@@ -495,7 +495,7 @@
 			"name": "Frenzied Publicist",
 			"rarity": "common",
 			"mana_cost": "{2}{G}",
-			"type": "Creature â€” Human Cleric ",
+			"type": "Creature — Human Cleric",
 			"collector_number": "169",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/169_Frenzied Publicist.png"
@@ -505,7 +505,7 @@
 			"name": "Phosphorescent Showcase",
 			"rarity": "common",
 			"mana_cost": "{5}{U}{U}",
-			"type": "Creature â€” Kraken ",
+			"type": "Creature — Kraken",
 			"collector_number": "67",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/67_Phosphorescent Showcase.png"
@@ -515,7 +515,7 @@
 			"name": "Hard Rock Hailers",
 			"rarity": "common",
 			"mana_cost": "{5}{R}{R}",
-			"type": "Creature â€” Berserker Bard ",
+			"type": "Creature — Berserker Bard",
 			"collector_number": "128",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/128_Hard Rock Hailers.png"
@@ -525,7 +525,7 @@
 			"name": "Sinister Spinner",
 			"rarity": "common",
 			"mana_cost": "{5}{B}{B}",
-			"type": "Creature â€” Demon Warlock Bard ",
+			"type": "Creature — Demon Warlock Bard",
 			"collector_number": "110",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/110_Sinister Spinner.png"
@@ -535,7 +535,7 @@
 			"name": "Wildstyle Romper",
 			"rarity": "common",
 			"mana_cost": "{3}{G}",
-			"type": "Creature â€” Elf ",
+			"type": "Creature — Elf",
 			"collector_number": "195",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/195_Wildstyle Romper.png"
@@ -545,7 +545,7 @@
 			"name": "Magnanimous Socialite",
 			"rarity": "common",
 			"mana_cost": "{5}{G}",
-			"type": "Creature â€” Orc ",
+			"type": "Creature — Orc",
 			"collector_number": "179",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/179_Magnanimous Socialite.png"
@@ -575,7 +575,7 @@
 			"name": "Smear Campaign",
 			"rarity": "common",
 			"mana_cost": "{1}{U}",
-			"type": "Enchantment â€” Aura ",
+			"type": "Enchantment — Aura",
 			"collector_number": "73",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/73_Smear Campaign.png"
@@ -585,7 +585,7 @@
 			"name": "Lightkin Conjurer",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{U}",
-			"type": "Creature â€” Elemental Wizard ",
+			"type": "Creature — Elemental Wizard",
 			"collector_number": "63",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/63_Lightkin Conjurer.png"
@@ -595,7 +595,7 @@
 			"name": "Mic Passer",
 			"rarity": "common",
 			"mana_cost": "{4}{R}",
-			"type": "Creature â€” Orc Bard ",
+			"type": "Creature — Orc Bard",
 			"collector_number": "137",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/137_Mic Passer.png"
@@ -605,7 +605,7 @@
 			"name": "Masked Street Drummer",
 			"rarity": "common",
 			"mana_cost": "{1}{R}",
-			"type": "Creature â€” Rogue Bard ",
+			"type": "Creature — Rogue Bard",
 			"collector_number": "136",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/136_Masked Street Drummer.png"
@@ -615,7 +615,7 @@
 			"name": "Botnet Engineer",
 			"rarity": "common",
 			"mana_cost": "{2}{U}",
-			"type": "Creature â€” Human Artificer ",
+			"type": "Creature — Human Artificer",
 			"collector_number": "43",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/43_Botnet Engineer.png"
@@ -625,7 +625,7 @@
 			"name": "Public Detail",
 			"rarity": "common",
 			"mana_cost": "{1}{U}",
-			"type": "Artifact Creature â€” Drone ",
+			"type": "Artifact Creature — Drone",
 			"collector_number": "68",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/68_Public Detail.png"
@@ -645,7 +645,7 @@
 			"name": "Highwire Star",
 			"rarity": "common",
 			"mana_cost": "{2}{U}",
-			"type": "Creature â€” Azra Bard ",
+			"type": "Creature — Azra Bard",
 			"collector_number": "58",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/58_Highwire Star.png"
@@ -655,7 +655,7 @@
 			"name": "Enamored Stan",
 			"rarity": "common",
 			"mana_cost": "{1}{U}",
-			"type": "Creature â€” Human ",
+			"type": "Creature — Human",
 			"collector_number": "50",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/50_Enamored Stan.png"
@@ -665,7 +665,7 @@
 			"name": "Camerawise Crooner",
 			"rarity": "common",
 			"mana_cost": "{1}{R}",
-			"type": "Creature â€” Human Bard ",
+			"type": "Creature — Human Bard",
 			"collector_number": "124",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/124_Camerawise Crooner.png"
@@ -675,7 +675,7 @@
 			"name": "On-Call Dancer",
 			"rarity": "common",
 			"mana_cost": "{2}{U}",
-			"type": "Creature â€” Human Wizard ",
+			"type": "Creature — Human Wizard",
 			"collector_number": "65",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/65_On-Call Dancer.png"
@@ -685,7 +685,7 @@
 			"name": "Meryel of Two Realities",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{B}",
-			"type": "Legendary Creature â€” Human Warlock ",
+			"type": "Legendary Creature — Human Warlock",
 			"collector_number": "98",
 			"back": {
 				"name": "",
@@ -752,7 +752,7 @@
 			"name": "Apalana, Apasionada",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{R}",
-			"type": "Legendary Planeswalker â€” Apalana ",
+			"type": "Legendary Planeswalker — Apalana",
 			"collector_number": "120",
 			"back": {
 				"name": "",
@@ -819,7 +819,7 @@
 			"name": "Deep Sea Diva",
 			"rarity": "uncommon",
 			"mana_cost": "{U}",
-			"type": "Creature â€” Merfolk ",
+			"type": "Creature — Merfolk",
 			"collector_number": "47",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/47_Deep Sea Diva.png"
@@ -839,7 +839,7 @@
 			"name": "Ishi, WeSing Star",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{U}",
-			"type": "Legendary Creature â€” Human Ninja ",
+			"type": "Legendary Creature — Human Ninja",
 			"collector_number": "61",
 			"back": {
 				"name": "",
@@ -866,7 +866,7 @@
 			"name": "Baril, Static Selector",
 			"rarity": "uncommon",
 			"mana_cost": "{R}{G}",
-			"type": "Legendary Creature â€” Elemental Bard ",
+			"type": "Legendary Creature — Elemental Bard",
 			"collector_number": "201",
 			"back": {
 				"name": "",
@@ -883,7 +883,7 @@
 			"name": "Mai Lim, Defending Champ",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{W}{U}",
-			"type": "Legendary Creature â€” Human Wizard ",
+			"type": "Legendary Creature — Human Wizard",
 			"collector_number": "218",
 			"back": {
 				"name": "",
@@ -900,7 +900,7 @@
 			"name": "Tempo Accelerator",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{W}{U}",
-			"type": "Creature â€” Human Artificer ",
+			"type": "Creature — Human Artificer",
 			"collector_number": "235",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/235_Tempo Accelerator.png"
@@ -910,7 +910,7 @@
 			"name": "The Apocalypse Sisters",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{B}{R}",
-			"type": "Legendary Creature â€” Devil ",
+			"type": "Legendary Creature — Devil",
 			"collector_number": "199",
 			"back": {
 				"name": "",
@@ -927,7 +927,7 @@
 			"name": "Halami the Dextrous",
 			"rarity": "rare",
 			"mana_cost": "{5}{G}{G}",
-			"type": "Legendary Creature â€” Spirit Bard ",
+			"type": "Legendary Creature — Spirit Bard",
 			"collector_number": "170",
 			"back": {
 				"name": "",
@@ -944,7 +944,7 @@
 			"name": "Anomaly DX397",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{G}",
-			"type": "Legendary Planeswalker â€” DX397 ",
+			"type": "Legendary Planeswalker — DX397",
 			"collector_number": "158",
 			"back": {
 				"name": "",
@@ -971,7 +971,7 @@
 			"name": "Lightvein Overdriver",
 			"rarity": "uncommon",
 			"mana_cost": "{5}",
-			"type": "Artifact Creature â€” Giant ",
+			"type": "Artifact Creature — Giant",
 			"collector_number": "242",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/242_Lightvein Overdriver.png"
@@ -1001,7 +1001,7 @@
 			"name": "LonJon, Dynamic Duo",
 			"rarity": "rare",
 			"mana_cost": "{3}{W}",
-			"type": "Legendary Creature â€” Human Performer ",
+			"type": "Legendary Creature — Human Performer",
 			"collector_number": "26",
 			"back": {
 				"name": "",
@@ -1028,7 +1028,7 @@
 			"name": "Ezri, Starmaking Producer",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{W}",
-			"type": "Legendary Creature â€” Elf ",
+			"type": "Legendary Creature — Elf",
 			"collector_number": "14",
 			"back": {
 				"name": "",
@@ -1045,7 +1045,7 @@
 			"name": "Mia Mia & Vic Villain",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{W}{B}",
-			"type": "Legendary Creature â€” Spirit ",
+			"type": "Legendary Creature — Spirit",
 			"collector_number": "221",
 			"back": {
 				"name": "",
@@ -1072,7 +1072,7 @@
 			"name": "Hypebeast",
 			"rarity": "rare",
 			"mana_cost": "{1}{G}",
-			"type": "Creature â€” Beast ",
+			"type": "Creature — Beast",
 			"collector_number": "172",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/172_Hypebeast.png"
@@ -1092,7 +1092,7 @@
 			"name": "Polya, Duchess of Grime",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{B}",
-			"type": "Legendary Planeswalker â€” Polya ",
+			"type": "Legendary Planeswalker — Polya",
 			"collector_number": "107",
 			"back": {
 				"name": "",
@@ -1129,7 +1129,7 @@
 			"name": "Beguiling Chorus",
 			"rarity": "uncommon",
 			"mana_cost": "{4}{U}",
-			"type": "Creature â€” Faerie ",
+			"type": "Creature — Faerie",
 			"collector_number": "42",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/42_Beguiling Chorus.png"
@@ -1139,7 +1139,7 @@
 			"name": "Flanger Flayer",
 			"rarity": "uncommon",
 			"mana_cost": "{4}{B}{B}",
-			"type": "Creature â€” Skeleton Bard ",
+			"type": "Creature — Skeleton Bard",
 			"collector_number": "86",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/86_Flanger Flayer.png"
@@ -1149,7 +1149,7 @@
 			"name": "Rafter Riggers",
 			"rarity": "uncommon",
 			"mana_cost": "{3}{G}",
-			"type": "Creature â€” Human Artificer ",
+			"type": "Creature — Human Artificer",
 			"collector_number": "188",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/188_Rafter Riggers.png"
@@ -1158,7 +1158,7 @@
 		{
 			"name": "Grand Dissonance",
 			"rarity": "rare",
-			"mana_cost": "{1}{S}{S}{B}{B}",
+			"mana_cost": "{1}{V}{V}{B}{B}",
 			"type": "Sorcery",
 			"collector_number": "87",
 			"image_uris": {
@@ -1179,7 +1179,7 @@
 			"name": "Reckless Drifter",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{R}",
-			"type": "Creature â€” Human Pilot ",
+			"type": "Creature — Human Pilot",
 			"collector_number": "144",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/144_Reckless Drifter.png"
@@ -1189,7 +1189,7 @@
 			"name": "Voo Won, Indisputable",
 			"rarity": "uncommon",
 			"mana_cost": "{4}{W}",
-			"type": "Legendary Planeswalker â€” Voo ",
+			"type": "Legendary Planeswalker — Voo",
 			"collector_number": "39",
 			"back": {
 				"name": "",
@@ -1206,7 +1206,7 @@
 			"name": "Extraplanar Aficionado",
 			"rarity": "uncommon",
 			"mana_cost": "{G}",
-			"type": "Creature â€” Satyr ",
+			"type": "Creature — Satyr",
 			"collector_number": "167",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/167_Extraplanar Aficionado.png"
@@ -1216,7 +1216,7 @@
 			"name": "Auditory Agitator",
 			"rarity": "rare",
 			"mana_cost": "{R}",
-			"type": "Creature â€” Human Rogue ",
+			"type": "Creature — Human Rogue",
 			"collector_number": "121",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/121_Auditory Agitator.png"
@@ -1226,7 +1226,7 @@
 			"name": "Scorched-Earth Songstress",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{R}",
-			"type": "Creature â€” Human Wizard Bard ",
+			"type": "Creature — Human Wizard Bard",
 			"collector_number": "145",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/145_Scorched-Earth Songstress.png"
@@ -1236,7 +1236,7 @@
 			"name": "Mykian, Planetrotter",
 			"rarity": "rare",
 			"mana_cost": "{4}{G}",
-			"type": "Legendary Planeswalker â€” Mykian ",
+			"type": "Legendary Planeswalker — Mykian",
 			"collector_number": "181",
 			"back": {
 				"name": "",
@@ -1253,7 +1253,7 @@
 			"name": "Living Billboard",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{W}",
-			"type": "Enchantment â€” Aura ",
+			"type": "Enchantment — Aura",
 			"collector_number": "25",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/25_Living Billboard.png"
@@ -1263,7 +1263,7 @@
 			"name": "Frequency Authority",
 			"rarity": "mythic",
 			"mana_cost": "{6}{U}{U}",
-			"type": "Creature â€” Avatar ",
+			"type": "Creature — Avatar",
 			"collector_number": "55",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/55_Frequency Authority.png"
@@ -1273,7 +1273,7 @@
 			"name": "Expert Stagehand",
 			"rarity": "uncommon",
 			"mana_cost": "{R}",
-			"type": "Creature â€” Human Artificer ",
+			"type": "Creature — Human Artificer",
 			"collector_number": "126",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/126_Expert Stagehand.png"
@@ -1283,7 +1283,7 @@
 			"name": "Kuma's Sharkjumper",
 			"rarity": "uncommon",
 			"mana_cost": "{3}{R}",
-			"type": "Creature â€” Devil ",
+			"type": "Creature — Devil",
 			"collector_number": "133",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/133_Kuma's Sharkjumper.png"
@@ -1293,7 +1293,7 @@
 			"name": "Anomalous Transmission",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{G}",
-			"type": "Creature â€” Elemental ",
+			"type": "Creature — Elemental",
 			"collector_number": "157",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/157_Anomalous Transmission.png"
@@ -1303,7 +1303,7 @@
 			"name": "Ishi's Prismwing",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{U}",
-			"type": "Creature â€” Bird ",
+			"type": "Creature — Bird",
 			"collector_number": "62",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/62_Ishi's Prismwing.png"
@@ -1313,7 +1313,7 @@
 			"name": "Blissed-Out Bot",
 			"rarity": "uncommon",
 			"mana_cost": "{W}",
-			"type": "Artifact Creature â€” Bard ",
+			"type": "Artifact Creature — Bard",
 			"collector_number": "5",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/5_Blissed-Out Bot.png"
@@ -1323,7 +1323,7 @@
 			"name": "Hardlight Tailor",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{B}",
-			"type": "Creature â€” Human Artificer ",
+			"type": "Creature — Human Artificer",
 			"collector_number": "91",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/91_Hardlight Tailor.png"
@@ -1333,7 +1333,7 @@
 			"name": "Shred Authority",
 			"rarity": "mythic",
 			"mana_cost": "{5}{B}{B}",
-			"type": "Creature â€” Avatar ",
+			"type": "Creature — Avatar",
 			"collector_number": "109",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/109_Shred Authority.png"
@@ -1353,7 +1353,7 @@
 			"name": "Sinthia, the Mindrazer",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{U}{B}",
-			"type": "Legendary Creature â€” Vampire ",
+			"type": "Legendary Creature — Vampire",
 			"collector_number": "231",
 			"back": {
 				"name": "",
@@ -1370,7 +1370,7 @@
 			"name": "Broadcast Executive",
 			"rarity": "uncommon",
 			"mana_cost": "{W}{B}",
-			"type": "Creature â€” Human Advisor ",
+			"type": "Creature — Human Advisor",
 			"collector_number": "204",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/204_Broadcast Executive.png"
@@ -1380,7 +1380,7 @@
 			"name": "Hologram Technician",
 			"rarity": "uncommon",
 			"mana_cost": "{G}{U}",
-			"type": "Creature â€” Human Monk Artificer ",
+			"type": "Creature — Human Monk Artificer",
 			"collector_number": "213",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/213_Hologram Technician.png"
@@ -1390,7 +1390,7 @@
 			"name": "Shambling Scratcher",
 			"rarity": "uncommon",
 			"mana_cost": "{B}{R}",
-			"type": "Creature â€” Zombie ",
+			"type": "Creature — Zombie",
 			"collector_number": "230",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/230_Shambling Scratcher.png"
@@ -1410,7 +1410,7 @@
 			"name": "Manis, StarKid",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{G}{W}",
-			"type": "Legendary Creature â€” Elemental Bard ",
+			"type": "Legendary Creature — Elemental Bard",
 			"collector_number": "219",
 			"back": {
 				"name": "",
@@ -1427,7 +1427,7 @@
 			"name": "Aerial Stunt Specialists",
 			"rarity": "uncommon",
 			"mana_cost": "{3}{U}{R}",
-			"type": "Artifact Creature â€” Performer ",
+			"type": "Artifact Creature — Performer",
 			"collector_number": "196",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/196_Aerial Stunt Specialists.png"
@@ -1437,7 +1437,7 @@
 			"name": "Samaya Soundwave",
 			"rarity": "uncommon",
 			"mana_cost": "{U}{R}",
-			"type": "Legendary Creature â€” Human Bard ",
+			"type": "Legendary Creature — Human Bard",
 			"collector_number": "229",
 			"back": {
 				"name": "",
@@ -1454,7 +1454,7 @@
 			"name": "The Skeleton Keys",
 			"rarity": "uncommon",
 			"mana_cost": "{4}{B}{G}",
-			"type": "Legendary Creature â€” Skeleton Orc Bard ",
+			"type": "Legendary Creature — Skeleton Orc Bard",
 			"collector_number": "232",
 			"back": {
 				"name": "",
@@ -1471,7 +1471,7 @@
 			"name": "Ruthless Shredder",
 			"rarity": "uncommon",
 			"mana_cost": "{B}{G}",
-			"type": "Creature â€” Human Bard ",
+			"type": "Creature — Human Bard",
 			"collector_number": "228",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/228_Ruthless Shredder.png"
@@ -1491,7 +1491,7 @@
 			"name": "Bebop Bob",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{R}{W}",
-			"type": "Legendary Creature â€” Spirit Bard ",
+			"type": "Legendary Creature — Spirit Bard",
 			"collector_number": "202",
 			"back": {
 				"name": "",
@@ -1508,7 +1508,7 @@
 			"name": "Bright-Eyed Bushytail",
 			"rarity": "common",
 			"mana_cost": "{2}{W}",
-			"type": "Creature â€” Fox Bard ",
+			"type": "Creature — Fox Bard",
 			"collector_number": "6",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/6_Bright-Eyed Bushytail.png"
@@ -1518,7 +1518,7 @@
 			"name": "Herald of New Sounds",
 			"rarity": "common",
 			"mana_cost": "{1}{W}",
-			"type": "Creature â€” Human Performer ",
+			"type": "Creature — Human Performer",
 			"collector_number": "21",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/21_Herald of New Sounds.png"
@@ -1528,7 +1528,7 @@
 			"name": "Nightlife Nightlight",
 			"rarity": "common",
 			"mana_cost": "{W}",
-			"type": "Creature â€” Elemental ",
+			"type": "Creature — Elemental",
 			"collector_number": "29",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/29_Nightlife Nightlight.png"
@@ -1538,7 +1538,7 @@
 			"name": "Fandom Commander",
 			"rarity": "common",
 			"mana_cost": "{4}{W}",
-			"type": "Creature â€” Human Artificer ",
+			"type": "Creature — Human Artificer",
 			"collector_number": "16",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/16_Fandom Commander.png"
@@ -1558,7 +1558,7 @@
 			"name": "Enraptured Patron",
 			"rarity": "common",
 			"mana_cost": "{1}{W}",
-			"type": "Creature â€” Human Advisor ",
+			"type": "Creature — Human Advisor",
 			"collector_number": "11",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/11_Enraptured Patron.png"
@@ -1568,7 +1568,7 @@
 			"name": "Undercover Security",
 			"rarity": "common",
 			"mana_cost": "{1}{W}",
-			"type": "Artifact Creature â€” Performer ",
+			"type": "Artifact Creature — Performer",
 			"collector_number": "38",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/38_Undercover Security.png"
@@ -1598,7 +1598,7 @@
 			"name": "Moonlighting Stagehand",
 			"rarity": "common",
 			"mana_cost": "{2}{B}",
-			"type": "Artifact Creature â€” Assassin ",
+			"type": "Artifact Creature — Assassin",
 			"collector_number": "99",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/99_Moonlighting Stagehand.png"
@@ -1608,7 +1608,7 @@
 			"name": "Lightseeker",
 			"rarity": "common",
 			"mana_cost": "{1}{B}",
-			"type": "Creature â€” Elemental ",
+			"type": "Creature — Elemental",
 			"collector_number": "96",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/96_Lightseeker.png"
@@ -1618,7 +1618,7 @@
 			"name": "Party Monster",
 			"rarity": "common",
 			"mana_cost": "{5}{B}",
-			"type": "Creature â€” Nightmare ",
+			"type": "Creature — Nightmare",
 			"collector_number": "104",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/104_Party Monster.png"
@@ -1628,7 +1628,7 @@
 			"name": "Nightlife Lurkers",
 			"rarity": "common",
 			"mana_cost": "{4}{B}",
-			"type": "Creature â€” Fish Illusion ",
+			"type": "Creature — Fish Illusion",
 			"collector_number": "102",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/102_Nightlife Lurkers.png"
@@ -1638,7 +1638,7 @@
 			"name": "Highrise Vagrant",
 			"rarity": "common",
 			"mana_cost": "{1}{B}",
-			"type": "Creature â€” Human Rogue ",
+			"type": "Creature — Human Rogue",
 			"collector_number": "92",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/92_Highrise Vagrant.png"
@@ -1678,7 +1678,7 @@
 			"name": "Phosphorescent Patrician",
 			"rarity": "uncommon",
 			"mana_cost": "{B}",
-			"type": "Creature â€” Vampire Advisor ",
+			"type": "Creature — Vampire Advisor",
 			"collector_number": "106",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/106_Phosphorescent Patrician.png"
@@ -1688,7 +1688,7 @@
 			"name": "Cabaret Aspirant",
 			"rarity": "common",
 			"mana_cost": "{2}{R}",
-			"type": "Creature â€” Satyr ",
+			"type": "Creature — Satyr",
 			"collector_number": "123",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/123_Cabaret Aspirant.png"
@@ -1698,7 +1698,7 @@
 			"name": "Supersonic Drummer",
 			"rarity": "common",
 			"mana_cost": "{3}{R}",
-			"type": "Artifact Creature â€” Troll ",
+			"type": "Artifact Creature — Troll",
 			"collector_number": "150",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/150_Supersonic Drummer.png"
@@ -1708,7 +1708,7 @@
 			"name": "Flamboyant Dresser",
 			"rarity": "common",
 			"mana_cost": "{1}{R}",
-			"type": "Creature â€” Human Performer ",
+			"type": "Creature — Human Performer",
 			"collector_number": "127",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/127_Flamboyant Dresser.png"
@@ -1718,7 +1718,7 @@
 			"name": "Surgeon for the Stars",
 			"rarity": "common",
 			"mana_cost": "{3}{R}",
-			"type": "Artifact Creature â€” Artificer ",
+			"type": "Artifact Creature — Artificer",
 			"collector_number": "151",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/151_Surgeon for the Stars.png"
@@ -1738,7 +1738,7 @@
 			"name": "Archaic Automaton",
 			"rarity": "common",
 			"mana_cost": "{3}",
-			"type": "Artifact Creature â€” Performer ",
+			"type": "Artifact Creature — Performer",
 			"collector_number": "237",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/237_Archaic Automaton.png"
@@ -1748,7 +1748,7 @@
 			"name": "Blaring Streetbot",
 			"rarity": "common",
 			"mana_cost": "{2}",
-			"type": "Artifact Creature â€” Robot ",
+			"type": "Artifact Creature — Robot",
 			"collector_number": "238",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/238_Blaring Streetbot.png"
@@ -1758,7 +1758,7 @@
 			"name": "Hardlight Painter",
 			"rarity": "common",
 			"mana_cost": "{5}",
-			"type": "Artifact Creature â€” Artist ",
+			"type": "Artifact Creature — Artist",
 			"collector_number": "241",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/241_Hardlight Painter.png"
@@ -1838,7 +1838,7 @@
 			"name": "Swamp",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Basic Land â€” Swamp ",
+			"type": "Basic Land — Swamp",
 			"collector_number": "269",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/269_Swamp.png"
@@ -1848,7 +1848,7 @@
 			"name": "Plains",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Basic Land â€” Plains ",
+			"type": "Basic Land — Plains",
 			"collector_number": "267",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/267_Plains.png"
@@ -1858,7 +1858,7 @@
 			"name": "Mountain",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Basic Land â€” Mountain ",
+			"type": "Basic Land — Mountain",
 			"collector_number": "270",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/270_Mountain.png"
@@ -1868,7 +1868,7 @@
 			"name": "Forest",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Basic Land â€” Forest ",
+			"type": "Basic Land — Forest",
 			"collector_number": "271",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/271_Forest.png"
@@ -1878,7 +1878,7 @@
 			"name": "Island",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Basic Land â€” Island ",
+			"type": "Basic Land — Island",
 			"collector_number": "268",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/268_Island.png"
@@ -1988,7 +1988,7 @@
 			"name": "Bedazzled Soloist",
 			"rarity": "uncommon",
 			"mana_cost": "{3}{U}",
-			"type": "Artifact Creature â€” Bard ",
+			"type": "Artifact Creature — Bard",
 			"collector_number": "41",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/41_Bedazzled Soloist.png"
@@ -1998,7 +1998,7 @@
 			"name": "Staggering Showbot",
 			"rarity": "uncommon",
 			"mana_cost": "{5}{U}",
-			"type": "Artifact Creature â€” Robot ",
+			"type": "Artifact Creature — Robot",
 			"collector_number": "74",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/74_Staggering Showbot.png"
@@ -2008,7 +2008,7 @@
 			"name": "Starmaker Mic",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{R}",
-			"type": "Artifact â€” Equipment ",
+			"type": "Artifact — Equipment",
 			"collector_number": "149",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/149_Starmaker Mic.png"
@@ -2028,7 +2028,7 @@
 			"name": "The Masked Rider",
 			"rarity": "uncommon",
 			"mana_cost": "{4}{R}{R}",
-			"type": "Legendary Creature â€” Pilot ",
+			"type": "Legendary Creature — Pilot",
 			"collector_number": "135",
 			"back": {
 				"name": "",
@@ -2045,7 +2045,7 @@
 			"name": "Jurjurian Ritualists",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{R}",
-			"type": "Creature â€” Spirit ",
+			"type": "Creature — Spirit",
 			"collector_number": "132",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/132_Jurjurian Ritualists.png"
@@ -2055,7 +2055,7 @@
 			"name": "Tympanic Titan",
 			"rarity": "uncommon",
 			"mana_cost": "{4}{R}",
-			"type": "Artifact Creature â€” Construct ",
+			"type": "Artifact Creature — Construct",
 			"collector_number": "153",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/153_Tympanic Titan.png"
@@ -2065,7 +2065,7 @@
 			"name": "Vivacious Host",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{R}",
-			"type": "Creature â€” Human ",
+			"type": "Creature — Human",
 			"collector_number": "155",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/155_Vivacious Host.png"
@@ -2085,7 +2085,7 @@
 			"name": "Morashan Mischief Makers",
 			"rarity": "uncommon",
 			"mana_cost": "{3}{B}",
-			"type": "Creature â€” Skeleton Zombie Goblin ",
+			"type": "Creature — Skeleton Zombie Goblin",
 			"collector_number": "100",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/100_Morashan Mischief Makers.png"
@@ -2095,7 +2095,7 @@
 			"name": "Guerilla Promoter",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{B}",
-			"type": "Creature â€” Human Rogue ",
+			"type": "Creature — Human Rogue",
 			"collector_number": "89",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/89_Guerilla Promoter.png"
@@ -2105,7 +2105,7 @@
 			"name": "Phantom of the Amplifier",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{B}",
-			"type": "Creature â€” Spirit ",
+			"type": "Creature — Spirit",
 			"collector_number": "105",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/105_Phantom of the Amplifier.png"
@@ -2115,7 +2115,7 @@
 			"name": "Oddsmaking Oracle",
 			"rarity": "uncommon",
 			"mana_cost": "{4}{B}",
-			"type": "Creature â€” Neverfolk ",
+			"type": "Creature — Neverfolk",
 			"collector_number": "103",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/103_Oddsmaking Oracle.png"
@@ -2125,7 +2125,7 @@
 			"name": "Stage Fright",
 			"rarity": "uncommon",
 			"mana_cost": "{B}",
-			"type": "Enchantment â€” Aura ",
+			"type": "Enchantment — Aura",
 			"collector_number": "111",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/111_Stage Fright.png"
@@ -2135,7 +2135,7 @@
 			"name": "Amped-Up Acrobats",
 			"rarity": "rare",
 			"mana_cost": "{1}{R}{W}",
-			"type": "Creature â€” Human Snake ",
+			"type": "Creature — Human Snake",
 			"collector_number": "197",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/197_Amped-Up Acrobats.png"
@@ -2155,7 +2155,7 @@
 			"name": "Eyes in the Sky",
 			"rarity": "uncommon",
 			"mana_cost": "{3}{W}",
-			"type": "Creature â€” Human Wizard ",
+			"type": "Creature — Human Wizard",
 			"collector_number": "13",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/13_Eyes in the Sky.png"
@@ -2165,7 +2165,7 @@
 			"name": "Lightrunner Duo",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{W}",
-			"type": "Creature â€” Human Rogue ",
+			"type": "Creature — Human Rogue",
 			"collector_number": "24",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/24_Lightrunner Duo.png"
@@ -2175,7 +2175,7 @@
 			"name": "Cover Art Designer",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{W}",
-			"type": "Creature â€” Faerie Artist ",
+			"type": "Creature — Faerie Artist",
 			"collector_number": "8",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/8_Cover Art Designer.png"
@@ -2185,7 +2185,7 @@
 			"name": "Delegation Orchestrator",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{W}",
-			"type": "Artifact Creature â€” Noble ",
+			"type": "Artifact Creature — Noble",
 			"collector_number": "10",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/10_Delegation Orchestrator.png"
@@ -2195,7 +2195,7 @@
 			"name": "Forbidden Harmony",
 			"rarity": "uncommon",
 			"mana_cost": "{5}{W}",
-			"type": "Creature â€” Elemental ",
+			"type": "Creature — Elemental",
 			"collector_number": "19",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/19_Forbidden Harmony.png"
@@ -2205,7 +2205,7 @@
 			"name": "Ezri's Street Team",
 			"rarity": "uncommon",
 			"mana_cost": "{4}{W}",
-			"type": "Creature â€” Human Pilot ",
+			"type": "Creature — Human Pilot",
 			"collector_number": "15",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/15_Ezri's Street Team.png"
@@ -2215,7 +2215,7 @@
 			"name": "Petrasian Derby Team",
 			"rarity": "mythic",
 			"mana_cost": "{2}{G}",
-			"type": "Creature â€” Human Performer ",
+			"type": "Creature — Human Performer",
 			"collector_number": "185",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/185_Petrasian Derby Team.png"
@@ -2225,7 +2225,7 @@
 			"name": "Stage Rhino",
 			"rarity": "uncommon",
 			"mana_cost": "{4}{G}{G}",
-			"type": "Artifact Creature â€” Rhino ",
+			"type": "Artifact Creature — Rhino",
 			"collector_number": "192",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/192_Stage Rhino.png"
@@ -2235,7 +2235,7 @@
 			"name": "Hardlight Exhibition",
 			"rarity": "uncommon",
 			"mana_cost": "{4}{G}",
-			"type": "Creature â€” Insect Illusion ",
+			"type": "Creature — Insect Illusion",
 			"collector_number": "171",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/171_Hardlight Exhibition.png"
@@ -2245,7 +2245,7 @@
 			"name": "Club Patron",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{G}",
-			"type": "Creature â€” Human Rogue ",
+			"type": "Creature — Human Rogue",
 			"collector_number": "165",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/165_Club Patron.png"
@@ -2255,7 +2255,7 @@
 			"name": "Fansite Maven",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{G}",
-			"type": "Creature â€” Troll ",
+			"type": "Creature — Troll",
 			"collector_number": "168",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/168_Fansite Maven.png"
@@ -2285,7 +2285,7 @@
 			"name": "Hornswoggler",
 			"rarity": "mythic",
 			"mana_cost": "{1}{B}",
-			"type": "Artifact â€” Vehicle ",
+			"type": "Artifact — Vehicle",
 			"collector_number": "93",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/93_Hornswoggler.png"
@@ -2294,7 +2294,7 @@
 		{
 			"name": "Heavy Inspiration",
 			"rarity": "rare",
-			"mana_cost": "{S}{S}{U}",
+			"mana_cost": "{V}{V}{U}",
 			"type": "Sorcery",
 			"collector_number": "57",
 			"image_uris": {
@@ -2305,7 +2305,7 @@
 			"name": "Tastemaking Authority",
 			"rarity": "mythic",
 			"mana_cost": "{1}{R}{R}",
-			"type": "Creature â€” Avatar ",
+			"type": "Creature — Avatar",
 			"collector_number": "152",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/152_Tastemaking Authority.png"
@@ -2315,7 +2315,7 @@
 			"name": "Rhythm Authority",
 			"rarity": "mythic",
 			"mana_cost": "{1}{G}{G}",
-			"type": "Creature â€” Avatar ",
+			"type": "Creature — Avatar",
 			"collector_number": "191",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/191_Rhythm Authority.png"
@@ -2325,7 +2325,7 @@
 			"name": "Crowd Authority",
 			"rarity": "mythic",
 			"mana_cost": "{4}{W}{W}",
-			"type": "Creature â€” Avatar ",
+			"type": "Creature — Avatar",
 			"collector_number": "9",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/9_Crowd Authority.png"
@@ -2334,8 +2334,8 @@
 		{
 			"name": "Lifted Cargolift",
 			"rarity": "mythic",
-			"mana_cost": "{2}{W}",
-			"type": "Artifact â€” Vehicle ",
+			"mana_cost": "{3}{W}",
+			"type": "Artifact — Vehicle",
 			"collector_number": "23",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/23_Lifted Cargolift.png"
@@ -2345,7 +2345,7 @@
 			"name": "Vanity Dragster",
 			"rarity": "mythic",
 			"mana_cost": "{2}{R}",
-			"type": "Artifact â€” Vehicle ",
+			"type": "Artifact — Vehicle",
 			"collector_number": "154",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/154_Vanity Dragster.png"
@@ -2355,7 +2355,7 @@
 			"name": "Remote-Control Showdrone",
 			"rarity": "mythic",
 			"mana_cost": "{1}{U}",
-			"type": "Artifact â€” Vehicle ",
+			"type": "Artifact — Vehicle",
 			"collector_number": "70",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/70_Remote-Control Showdrone.png"
@@ -2365,7 +2365,7 @@
 			"name": "Joyride Offroader",
 			"rarity": "mythic",
 			"mana_cost": "{3}{G}",
-			"type": "Artifact â€” Vehicle ",
+			"type": "Artifact — Vehicle",
 			"collector_number": "173",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/173_Joyride Offroader.png"
@@ -2374,7 +2374,7 @@
 		{
 			"name": "Closing Ceremony",
 			"rarity": "rare",
-			"mana_cost": "{S}{S}{G}",
+			"mana_cost": "{V}{V}{G}",
 			"type": "Sorcery",
 			"collector_number": "164",
 			"image_uris": {
@@ -2385,7 +2385,7 @@
 			"name": "Miss Anthrope",
 			"rarity": "rare",
 			"mana_cost": "{2}{R}",
-			"type": "Legendary Creature â€” Human Bard ",
+			"type": "Legendary Creature — Human Bard",
 			"collector_number": "138",
 			"back": {
 				"name": "",
@@ -2402,7 +2402,7 @@
 			"name": "BXB Fessy",
 			"rarity": "rare",
 			"mana_cost": "{B}",
-			"type": "Legendary Creature â€” Human Rebel ",
+			"type": "Legendary Creature — Human Rebel",
 			"collector_number": "81",
 			"back": {
 				"name": "",
@@ -2418,7 +2418,7 @@
 		{
 			"name": "Surprise Interlude",
 			"rarity": "rare",
-			"mana_cost": "{S}{S}{W}",
+			"mana_cost": "{V}{V}{W}",
 			"type": "Sorcery",
 			"collector_number": "36",
 			"image_uris": {
@@ -2428,7 +2428,7 @@
 		{
 			"name": "Lightvein Eclipse",
 			"rarity": "rare",
-			"mana_cost": "{S}{S}{R}{R}",
+			"mana_cost": "{V}{V}{R}{R}",
 			"type": "Sorcery",
 			"collector_number": "134",
 			"image_uris": {
@@ -2449,7 +2449,7 @@
 			"name": "Aka'a, Street Battler",
 			"rarity": "rare",
 			"mana_cost": "{4}{R}",
-			"type": "Legendary Creature â€” Troll Rogue  ",
+			"type": "Legendary Creature — Troll Rogue",
 			"collector_number": "119",
 			"back": {
 				"name": "",
@@ -2466,7 +2466,7 @@
 			"name": "Maxime Maximalist",
 			"rarity": "rare",
 			"mana_cost": "{3}{G}",
-			"type": "Legendary Creature â€” Human Bard ",
+			"type": "Legendary Creature — Human Bard",
 			"collector_number": "180",
 			"back": {
 				"name": "",
@@ -2483,7 +2483,7 @@
 			"name": "Irana, Sultan of SingNow",
 			"rarity": "rare",
 			"mana_cost": "{3}{U}",
-			"type": "Legendary Creature â€” Human Artificer ",
+			"type": "Legendary Creature — Human Artificer",
 			"collector_number": "60",
 			"back": {
 				"name": "",
@@ -2590,7 +2590,7 @@
 			"name": "Stray Hologram",
 			"rarity": "rare",
 			"mana_cost": "{1}{B}",
-			"type": "Creature â€” Elemental Cat ",
+			"type": "Creature — Elemental Cat",
 			"collector_number": "113",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/113_Stray Hologram.png"
@@ -2600,7 +2600,7 @@
 			"name": "Dazzling Lanternshark",
 			"rarity": "rare",
 			"mana_cost": "{2}{U}",
-			"type": "Creature â€” Shark Illusion ",
+			"type": "Creature — Shark Illusion",
 			"collector_number": "46",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/46_Dazzling Lanternshark.png"
@@ -2610,7 +2610,7 @@
 			"name": "Otto Mollusco",
 			"rarity": "rare",
 			"mana_cost": "{1}{U}",
-			"type": "Legendary Creature â€” Octopus Performer ",
+			"type": "Legendary Creature — Octopus Performer",
 			"collector_number": "66",
 			"back": {
 				"name": "",
@@ -2637,7 +2637,7 @@
 			"name": "Transcendent Conversion",
 			"rarity": "rare",
 			"mana_cost": "{2}{U}{U}",
-			"type": "Enchantment â€” Aura ",
+			"type": "Enchantment — Aura",
 			"collector_number": "78",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/78_Transcendent Conversion.png"
@@ -2647,7 +2647,7 @@
 			"name": "Singing Spitter",
 			"rarity": "rare",
 			"mana_cost": "{2}{R}{R}",
-			"type": "Creature â€” Dragon Artist ",
+			"type": "Creature — Dragon Artist",
 			"collector_number": "147",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/147_Singing Spitter.png"
@@ -2657,7 +2657,7 @@
 			"name": "Festival Spoiler",
 			"rarity": "rare",
 			"mana_cost": "{2}{B}",
-			"type": "Creature â€” Human Rogue ",
+			"type": "Creature — Human Rogue",
 			"collector_number": "85",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/85_Festival Spoiler.png"
@@ -2667,7 +2667,7 @@
 			"name": "Morashim the Wastelord",
 			"rarity": "rare",
 			"mana_cost": "{4}{B}",
-			"type": "Legendary Creature â€” Nightmare ",
+			"type": "Legendary Creature — Nightmare",
 			"collector_number": "101",
 			"back": {
 				"name": "",
@@ -2711,7 +2711,7 @@
 			"name": "Baricol the Infinist",
 			"rarity": "rare",
 			"mana_cost": "{1}{U}{B}{R}",
-			"type": "Legendary Planeswalker â€” Baricol ",
+			"type": "Legendary Planeswalker — Baricol",
 			"collector_number": "200",
 			"back": {
 				"name": "",
@@ -2748,7 +2748,7 @@
 			"name": "Jester of the Lightveins",
 			"rarity": "rare",
 			"mana_cost": "{B}{R}",
-			"type": "Creature â€” Horror ",
+			"type": "Creature — Horror",
 			"collector_number": "216",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/216_Jester of the Lightveins.png"
@@ -2758,7 +2758,7 @@
 			"name": "Cassia Reinvented",
 			"rarity": "rare",
 			"mana_cost": "{1}{W}{W}",
-			"type": "Legendary Planeswalker â€” Cassia ",
+			"type": "Legendary Planeswalker — Cassia",
 			"collector_number": "7",
 			"back": {
 				"name": "",
@@ -2775,7 +2775,7 @@
 			"name": "Holocrafter",
 			"rarity": "rare",
 			"mana_cost": "{2}{G}{U}",
-			"type": "Creature â€” Elemental Wizard ",
+			"type": "Creature — Elemental Wizard",
 			"collector_number": "212",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/212_Holocrafter.png"
@@ -2785,7 +2785,7 @@
 			"name": "Extraplanar Talent Scout",
 			"rarity": "mythic",
 			"mana_cost": "{2}{W}",
-			"type": "Creature â€” Human Advisor ",
+			"type": "Creature — Human Advisor",
 			"collector_number": "12",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/12_Extraplanar Talent Scout.png"
@@ -2795,7 +2795,7 @@
 			"name": "Jukebox of Mysteries",
 			"rarity": "rare",
 			"mana_cost": "{5}{U}{B}",
-			"type": "Creature â€” Illusion ",
+			"type": "Creature — Illusion",
 			"collector_number": "217",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/217_Jukebox of Mysteries.png"
@@ -2805,7 +2805,7 @@
 			"name": "Party Platform",
 			"rarity": "rare",
 			"mana_cost": "{3}{W}{U}",
-			"type": "Creature â€” Alien Artificer ",
+			"type": "Creature — Alien Artificer",
 			"collector_number": "224",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/224_Party Platform.png"
@@ -2815,7 +2815,7 @@
 			"name": "Mass Marketers",
 			"rarity": "rare",
 			"mana_cost": "{2}{W}",
-			"type": "Creature â€” Human Advisor ",
+			"type": "Creature — Human Advisor",
 			"collector_number": "28",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/28_Mass Marketers.png"
@@ -2825,7 +2825,7 @@
 			"name": "Endless Soloist",
 			"rarity": "rare",
 			"mana_cost": "{2}{W}{B}",
-			"type": "Creature â€” Zombie ",
+			"type": "Creature — Zombie",
 			"collector_number": "207",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/207_Endless Soloist.png"
@@ -2835,7 +2835,7 @@
 			"name": "Familiar-Blessed Folkist",
 			"rarity": "rare",
 			"mana_cost": "{G}{W}",
-			"type": "Creature â€” Human Fox Bard ",
+			"type": "Creature — Human Fox Bard",
 			"collector_number": "208",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/208_Familiar-Blessed Folkist.png"
@@ -2845,7 +2845,7 @@
 			"name": "Irradiated Ooze",
 			"rarity": "rare",
 			"mana_cost": "{X}{R}{G}",
-			"type": "Creature â€” Ooze ",
+			"type": "Creature — Ooze",
 			"collector_number": "215",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/215_Irradiated Ooze.png"
@@ -2855,7 +2855,7 @@
 			"name": "Feedback Loop",
 			"rarity": "rare",
 			"mana_cost": "{3}{B}{G}",
-			"type": "Creature â€” Nightmare ",
+			"type": "Creature — Nightmare",
 			"collector_number": "209",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/209_Feedback Loop.png"
@@ -2865,7 +2865,7 @@
 			"name": "Azzenoti the Organist",
 			"rarity": "mythic",
 			"mana_cost": "{3}{B}",
-			"type": "Legendary Creature â€” Demon ",
+			"type": "Legendary Creature — Demon",
 			"collector_number": "79",
 			"back": {
 				"name": "",
@@ -2882,7 +2882,7 @@
 			"name": "Nekaru, Master of Ceremonies",
 			"rarity": "mythic",
 			"mana_cost": "{2}{R}",
-			"type": "Legendary Planeswalker â€” Nekaru ",
+			"type": "Legendary Planeswalker — Nekaru",
 			"collector_number": "139",
 			"back": {
 				"name": "",
@@ -2899,7 +2899,7 @@
 			"name": "Farrah Q, Grand Sampler",
 			"rarity": "mythic",
 			"mana_cost": "{2}{U}",
-			"type": "Legendary Creature â€” Spirit ",
+			"type": "Legendary Creature — Spirit",
 			"collector_number": "52",
 			"back": {
 				"name": "",
@@ -2946,7 +2946,7 @@
 			"name": "Overclocked Spinmaster",
 			"rarity": "mythic",
 			"mana_cost": "{1}",
-			"type": "Artifact Creature â€” Performer ",
+			"type": "Artifact Creature — Performer",
 			"collector_number": "243",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/243_Overclocked Spinmaster.png"
@@ -2956,7 +2956,7 @@
 			"name": "Trained Showdragon",
 			"rarity": "rare",
 			"mana_cost": "{4}{U}{R}",
-			"type": "Creature â€” Dragon ",
+			"type": "Creature — Dragon",
 			"collector_number": "236",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/236_Trained Showdragon.png"
@@ -2966,7 +2966,7 @@
 			"name": "Fan",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Token Creature â€” Fan ",
+			"type": "Token Creature — Fan",
 			"collector_number": "6",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/6_Fan.png"
@@ -2976,7 +2976,7 @@
 			"name": "Performer",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Token Creature â€” Performer ",
+			"type": "Token Creature — Performer",
 			"collector_number": "3",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/3_Performer.png"
@@ -2986,7 +2986,7 @@
 			"name": "Noble",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Token Creature â€” Noble ",
+			"type": "Token Creature — Noble",
 			"collector_number": "5",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/5_Noble.png"
@@ -2996,7 +2996,7 @@
 			"name": "Servo",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Token Artifact Creature â€” Servo ",
+			"type": "Token Artifact Creature — Servo",
 			"collector_number": "12",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/12_Servo.png"
@@ -3006,7 +3006,7 @@
 			"name": "Fan",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Token Creature â€” Fan ",
+			"type": "Token Creature — Fan",
 			"collector_number": "7",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/7_Fan.png"
@@ -3016,7 +3016,7 @@
 			"name": "Fan",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Token Creature â€” Fan ",
+			"type": "Token Creature — Fan",
 			"collector_number": "8",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/8_Fan.png"
@@ -3026,7 +3026,7 @@
 			"name": "Fan",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Token Creature â€” Fan ",
+			"type": "Token Creature — Fan",
 			"collector_number": "9",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/9_Fan.png"
@@ -3036,7 +3036,7 @@
 			"name": "Mutant",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Token Creature â€” Mutant ",
+			"type": "Token Creature — Mutant",
 			"collector_number": "4",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/4_Mutant.png"
@@ -3046,7 +3046,7 @@
 			"name": "Elemental",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Token Creature â€” Elemental ",
+			"type": "Token Creature — Elemental",
 			"collector_number": "11",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/11_Elemental.png"
@@ -3056,7 +3056,7 @@
 			"name": "Illusion",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Token Creature â€” Illusion ",
+			"type": "Token Creature — Illusion",
 			"collector_number": "2",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/2_Illusion.png"
@@ -3076,7 +3076,7 @@
 			"name": "Treasure",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Token Artifact â€” Treasure ",
+			"type": "Token Artifact — Treasure",
 			"collector_number": "13",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/13_Treasure.png"
@@ -3086,7 +3086,7 @@
 			"name": "Centaur",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Token Creature â€” Centaur ",
+			"type": "Token Creature — Centaur",
 			"collector_number": "10",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/10_Centaur.png"
@@ -3096,547 +3096,547 @@
 			"name": "The Stage",
 			"rarity": "common",
 			"mana_cost": "",
-			"type": "Token â€” Reminder",
+			"type": "Token — Reminder",
 			"collector_number": "1",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/1_The Stage.png"
 			}
-		}
+		},
 	]
-[RareSlot(1)]
-2 Surprise Feature
-2 Silencer of Critics
-2 The Song That Changed It All
-2 Kaleidoscamp
-2 Construction Zone
-2 Burgeoning Linktree
-2 Hit Factory
-2 Morashan Wasteland
-2 Eco Rave
-2 Halami the Dextrous
-2 LonJon, Dynamic Duo
-2 Ingrained Memory
-2 Hypebeast
-2 Grand Dissonance
-2 Auditory Agitator
-2 Mykian, Planetrotter
-2 Amped-Up Acrobats
-2 Heavy Inspiration
-2 Closing Ceremony
-2 Miss Anthrope
-2 BXB Fessy
-2 Surprise Interlude
-2 Lightvein Eclipse
-2 Four on the Floor
-2 Aka'a, Street Battler
-2 Maxime Maximalist
-2 Irana, Sultan of SingNow
-2 Otherworldly Exchange
-2 Price of Greatness
-2 Opening Night Bash
-2 Remix Reality
-2 Spare No Expense
-2 Maybe Next Year
-2 Encore of Dread
-2 Disqualify
-2 Rapid Revamp
-2 Stray Hologram
-2 Dazzling Lanternshark
-2 Otto Mollusco
-2 Cross-Promotion
-2 Transcendent Conversion
-2 Singing Spitter
-2 Festival Spoiler
-2 Morashim the Wastelord
-2 Reckless Acrobatics
-2 The Artist with No Name
-2 Baricol the Infinist
-2 Engineered Virus
-2 Prismatic Heirloom
-2 Jester of the Lightveins
-2 Cassia Reinvented
-2 Holocrafter
-2 Jukebox of Mysteries
-2 Party Platform
-2 Mass Marketers
-2 Endless Soloist
-2 Familiar-Blessed Folkist
-2 Irradiated Ooze
-2 Feedback Loop
-2 Trained Showdragon
-1 Hypnotic Formation
-1 Frequency Authority
-1 Shred Authority
-1 Petrasian Derby Team
-1 Hornswoggler
-1 Tastemaking Authority
-1 Rhythm Authority
-1 Crowd Authority
-1 Lifted Cargolift
-1 Vanity Dragster
-1 Remote-Control Showdrone
-1 Joyride Offroader
-1 Extraplanar Talent Scout
-1 Azzenoti the Organist
-1 Nekaru, Master of Ceremonies
-1 Farrah Q, Grand Sampler
-1 Vote Trading
-1 Parade of Champions
-1 Staff of Moresso
-1 Overclocked Spinmaster
-[UncommonSlot(3)]
-9 Cloistered Harmonizer
-9 Flash Mob
-9 Devrinn, Pitch Perfect
-9 Boma, Miss Worldwide
-9 Unsettling Seance
-9 Beckon the Clapalong
-9 Smokescreen
-9 Tight Turnaround
-9 Bravi, the City Alive
-9 Lightkin Conjurer
-9 Meryel of Two Realities
-9 Apalana, Apasionada
-9 Stunned Silence
-9 Extended Outro
-9 Put in Their Place
-9 Beat Switch
-9 Fervent Schooling
-9 Deep Sea Diva
-9 Greatest Hits Tour
-9 Ishi, WeSing Star
-9 A Star is Born
-9 Baril, Static Selector
-9 Mai Lim, Defending Champ
-9 Tempo Accelerator
-9 The Apocalypse Sisters
-9 Anomaly DX397
-9 Highly-Anticipated Collab
-9 Lightvein Overdriver
-9 Amplified Switchbot
-9 Ezri, Starmaking Producer
-9 Mia Mia & Vic Villain
-9 Neon Blitz
-9 Group Power Pose
-9 Polya, Duchess of Grime
-9 Overwhelm the Airwaves
-9 Beguiling Chorus
-9 Flanger Flayer
-9 Rafter Riggers
-9 Disco Inferno
-9 Reckless Drifter
-9 Voo Won, Indisputable
-9 Extraplanar Aficionado
-9 Scorched-Earth Songstress
-9 Living Billboard
-9 Expert Stagehand
-9 Kuma's Sharkjumper
-9 Anomalous Transmission
-9 Ishi's Prismwing
-9 Blissed-Out Bot
-9 Hardlight Tailor
-9 Sinthia, the Mindrazer
-9 Broadcast Executive
-9 Hologram Technician
-9 Shambling Scratcher
-9 In Memoriam
-9 Manis, StarKid
-9 Aerial Stunt Specialists
-9 Samaya Soundwave
-9 The Skeleton Keys
-9 Ruthless Shredder
-9 Festival Kickoff
-9 Bebop Bob
-9 Understudy's Envy
-9 Phosphorescent Patrician
-9 Resonant Grove
-9 Resonant Tidepool
-9 Resonant Crag
-9 Resonant Springs
-9 Resonant Valley
-9 Resonant Cove
-9 Resonant Highland
-9 Resonant Expanse
-9 Resonant Moor
-9 Resonant Marsh
-9 Bedazzled Soloist
-9 Staggering Showbot
-9 Starmaker Mic
-9 Holographic Mirror
-9 The Masked Rider
-9 Jurjurian Ritualists
-9 Tympanic Titan
-9 Vivacious Host
-9 Mashup Machine
-9 Morashan Mischief Makers
-9 Guerilla Promoter
-9 Phantom of the Amplifier
-9 Oddsmaking Oracle
-9 Stage Fright
-9 Throes of the Masses
-9 Eyes in the Sky
-9 Lightrunner Duo
-9 Cover Art Designer
-9 Delegation Orchestrator
-9 Forbidden Harmony
-9 Ezri's Street Team
-9 Stage Rhino
-9 Hardlight Exhibition
-9 Club Patron
-9 Fansite Maven
-9 Presence of the Unending Rave
-9 Return to the Classics
-[CommonSlot(7)]
-30 Action Close-Up
-30 Online Teaser
-30 Stage Manager
-30 Improvised Solo
-30 Disarming Lilt
-30 Festival Greeter
-30 Swooping Socialite
-30 Silkdance
-30 Blazing Spotlight
-30 Posthumous Hologram
-30 Sudden Inspiration
-30 Brooding Ascetic
-30 Knock Your Socks Off
-30 Beloved PrismaVeteran
-30 Recurrent Virus
-30 Kaleidomeleon
-30 Hip Choreographer
-30 Finishing Touches
-30 Unplug
-30 Automated Backup
-30 Overwhelm the Network
-30 Key Change
-30 Ravek Glade Busker
-30 Bright-Eyed Insurgent
-30 Manufactured Hype
-30 Shy First-Timers
-30 Brutish Bodyguard
-30 Stage Invaders
-30 Death-Defying Stunt
-30 Overpowering Reprise
-30 Lightshow Technician
-30 Prismclaw Regent
-30 Drumset Duo
-30 Frenzied Publicist
-30 Phosphorescent Showcase
-30 Hard Rock Hailers
-30 Sinister Spinner
-30 Wildstyle Romper
-30 Magnanimous Socialite
-30 Heart-Shaking Drop
-30 Brief Appearance
-30 Smear Campaign
-30 Mic Passer
-30 Masked Street Drummer
-30 Botnet Engineer
-30 Public Detail
-30 Worldwide Smear
-30 Highwire Star
-30 Enamored Stan
-30 Camerawise Crooner
-30 On-Call Dancer
-30 Resounding Chorus
-30 Cast Down
-30 Guttural Scream
-30 Bright-Eyed Bushytail
-30 Herald of New Sounds
-30 Nightlife Nightlight
-30 Fandom Commander
-30 Stunted By Success
-30 Enraptured Patron
-30 Undercover Security
-30 Magnetic Presence
-30 All Hands Rehearsal
-30 Moonlighting Stagehand
-30 Lightseeker
-30 Party Monster
-30 Nightlife Lurkers
-30 Highrise Vagrant
-30 Inescapable Earworm
-30 Disrupt the Program
-30 Cabaret Aspirant
-30 Supersonic Drummer
-30 Flamboyant Dresser
-30 Surgeon for the Stars
-30 Scorching Duet
-30 Archaic Automaton
-30 Blaring Streetbot
-30 Hardlight Painter
-30 Broadcast Hub
-30 Digital Landscape
-[WildcardSlot(2)]
-10 Action Close-Up
-10 Surprise Feature
-10 Cloistered Harmonizer
-10 Flash Mob
-10 Devrinn, Pitch Perfect
-10 Boma, Miss Worldwide
-10 Online Teaser
-10 Stage Manager
-10 Unsettling Seance
-10 Beckon the Clapalong
-10 Silencer of Critics
-10 Improvised Solo
-10 Smokescreen
-10 Disarming Lilt
-10 Festival Greeter
-10 Swooping Socialite
-10 Silkdance
-10 Blazing Spotlight
-10 Posthumous Hologram
-10 Sudden Inspiration
-10 Brooding Ascetic
-10 Knock Your Socks Off
-10 The Song That Changed It All
-10 Kaleidoscamp
-10 Beloved PrismaVeteran
-10 Recurrent Virus
-10 Kaleidomeleon
-10 Hip Choreographer
-10 Finishing Touches
-10 Unplug
-10 Automated Backup
-10 Overwhelm the Network
-10 Key Change
-10 Hypnotic Formation
-10 Tight Turnaround
-10 Bravi, the City Alive
-10 Ravek Glade Busker
-10 Bright-Eyed Insurgent
-10 Manufactured Hype
-10 Shy First-Timers
-10 Brutish Bodyguard
-10 Stage Invaders
-10 Death-Defying Stunt
-10 Overpowering Reprise
-10 Lightshow Technician
-10 Prismclaw Regent
-10 Drumset Duo
-10 Frenzied Publicist
-10 Phosphorescent Showcase
-10 Hard Rock Hailers
-10 Sinister Spinner
-10 Wildstyle Romper
-10 Magnanimous Socialite
-10 Heart-Shaking Drop
-10 Brief Appearance
-10 Smear Campaign
-10 Lightkin Conjurer
-10 Mic Passer
-10 Masked Street Drummer
-10 Botnet Engineer
-10 Public Detail
-10 Worldwide Smear
-10 Highwire Star
-10 Enamored Stan
-10 Camerawise Crooner
-10 On-Call Dancer
-10 Meryel of Two Realities
-10 Construction Zone
-10 Burgeoning Linktree
-10 Hit Factory
-10 Morashan Wasteland
-10 Eco Rave
-10 Apalana, Apasionada
-10 Stunned Silence
-10 Extended Outro
-10 Put in Their Place
-10 Beat Switch
-10 Fervent Schooling
-10 Deep Sea Diva
-10 Greatest Hits Tour
-10 Ishi, WeSing Star
-10 A Star is Born
-10 Baril, Static Selector
-10 Mai Lim, Defending Champ
-10 Tempo Accelerator
-10 The Apocalypse Sisters
-10 Halami the Dextrous
-10 Anomaly DX397
-10 Highly-Anticipated Collab
-10 Lightvein Overdriver
-10 Amplified Switchbot
-10 Resounding Chorus
-10 LonJon, Dynamic Duo
-10 Ingrained Memory
-10 Ezri, Starmaking Producer
-10 Mia Mia & Vic Villain
-10 Neon Blitz
-10 Hypebeast
-10 Group Power Pose
-10 Polya, Duchess of Grime
-10 Overwhelm the Airwaves
-10 Cast Down
-10 Beguiling Chorus
-10 Flanger Flayer
-10 Rafter Riggers
-10 Grand Dissonance
-10 Disco Inferno
-10 Reckless Drifter
-10 Voo Won, Indisputable
-10 Extraplanar Aficionado
-10 Auditory Agitator
-10 Scorched-Earth Songstress
-10 Mykian, Planetrotter
-10 Living Billboard
-10 Frequency Authority
-10 Expert Stagehand
-10 Kuma's Sharkjumper
-10 Anomalous Transmission
-10 Ishi's Prismwing
-10 Blissed-Out Bot
-10 Hardlight Tailor
-10 Shred Authority
-10 Guttural Scream
-10 Sinthia, the Mindrazer
-10 Broadcast Executive
-10 Hologram Technician
-10 Shambling Scratcher
-10 In Memoriam
-10 Manis, StarKid
-10 Aerial Stunt Specialists
-10 Samaya Soundwave
-10 The Skeleton Keys
-10 Ruthless Shredder
-10 Festival Kickoff
-10 Bebop Bob
-10 Bright-Eyed Bushytail
-10 Herald of New Sounds
-10 Nightlife Nightlight
-10 Fandom Commander
-10 Stunted By Success
-10 Enraptured Patron
-10 Undercover Security
-10 Magnetic Presence
-10 All Hands Rehearsal
-10 Moonlighting Stagehand
-10 Lightseeker
-10 Party Monster
-10 Nightlife Lurkers
-10 Highrise Vagrant
-10 Inescapable Earworm
-10 Understudy's Envy
-10 Disrupt the Program
-10 Phosphorescent Patrician
-10 Cabaret Aspirant
-10 Supersonic Drummer
-10 Flamboyant Dresser
-10 Surgeon for the Stars
-10 Scorching Duet
-10 Archaic Automaton
-10 Blaring Streetbot
-10 Hardlight Painter
-10 Broadcast Hub
-10 Digital Landscape
-10 Resonant Grove
-10 Resonant Tidepool
-10 Resonant Crag
-10 Resonant Springs
-10 Resonant Valley
-10 Resonant Cove
-10 Resonant Highland
-10 Resonant Expanse
-10 Resonant Moor
-10 Resonant Marsh
-10 Bedazzled Soloist
-10 Staggering Showbot
-10 Starmaker Mic
-10 Holographic Mirror
-10 The Masked Rider
-10 Jurjurian Ritualists
-10 Tympanic Titan
-10 Vivacious Host
-10 Mashup Machine
-10 Morashan Mischief Makers
-10 Guerilla Promoter
-10 Phantom of the Amplifier
-10 Oddsmaking Oracle
-10 Stage Fright
-10 Amped-Up Acrobats
-10 Throes of the Masses
-10 Eyes in the Sky
-10 Lightrunner Duo
-10 Cover Art Designer
-10 Delegation Orchestrator
-10 Forbidden Harmony
-10 Ezri's Street Team
-10 Petrasian Derby Team
-10 Stage Rhino
-10 Hardlight Exhibition
-10 Club Patron
-10 Fansite Maven
-10 Presence of the Unending Rave
-10 Return to the Classics
-10 Hornswoggler
-10 Heavy Inspiration
-10 Tastemaking Authority
-10 Rhythm Authority
-10 Crowd Authority
-10 Lifted Cargolift
-10 Vanity Dragster
-10 Remote-Control Showdrone
-10 Joyride Offroader
-10 Closing Ceremony
-10 Miss Anthrope
-10 BXB Fessy
-10 Surprise Interlude
-10 Lightvein Eclipse
-10 Four on the Floor
-10 Aka'a, Street Battler
-10 Maxime Maximalist
-10 Irana, Sultan of SingNow
-10 Otherworldly Exchange
-10 Price of Greatness
-10 Opening Night Bash
-10 Remix Reality
-10 Spare No Expense
-10 Maybe Next Year
-10 Encore of Dread
-10 Disqualify
-10 Rapid Revamp
-10 Stray Hologram
-10 Dazzling Lanternshark
-10 Otto Mollusco
-10 Cross-Promotion
-10 Transcendent Conversion
-10 Singing Spitter
-10 Festival Spoiler
-10 Morashim the Wastelord
-10 Reckless Acrobatics
-10 The Artist with No Name
-10 Baricol the Infinist
-10 Engineered Virus
-10 Prismatic Heirloom
-10 Jester of the Lightveins
-10 Cassia Reinvented
-10 Holocrafter
-10 Extraplanar Talent Scout
-10 Jukebox of Mysteries
-10 Party Platform
-10 Mass Marketers
-10 Endless Soloist
-10 Familiar-Blessed Folkist
-10 Irradiated Ooze
-10 Feedback Loop
-10 Azzenoti the Organist
-10 Nekaru, Master of Ceremonies
-10 Farrah Q, Grand Sampler
-10 Vote Trading
-10 Parade of Champions
-10 Staff of Moresso
-10 Overclocked Spinmaster
-10 Trained Showdragon
-[LandSlot(1)]
-10 Thriving Isle
-10 Thriving Bluff
-10 Thriving Moor
-10 Thriving Heath
-10 Thriving Grove
-10 Swamp
-10 Plains
-10 Mountain
-10 Forest
-10 Island
+
+[rare(1)]
+	2 Surprise Feature
+	2 Silencer of Critics
+	2 The Song That Changed It All
+	2 Kaleidoscamp
+	1 Hypnotic Formation
+	2 Construction Zone
+	2 Burgeoning Linktree
+	2 Hit Factory
+	2 Morashan Wasteland
+	2 Eco Rave
+	2 Halami the Dextrous
+	2 LonJon, Dynamic Duo
+	2 Ingrained Memory
+	2 Hypebeast
+	2 Grand Dissonance
+	2 Auditory Agitator
+	2 Mykian, Planetrotter
+	1 Frequency Authority
+	1 Shred Authority
+	2 Amped-Up Acrobats
+	1 Petrasian Derby Team
+	1 Hornswoggler
+	2 Heavy Inspiration
+	1 Tastemaking Authority
+	1 Rhythm Authority
+	1 Crowd Authority
+	1 Lifted Cargolift
+	1 Vanity Dragster
+	1 Remote-Control Showdrone
+	1 Joyride Offroader
+	2 Closing Ceremony
+	2 Miss Anthrope
+	2 BXB Fessy
+	2 Surprise Interlude
+	2 Lightvein Eclipse
+	2 Four on the Floor
+	2 Aka'a, Street Battler
+	2 Maxime Maximalist
+	2 Irana, Sultan of SingNow
+	2 Otherworldly Exchange
+	2 Price of Greatness
+	2 Opening Night Bash
+	2 Remix Reality
+	2 Spare No Expense
+	2 Maybe Next Year
+	2 Encore of Dread
+	2 Disqualify
+	2 Rapid Revamp
+	2 Stray Hologram
+	2 Dazzling Lanternshark
+	2 Otto Mollusco
+	2 Cross-Promotion
+	2 Transcendent Conversion
+	2 Singing Spitter
+	2 Festival Spoiler
+	2 Morashim the Wastelord
+	2 Reckless Acrobatics
+	2 The Artist with No Name
+	2 Baricol the Infinist
+	2 Engineered Virus
+	2 Prismatic Heirloom
+	2 Jester of the Lightveins
+	2 Cassia Reinvented
+	2 Holocrafter
+	1 Extraplanar Talent Scout
+	2 Jukebox of Mysteries
+	2 Party Platform
+	2 Mass Marketers
+	2 Endless Soloist
+	2 Familiar-Blessed Folkist
+	2 Irradiated Ooze
+	2 Feedback Loop
+	1 Azzenoti the Organist
+	1 Nekaru, Master of Ceremonies
+	1 Farrah Q, Grand Sampler
+	1 Vote Trading
+	1 Parade of Champions
+	1 Staff of Moresso
+	1 Overclocked Spinmaster
+	2 Trained Showdragon
+[uncommon(4)]
+	4 Cloistered Harmonizer
+	4 Flash Mob
+	4 Devrinn, Pitch Perfect
+	4 Boma, Miss Worldwide
+	4 Unsettling Seance
+	4 Beckon the Clapalong
+	4 Smokescreen
+	4 Tight Turnaround
+	4 Bravi, the City Alive
+	4 Lightkin Conjurer
+	4 Meryel of Two Realities
+	4 Apalana, Apasionada
+	4 Stunned Silence
+	4 Extended Outro
+	4 Put in Their Place
+	4 Beat Switch
+	4 Fervent Schooling
+	4 Deep Sea Diva
+	4 Greatest Hits Tour
+	4 Ishi, WeSing Star
+	4 A Star is Born
+	4 Baril, Static Selector
+	4 Mai Lim, Defending Champ
+	4 Tempo Accelerator
+	4 The Apocalypse Sisters
+	4 Anomaly DX397
+	4 Highly-Anticipated Collab
+	4 Lightvein Overdriver
+	4 Amplified Switchbot
+	4 Ezri, Starmaking Producer
+	4 Mia Mia & Vic Villain
+	4 Neon Blitz
+	4 Group Power Pose
+	4 Polya, Duchess of Grime
+	4 Overwhelm the Airwaves
+	4 Beguiling Chorus
+	4 Flanger Flayer
+	4 Rafter Riggers
+	4 Disco Inferno
+	4 Reckless Drifter
+	4 Voo Won, Indisputable
+	4 Extraplanar Aficionado
+	4 Scorched-Earth Songstress
+	4 Living Billboard
+	4 Expert Stagehand
+	4 Kuma's Sharkjumper
+	4 Anomalous Transmission
+	4 Ishi's Prismwing
+	4 Blissed-Out Bot
+	4 Hardlight Tailor
+	4 Sinthia, the Mindrazer
+	4 Broadcast Executive
+	4 Hologram Technician
+	4 Shambling Scratcher
+	4 In Memoriam
+	4 Manis, StarKid
+	4 Aerial Stunt Specialists
+	4 Samaya Soundwave
+	4 The Skeleton Keys
+	4 Ruthless Shredder
+	4 Festival Kickoff
+	4 Bebop Bob
+	4 Understudy's Envy
+	4 Phosphorescent Patrician
+	4 Resonant Grove
+	4 Resonant Tidepool
+	4 Resonant Crag
+	4 Resonant Springs
+	4 Resonant Valley
+	4 Resonant Cove
+	4 Resonant Highland
+	4 Resonant Expanse
+	4 Resonant Moor
+	4 Resonant Marsh
+	4 Bedazzled Soloist
+	4 Staggering Showbot
+	4 Starmaker Mic
+	4 Holographic Mirror
+	4 The Masked Rider
+	4 Jurjurian Ritualists
+	4 Tympanic Titan
+	4 Vivacious Host
+	4 Mashup Machine
+	4 Morashan Mischief Makers
+	4 Guerilla Promoter
+	4 Phantom of the Amplifier
+	4 Oddsmaking Oracle
+	4 Stage Fright
+	4 Throes of the Masses
+	4 Eyes in the Sky
+	4 Lightrunner Duo
+	4 Cover Art Designer
+	4 Delegation Orchestrator
+	4 Forbidden Harmony
+	4 Ezri's Street Team
+	4 Stage Rhino
+	4 Hardlight Exhibition
+	4 Club Patron
+	4 Fansite Maven
+	4 Presence of the Unending Rave
+	4 Return to the Classics
+[common(7)]
+	8 Action Close-Up
+	8 Online Teaser
+	8 Stage Manager
+	8 Improvised Solo
+	8 Disarming Lilt
+	8 Festival Greeter
+	8 Swooping Socialite
+	8 Silkdance
+	8 Blazing Spotlight
+	8 Posthumous Hologram
+	8 Sudden Inspiration
+	8 Brooding Ascetic
+	8 Knock Your Socks Off
+	8 Beloved PrismaVeteran
+	8 Recurrent Virus
+	8 Kaleidomeleon
+	8 Hip Choreographer
+	8 Finishing Touches
+	8 Unplug
+	8 Automated Backup
+	8 Overwhelm the Network
+	8 Key Change
+	8 Ravek Glade Busker
+	8 Bright-Eyed Insurgent
+	8 Manufactured Hype
+	8 Shy First-Timers
+	8 Brutish Bodyguard
+	8 Stage Invaders
+	8 Death-Defying Stunt
+	8 Overpowering Reprise
+	8 Lightshow Technician
+	8 Prismclaw Regent
+	8 Drumset Duo
+	8 Frenzied Publicist
+	8 Phosphorescent Showcase
+	8 Hard Rock Hailers
+	8 Sinister Spinner
+	8 Wildstyle Romper
+	8 Magnanimous Socialite
+	8 Heart-Shaking Drop
+	8 Brief Appearance
+	8 Smear Campaign
+	8 Mic Passer
+	8 Masked Street Drummer
+	8 Botnet Engineer
+	8 Public Detail
+	8 Worldwide Smear
+	8 Highwire Star
+	8 Enamored Stan
+	8 Camerawise Crooner
+	8 On-Call Dancer
+	8 Resounding Chorus
+	8 Cast Down
+	8 Guttural Scream
+	8 Bright-Eyed Bushytail
+	8 Herald of New Sounds
+	8 Nightlife Nightlight
+	8 Fandom Commander
+	8 Stunted By Success
+	8 Enraptured Patron
+	8 Undercover Security
+	8 Magnetic Presence
+	8 All Hands Rehearsal
+	8 Moonlighting Stagehand
+	8 Lightseeker
+	8 Party Monster
+	8 Nightlife Lurkers
+	8 Highrise Vagrant
+	8 Inescapable Earworm
+	8 Disrupt the Program
+	8 Cabaret Aspirant
+	8 Supersonic Drummer
+	8 Flamboyant Dresser
+	8 Surgeon for the Stars
+	8 Scorching Duet
+	8 Archaic Automaton
+	8 Blaring Streetbot
+	8 Hardlight Painter
+	8 Broadcast Hub
+	8 Digital Landscape
+	8 Thriving Isle
+	8 Thriving Bluff
+	8 Thriving Moor
+	8 Thriving Heath
+	8 Thriving Grove
+[wildcard(2)]
+	6 Action Close-Up
+	7 Surprise Feature
+	15 Cloistered Harmonizer
+	15 Flash Mob
+	15 Devrinn, Pitch Perfect
+	15 Boma, Miss Worldwide
+	6 Online Teaser
+	6 Stage Manager
+	15 Unsettling Seance
+	15 Beckon the Clapalong
+	7 Silencer of Critics
+	6 Improvised Solo
+	15 Smokescreen
+	6 Disarming Lilt
+	6 Festival Greeter
+	6 Swooping Socialite
+	6 Silkdance
+	6 Blazing Spotlight
+	6 Posthumous Hologram
+	6 Sudden Inspiration
+	6 Brooding Ascetic
+	6 Knock Your Socks Off
+	7 The Song That Changed It All
+	7 Kaleidoscamp
+	6 Beloved PrismaVeteran
+	6 Recurrent Virus
+	6 Kaleidomeleon
+	6 Hip Choreographer
+	6 Finishing Touches
+	6 Unplug
+	6 Automated Backup
+	6 Overwhelm the Network
+	6 Key Change
+	4 Hypnotic Formation
+	15 Tight Turnaround
+	15 Bravi, the City Alive
+	6 Ravek Glade Busker
+	6 Bright-Eyed Insurgent
+	6 Manufactured Hype
+	6 Shy First-Timers
+	6 Brutish Bodyguard
+	6 Stage Invaders
+	6 Death-Defying Stunt
+	6 Overpowering Reprise
+	6 Lightshow Technician
+	6 Prismclaw Regent
+	6 Drumset Duo
+	6 Frenzied Publicist
+	6 Phosphorescent Showcase
+	6 Hard Rock Hailers
+	6 Sinister Spinner
+	6 Wildstyle Romper
+	6 Magnanimous Socialite
+	6 Heart-Shaking Drop
+	6 Brief Appearance
+	6 Smear Campaign
+	15 Lightkin Conjurer
+	6 Mic Passer
+	6 Masked Street Drummer
+	6 Botnet Engineer
+	6 Public Detail
+	6 Worldwide Smear
+	6 Highwire Star
+	6 Enamored Stan
+	6 Camerawise Crooner
+	6 On-Call Dancer
+	15 Meryel of Two Realities
+	7 Construction Zone
+	7 Burgeoning Linktree
+	7 Hit Factory
+	7 Morashan Wasteland
+	7 Eco Rave
+	15 Apalana, Apasionada
+	15 Stunned Silence
+	15 Extended Outro
+	15 Put in Their Place
+	15 Beat Switch
+	15 Fervent Schooling
+	15 Deep Sea Diva
+	15 Greatest Hits Tour
+	15 Ishi, WeSing Star
+	15 A Star is Born
+	15 Baril, Static Selector
+	15 Mai Lim, Defending Champ
+	15 Tempo Accelerator
+	15 The Apocalypse Sisters
+	7 Halami the Dextrous
+	15 Anomaly DX397
+	15 Highly-Anticipated Collab
+	15 Lightvein Overdriver
+	15 Amplified Switchbot
+	6 Resounding Chorus
+	7 LonJon, Dynamic Duo
+	7 Ingrained Memory
+	15 Ezri, Starmaking Producer
+	15 Mia Mia & Vic Villain
+	15 Neon Blitz
+	7 Hypebeast
+	15 Group Power Pose
+	15 Polya, Duchess of Grime
+	15 Overwhelm the Airwaves
+	6 Cast Down
+	15 Beguiling Chorus
+	15 Flanger Flayer
+	15 Rafter Riggers
+	7 Grand Dissonance
+	15 Disco Inferno
+	15 Reckless Drifter
+	15 Voo Won, Indisputable
+	15 Extraplanar Aficionado
+	7 Auditory Agitator
+	15 Scorched-Earth Songstress
+	7 Mykian, Planetrotter
+	15 Living Billboard
+	4 Frequency Authority
+	15 Expert Stagehand
+	15 Kuma's Sharkjumper
+	15 Anomalous Transmission
+	15 Ishi's Prismwing
+	15 Blissed-Out Bot
+	15 Hardlight Tailor
+	4 Shred Authority
+	6 Guttural Scream
+	15 Sinthia, the Mindrazer
+	15 Broadcast Executive
+	15 Hologram Technician
+	15 Shambling Scratcher
+	15 In Memoriam
+	15 Manis, StarKid
+	15 Aerial Stunt Specialists
+	15 Samaya Soundwave
+	15 The Skeleton Keys
+	15 Ruthless Shredder
+	15 Festival Kickoff
+	15 Bebop Bob
+	6 Bright-Eyed Bushytail
+	6 Herald of New Sounds
+	6 Nightlife Nightlight
+	6 Fandom Commander
+	6 Stunted By Success
+	6 Enraptured Patron
+	6 Undercover Security
+	6 Magnetic Presence
+	6 All Hands Rehearsal
+	6 Moonlighting Stagehand
+	6 Lightseeker
+	6 Party Monster
+	6 Nightlife Lurkers
+	6 Highrise Vagrant
+	6 Inescapable Earworm
+	15 Understudy's Envy
+	6 Disrupt the Program
+	15 Phosphorescent Patrician
+	6 Cabaret Aspirant
+	6 Supersonic Drummer
+	6 Flamboyant Dresser
+	6 Surgeon for the Stars
+	6 Scorching Duet
+	6 Archaic Automaton
+	6 Blaring Streetbot
+	6 Hardlight Painter
+	6 Broadcast Hub
+	6 Digital Landscape
+	6 Thriving Isle
+	6 Thriving Bluff
+	6 Thriving Moor
+	6 Thriving Heath
+	6 Thriving Grove
+	15 Resonant Grove
+	15 Resonant Tidepool
+	15 Resonant Crag
+	15 Resonant Springs
+	15 Resonant Valley
+	15 Resonant Cove
+	15 Resonant Highland
+	15 Resonant Expanse
+	15 Resonant Moor
+	15 Resonant Marsh
+	15 Bedazzled Soloist
+	15 Staggering Showbot
+	15 Starmaker Mic
+	15 Holographic Mirror
+	15 The Masked Rider
+	15 Jurjurian Ritualists
+	15 Tympanic Titan
+	15 Vivacious Host
+	15 Mashup Machine
+	15 Morashan Mischief Makers
+	15 Guerilla Promoter
+	15 Phantom of the Amplifier
+	15 Oddsmaking Oracle
+	15 Stage Fright
+	7 Amped-Up Acrobats
+	15 Throes of the Masses
+	15 Eyes in the Sky
+	15 Lightrunner Duo
+	15 Cover Art Designer
+	15 Delegation Orchestrator
+	15 Forbidden Harmony
+	15 Ezri's Street Team
+	4 Petrasian Derby Team
+	15 Stage Rhino
+	15 Hardlight Exhibition
+	15 Club Patron
+	15 Fansite Maven
+	15 Presence of the Unending Rave
+	15 Return to the Classics
+	4 Hornswoggler
+	7 Heavy Inspiration
+	4 Tastemaking Authority
+	4 Rhythm Authority
+	4 Crowd Authority
+	4 Lifted Cargolift
+	4 Vanity Dragster
+	4 Remote-Control Showdrone
+	4 Joyride Offroader
+	7 Closing Ceremony
+	7 Miss Anthrope
+	7 BXB Fessy
+	7 Surprise Interlude
+	7 Lightvein Eclipse
+	7 Four on the Floor
+	7 Aka'a, Street Battler
+	7 Maxime Maximalist
+	7 Irana, Sultan of SingNow
+	7 Otherworldly Exchange
+	7 Price of Greatness
+	7 Opening Night Bash
+	7 Remix Reality
+	7 Spare No Expense
+	7 Maybe Next Year
+	7 Encore of Dread
+	7 Disqualify
+	7 Rapid Revamp
+	7 Stray Hologram
+	7 Dazzling Lanternshark
+	7 Otto Mollusco
+	7 Cross-Promotion
+	7 Transcendent Conversion
+	7 Singing Spitter
+	7 Festival Spoiler
+	7 Morashim the Wastelord
+	7 Reckless Acrobatics
+	7 The Artist with No Name
+	7 Baricol the Infinist
+	7 Engineered Virus
+	7 Prismatic Heirloom
+	7 Jester of the Lightveins
+	7 Cassia Reinvented
+	7 Holocrafter
+	4 Extraplanar Talent Scout
+	7 Jukebox of Mysteries
+	7 Party Platform
+	7 Mass Marketers
+	7 Endless Soloist
+	7 Familiar-Blessed Folkist
+	7 Irradiated Ooze
+	7 Feedback Loop
+	4 Azzenoti the Organist
+	4 Nekaru, Master of Ceremonies
+	4 Farrah Q, Grand Sampler
+	4 Vote Trading
+	4 Parade of Champions
+	4 Staff of Moresso
+	4 Overclocked Spinmaster
+	7 Trained Showdragon

@@ -1,7 +1,7 @@
 ﻿{
     "name": "Prismavision",
     "formats": "",
-    "trimmed": "y",
+    "trimmed": "n",
     "image_type": "png",
     "draft_structure": "play booster",
     "cards": [
@@ -5495,6 +5495,5 @@
             "artist": "VIANVOLAEUS",
             "notes": ""
         }
-    ],
-    "version": 1
+    ]
 }
