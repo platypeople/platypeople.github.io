@@ -926,7 +926,7 @@
 		{
 			"name": "Halami the Dextrous",
 			"rarity": "rare",
-			"mana_cost": "{5}{G}{G}",
+			"mana_cost": "{3}{G}{G}",
 			"type": "Legendary Creature — Spirit Bard",
 			"collector_number": "170",
 			"back": {
@@ -1226,7 +1226,7 @@
 			"name": "Scorched-Earth Songstress",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{R}",
-			"type": "Creature — Human Wizard Bard",
+			"type": "Creature — Human Sorceror Bard",
 			"collector_number": "145",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/145_Scorched-Earth Songstress.png"
@@ -2334,7 +2334,7 @@
 		{
 			"name": "Lifted Cargolift",
 			"rarity": "mythic",
-			"mana_cost": "{3}{W}",
+			"mana_cost": "{1}{W}",
 			"type": "Artifact — Vehicle",
 			"collector_number": "23",
 			"image_uris": {
@@ -2747,7 +2747,7 @@
 		{
 			"name": "Jester of the Lightveins",
 			"rarity": "rare",
-			"mana_cost": "{B}{R}",
+			"mana_cost": "{1}{B}{R}",
 			"type": "Creature — Horror",
 			"collector_number": "216",
 			"image_uris": {
