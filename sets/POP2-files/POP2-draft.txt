@@ -35,9 +35,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{1}{W}",
 			"type": "Sorcery",
-			"collector_number": "18",
+			"collector_number": "19",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/18_Flash Mob.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/19_Flash Mob.png"
 			}
 		},
 		{
@@ -45,16 +45,16 @@
 			"rarity": "uncommon",
 			"mana_cost": "{3}{U}",
 			"type": "Legendary Planeswalker — Devrinn",
-			"collector_number": "48",
+			"collector_number": "49",
 			"back": {
 				"name": "",
 				"type": "",
 				"image_uris": {
-					"en": "https://platypeople.github.io/sets/POP2-files/img/48_Devrinn, Pitch Perfect_back.png"
+					"en": "https://platypeople.github.io/sets/POP2-files/img/49_Devrinn, Pitch Perfect_back.png"
 				}
 			},
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/48_Devrinn, Pitch Perfect_front.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/49_Devrinn, Pitch Perfect_front.png"
 			}
 		},
 		{
@@ -129,9 +129,9 @@
 			"rarity": "common",
 			"mana_cost": "{R}",
 			"type": "Sorcery",
-			"collector_number": "131",
+			"collector_number": "132",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/131_Improvised Solo.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/132_Improvised Solo.png"
 			}
 		},
 		{
@@ -149,9 +149,9 @@
 			"rarity": "common",
 			"mana_cost": "{U}",
 			"type": "Instant",
-			"collector_number": "49",
+			"collector_number": "50",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/49_Disarming Lilt.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/50_Disarming Lilt.png"
 			}
 		},
 		{
@@ -159,9 +159,9 @@
 			"rarity": "common",
 			"mana_cost": "{2}{W}",
 			"type": "Creature — Human Performer",
-			"collector_number": "17",
+			"collector_number": "18",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/17_Festival Greeter.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/18_Festival Greeter.png"
 			}
 		},
 		{
@@ -189,9 +189,9 @@
 			"rarity": "common",
 			"mana_cost": "{1}{S}{R}",
 			"type": "Instant",
-			"collector_number": "122",
+			"collector_number": "123",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/122_Blazing Spotlight.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/123_Blazing Spotlight.png"
 			}
 		},
 		{
@@ -229,9 +229,9 @@
 			"rarity": "common",
 			"mana_cost": "{2}{G}",
 			"type": "Sorcery",
-			"collector_number": "177",
+			"collector_number": "178",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/177_Knock Your Socks Off.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/178_Knock Your Socks Off.png"
 			}
 		},
 		{
@@ -249,9 +249,9 @@
 			"rarity": "rare",
 			"mana_cost": "{G}",
 			"type": "Creature — Elemental",
-			"collector_number": "175",
+			"collector_number": "176",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/175_Kaleidoscamp.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/176_Kaleidoscamp.png"
 			}
 		},
 		{
@@ -259,9 +259,9 @@
 			"rarity": "common",
 			"mana_cost": "{5}{W}{W}",
 			"type": "Creature — Angel Bard",
-			"collector_number": "4",
+			"collector_number": "5",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/4_Beloved PrismaVeteran.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/5_Beloved PrismaVeteran.png"
 			}
 		},
 		{
@@ -279,9 +279,9 @@
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
 			"type": "Creature — Lizard",
-			"collector_number": "174",
+			"collector_number": "175",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/174_Kaleidomeleon.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/175_Kaleidomeleon.png"
 			}
 		},
 		{
@@ -289,9 +289,9 @@
 			"rarity": "common",
 			"mana_cost": "{2}{R}",
 			"type": "Creature — Human Monk",
-			"collector_number": "129",
+			"collector_number": "130",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/129_Hip Choreographer.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/130_Hip Choreographer.png"
 			}
 		},
 		{
@@ -299,9 +299,9 @@
 			"rarity": "common",
 			"mana_cost": "{2}{S}{U}",
 			"type": "Instant",
-			"collector_number": "54",
+			"collector_number": "55",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/54_Finishing Touches.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/55_Finishing Touches.png"
 			}
 		},
 		{
@@ -325,13 +325,13 @@
 			}
 		},
 		{
-			"name": "Overwhelm the Network",
+			"name": "Hijack the Network",
 			"rarity": "common",
 			"mana_cost": "{S}{G}",
 			"type": "Instant",
-			"collector_number": "184",
+			"collector_number": "172",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/184_Overwhelm the Network.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/172_Hijack the Network.png"
 			}
 		},
 		{
@@ -339,9 +339,9 @@
 			"rarity": "common",
 			"mana_cost": "{2}{G}",
 			"type": "Sorcery",
-			"collector_number": "176",
+			"collector_number": "177",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/176_Key Change.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/177_Key Change.png"
 			}
 		},
 		{
@@ -357,8 +357,8 @@
 		{
 			"name": "Tight Turnaround",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{U}",
-			"type": "Sorcery",
+			"mana_cost": "{2}{U}",
+			"type": "Instant",
 			"collector_number": "77",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/77_Tight Turnaround.png"
@@ -454,11 +454,11 @@
 		{
 			"name": "Overpowering Reprise",
 			"rarity": "common",
-			"mana_cost": "{3}{G}",
+			"mana_cost": "{1}{G}",
 			"type": "Instant",
-			"collector_number": "182",
+			"collector_number": "183",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/182_Overpowering Reprise.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/183_Overpowering Reprise.png"
 			}
 		},
 		{
@@ -466,9 +466,9 @@
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
 			"type": "Creature — Elf Artificer",
-			"collector_number": "178",
+			"collector_number": "179",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/178_Lightshow Technician.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/179_Lightshow Technician.png"
 			}
 		},
 		{
@@ -516,9 +516,9 @@
 			"rarity": "common",
 			"mana_cost": "{5}{R}{R}",
 			"type": "Creature — Berserker Bard",
-			"collector_number": "128",
+			"collector_number": "129",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/128_Hard Rock Hailers.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/129_Hard Rock Hailers.png"
 			}
 		},
 		{
@@ -545,10 +545,10 @@
 			"name": "Magnanimous Socialite",
 			"rarity": "common",
 			"mana_cost": "{5}{G}",
-			"type": "Creature — Orc",
-			"collector_number": "179",
+			"type": "Creature — Orc Advisor",
+			"collector_number": "180",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/179_Magnanimous Socialite.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/180_Magnanimous Socialite.png"
 			}
 		},
 		{
@@ -556,9 +556,9 @@
 			"rarity": "common",
 			"mana_cost": "{1}{U}",
 			"type": "Instant",
-			"collector_number": "56",
+			"collector_number": "57",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/56_Heart-Shaking Drop.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/57_Heart-Shaking Drop.png"
 			}
 		},
 		{
@@ -656,9 +656,9 @@
 			"rarity": "common",
 			"mana_cost": "{1}{U}",
 			"type": "Creature — Human",
-			"collector_number": "50",
+			"collector_number": "51",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/50_Enamored Stan.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/51_Enamored Stan.png"
 			}
 		},
 		{
@@ -666,9 +666,9 @@
 			"rarity": "common",
 			"mana_cost": "{1}{R}",
 			"type": "Creature — Human Bard",
-			"collector_number": "124",
+			"collector_number": "125",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/124_Camerawise Crooner.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/125_Camerawise Crooner.png"
 			}
 		},
 		{
@@ -777,12 +777,12 @@
 		},
 		{
 			"name": "Extended Outro",
-			"rarity": "uncommon",
-			"mana_cost": "{4}{U}",
-			"type": "Instant",
-			"collector_number": "51",
+			"rarity": "rare",
+			"mana_cost": "{1}{U}",
+			"type": "Sorcery",
+			"collector_number": "52",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/51_Extended Outro.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/52_Extended Outro.png"
 			}
 		},
 		{
@@ -810,9 +810,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{2}{U}",
 			"type": "Instant",
-			"collector_number": "53",
+			"collector_number": "54",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/53_Fervent Schooling.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/54_Fervent Schooling.png"
 			}
 		},
 		{
@@ -820,19 +820,19 @@
 			"rarity": "uncommon",
 			"mana_cost": "{U}",
 			"type": "Creature — Merfolk",
-			"collector_number": "47",
+			"collector_number": "48",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/47_Deep Sea Diva.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/48_Deep Sea Diva.png"
 			}
 		},
 		{
-			"name": "Greatest Hits Tour",
+			"name": "Harsh Criticism",
 			"rarity": "uncommon",
 			"mana_cost": "{B}",
-			"type": "Instant",
-			"collector_number": "88",
+			"type": "Sorcery",
+			"collector_number": "91",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/88_Greatest Hits Tour.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/91_Harsh Criticism.png"
 			}
 		},
 		{
@@ -926,7 +926,7 @@
 		{
 			"name": "Halami the Dextrous",
 			"rarity": "rare",
-			"mana_cost": "{3}{G}{G}",
+			"mana_cost": "{2}{G}{G}",
 			"type": "Legendary Creature — Spirit Bard",
 			"collector_number": "170",
 			"back": {
@@ -962,9 +962,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{2}{W}",
 			"type": "Sorcery",
-			"collector_number": "22",
+			"collector_number": "23",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/22_Highly-Anticipated Collab.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/23_Highly-Anticipated Collab.png"
 			}
 		},
 		{
@@ -1029,16 +1029,16 @@
 			"rarity": "uncommon",
 			"mana_cost": "{1}{W}",
 			"type": "Legendary Creature — Elf",
-			"collector_number": "14",
+			"collector_number": "15",
 			"back": {
 				"name": "",
 				"type": "",
 				"image_uris": {
-					"en": "https://platypeople.github.io/sets/POP2-files/img/14_Ezri, Starmaking Producer_back.png"
+					"en": "https://platypeople.github.io/sets/POP2-files/img/15_Ezri, Starmaking Producer_back.png"
 				}
 			},
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/14_Ezri, Starmaking Producer_front.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/15_Ezri, Starmaking Producer_front.png"
 			}
 		},
 		{
@@ -1061,7 +1061,7 @@
 		{
 			"name": "Neon Blitz",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{R}",
+			"mana_cost": "{2}{R}",
 			"type": "Sorcery",
 			"collector_number": "140",
 			"image_uris": {
@@ -1073,9 +1073,9 @@
 			"rarity": "rare",
 			"mana_cost": "{1}{G}",
 			"type": "Creature — Beast",
-			"collector_number": "172",
+			"collector_number": "173",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/172_Hypebeast.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/173_Hypebeast.png"
 			}
 		},
 		{
@@ -1083,9 +1083,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{2}{W}",
 			"type": "Instant",
-			"collector_number": "20",
+			"collector_number": "21",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/20_Group Power Pose.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/21_Group Power Pose.png"
 			}
 		},
 		{
@@ -1110,9 +1110,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{1}{G}",
 			"type": "Sorcery",
-			"collector_number": "183",
+			"collector_number": "184",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/183_Overwhelm the Airwaves.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/184_Overwhelm the Airwaves.png"
 			}
 		},
 		{
@@ -1170,9 +1170,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{2}{R}",
 			"type": "Instant",
-			"collector_number": "125",
+			"collector_number": "126",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/125_Disco Inferno.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/126_Disco Inferno.png"
 			}
 		},
 		{
@@ -1217,9 +1217,9 @@
 			"rarity": "rare",
 			"mana_cost": "{R}",
 			"type": "Creature — Human Rogue",
-			"collector_number": "121",
+			"collector_number": "122",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/121_Auditory Agitator.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/122_Auditory Agitator.png"
 			}
 		},
 		{
@@ -1237,16 +1237,16 @@
 			"rarity": "rare",
 			"mana_cost": "{4}{G}",
 			"type": "Legendary Planeswalker — Mykian",
-			"collector_number": "181",
+			"collector_number": "182",
 			"back": {
 				"name": "",
 				"type": "",
 				"image_uris": {
-					"en": "https://platypeople.github.io/sets/POP2-files/img/181_Mykian, Planetrotter_back.png"
+					"en": "https://platypeople.github.io/sets/POP2-files/img/182_Mykian, Planetrotter_back.png"
 				}
 			},
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/181_Mykian, Planetrotter_front.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/182_Mykian, Planetrotter_front.png"
 			}
 		},
 		{
@@ -1264,9 +1264,9 @@
 			"rarity": "mythic",
 			"mana_cost": "{6}{U}{U}",
 			"type": "Creature — Avatar",
-			"collector_number": "55",
+			"collector_number": "56",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/55_Frequency Authority.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/56_Frequency Authority.png"
 			}
 		},
 		{
@@ -1274,19 +1274,19 @@
 			"rarity": "uncommon",
 			"mana_cost": "{R}",
 			"type": "Creature — Human Artificer",
-			"collector_number": "126",
+			"collector_number": "127",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/126_Expert Stagehand.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/127_Expert Stagehand.png"
 			}
 		},
 		{
-			"name": "Kuma's Sharkjumper",
+			"name": "Apocalypse Sharkjumper",
 			"rarity": "uncommon",
 			"mana_cost": "{3}{R}",
 			"type": "Creature — Devil",
-			"collector_number": "133",
+			"collector_number": "121",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/133_Kuma's Sharkjumper.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/121_Apocalypse Sharkjumper.png"
 			}
 		},
 		{
@@ -1314,9 +1314,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{W}",
 			"type": "Artifact Creature — Bard",
-			"collector_number": "5",
+			"collector_number": "6",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/5_Blissed-Out Bot.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/6_Blissed-Out Bot.png"
 			}
 		},
 		{
@@ -1324,9 +1324,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{1}{B}",
 			"type": "Creature — Human Artificer",
-			"collector_number": "91",
+			"collector_number": "90",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/91_Hardlight Tailor.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/90_Hardlight Tailor.png"
 			}
 		},
 		{
@@ -1344,9 +1344,9 @@
 			"rarity": "common",
 			"mana_cost": "{B}",
 			"type": "Sorcery",
-			"collector_number": "90",
+			"collector_number": "89",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/90_Guttural Scream.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/89_Guttural Scream.png"
 			}
 		},
 		{
@@ -1509,9 +1509,9 @@
 			"rarity": "common",
 			"mana_cost": "{2}{W}",
 			"type": "Creature — Fox Bard",
-			"collector_number": "6",
+			"collector_number": "7",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/6_Bright-Eyed Bushytail.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/7_Bright-Eyed Bushytail.png"
 			}
 		},
 		{
@@ -1519,9 +1519,9 @@
 			"rarity": "common",
 			"mana_cost": "{1}{W}",
 			"type": "Creature — Human Performer",
-			"collector_number": "21",
+			"collector_number": "22",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/21_Herald of New Sounds.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/22_Herald of New Sounds.png"
 			}
 		},
 		{
@@ -1539,9 +1539,9 @@
 			"rarity": "common",
 			"mana_cost": "{4}{W}",
 			"type": "Creature — Human Artificer",
-			"collector_number": "16",
+			"collector_number": "17",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/16_Fandom Commander.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/17_Fandom Commander.png"
 			}
 		},
 		{
@@ -1559,9 +1559,9 @@
 			"rarity": "common",
 			"mana_cost": "{1}{W}",
 			"type": "Creature — Human Advisor",
-			"collector_number": "11",
+			"collector_number": "12",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/11_Enraptured Patron.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/12_Enraptured Patron.png"
 			}
 		},
 		{
@@ -1689,9 +1689,9 @@
 			"rarity": "common",
 			"mana_cost": "{2}{R}",
 			"type": "Creature — Satyr",
-			"collector_number": "123",
+			"collector_number": "124",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/123_Cabaret Aspirant.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/124_Cabaret Aspirant.png"
 			}
 		},
 		{
@@ -1709,9 +1709,9 @@
 			"rarity": "common",
 			"mana_cost": "{1}{R}",
 			"type": "Creature — Human Performer",
-			"collector_number": "127",
+			"collector_number": "128",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/127_Flamboyant Dresser.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/128_Flamboyant Dresser.png"
 			}
 		},
 		{
@@ -1725,13 +1725,13 @@
 			}
 		},
 		{
-			"name": "Scorching Duet",
+			"name": "Scorching Trio",
 			"rarity": "common",
-			"mana_cost": "{1}{R}",
-			"type": "Instant",
+			"mana_cost": "{R}",
+			"type": "Sorcery",
 			"collector_number": "146",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/146_Scorching Duet.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/146_Scorching Trio.png"
 			}
 		},
 		{
@@ -2019,9 +2019,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{3}{R}",
 			"type": "Instant",
-			"collector_number": "130",
+			"collector_number": "131",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/130_Holographic Mirror.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/131_Holographic Mirror.png"
 			}
 		},
 		{
@@ -2046,9 +2046,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{2}{R}",
 			"type": "Creature — Spirit",
-			"collector_number": "132",
+			"collector_number": "133",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/132_Jurjurian Ritualists.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/133_Jurjurian Ritualists.png"
 			}
 		},
 		{
@@ -2096,9 +2096,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{2}{B}",
 			"type": "Creature — Human Rogue",
-			"collector_number": "89",
+			"collector_number": "88",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/89_Guerilla Promoter.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/88_Guerilla Promoter.png"
 			}
 		},
 		{
@@ -2156,9 +2156,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{3}{W}",
 			"type": "Creature — Human Wizard",
-			"collector_number": "13",
+			"collector_number": "14",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/13_Eyes in the Sky.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/14_Eyes in the Sky.png"
 			}
 		},
 		{
@@ -2176,19 +2176,19 @@
 			"rarity": "uncommon",
 			"mana_cost": "{1}{W}",
 			"type": "Creature — Faerie Artist",
-			"collector_number": "8",
+			"collector_number": "9",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/8_Cover Art Designer.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/9_Cover Art Designer.png"
 			}
 		},
 		{
 			"name": "Delegation Orchestrator",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{W}",
-			"type": "Artifact Creature — Noble",
-			"collector_number": "10",
+			"type": "Artifact Creature — Advisor",
+			"collector_number": "11",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/10_Delegation Orchestrator.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/11_Delegation Orchestrator.png"
 			}
 		},
 		{
@@ -2196,9 +2196,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{5}{W}",
 			"type": "Creature — Elemental",
-			"collector_number": "19",
+			"collector_number": "20",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/19_Forbidden Harmony.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/20_Forbidden Harmony.png"
 			}
 		},
 		{
@@ -2206,9 +2206,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{4}{W}",
 			"type": "Creature — Human Pilot",
-			"collector_number": "15",
+			"collector_number": "16",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/15_Ezri's Street Team.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/16_Ezri's Street Team.png"
 			}
 		},
 		{
@@ -2264,7 +2264,7 @@
 		{
 			"name": "Presence of the Unending Rave",
 			"rarity": "uncommon",
-			"mana_cost": "{2}{G}",
+			"mana_cost": "{1}{G}",
 			"type": "Enchantment",
 			"collector_number": "186",
 			"image_uris": {
@@ -2275,7 +2275,7 @@
 			"name": "Return to the Classics",
 			"rarity": "uncommon",
 			"mana_cost": "{4}{G}",
-			"type": "Sorcery",
+			"type": "Instant",
 			"collector_number": "190",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/190_Return to the Classics.png"
@@ -2292,13 +2292,13 @@
 			}
 		},
 		{
-			"name": "Heavy Inspiration",
+			"name": "Clear the Stage",
 			"rarity": "rare",
-			"mana_cost": "{S}{S}{U}",
+			"mana_cost": "{1}{S}{S}{U}{U}",
 			"type": "Sorcery",
-			"collector_number": "57",
+			"collector_number": "45",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/57_Heavy Inspiration.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/45_Clear the Stage.png"
 			}
 		},
 		{
@@ -2326,19 +2326,19 @@
 			"rarity": "mythic",
 			"mana_cost": "{4}{W}{W}",
 			"type": "Creature — Avatar",
-			"collector_number": "9",
+			"collector_number": "10",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/9_Crowd Authority.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/10_Crowd Authority.png"
 			}
 		},
 		{
-			"name": "Lifted Cargolift",
+			"name": "Bandwagon",
 			"rarity": "mythic",
 			"mana_cost": "{1}{W}",
 			"type": "Artifact — Vehicle",
-			"collector_number": "23",
+			"collector_number": "4",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/23_Lifted Cargolift.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/4_Bandwagon.png"
 			}
 		},
 		{
@@ -2366,9 +2366,9 @@
 			"rarity": "mythic",
 			"mana_cost": "{3}{G}",
 			"type": "Artifact — Vehicle",
-			"collector_number": "173",
+			"collector_number": "174",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/173_Joyride Offroader.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/174_Joyride Offroader.png"
 			}
 		},
 		{
@@ -2448,7 +2448,7 @@
 		{
 			"name": "Aka'a, Street Battler",
 			"rarity": "rare",
-			"mana_cost": "{4}{R}",
+			"mana_cost": "{3}{R}",
 			"type": "Legendary Creature — Troll Rogue",
 			"collector_number": "119",
 			"back": {
@@ -2465,18 +2465,18 @@
 		{
 			"name": "Maxime Maximalist",
 			"rarity": "rare",
-			"mana_cost": "{3}{G}",
+			"mana_cost": "{4}{G}",
 			"type": "Legendary Creature — Human Bard",
-			"collector_number": "180",
+			"collector_number": "181",
 			"back": {
 				"name": "",
 				"type": "",
 				"image_uris": {
-					"en": "https://platypeople.github.io/sets/POP2-files/img/180_Maxime Maximalist_back.png"
+					"en": "https://platypeople.github.io/sets/POP2-files/img/181_Maxime Maximalist_back.png"
 				}
 			},
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/180_Maxime Maximalist_front.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/181_Maxime Maximalist_front.png"
 			}
 		},
 		{
@@ -2601,9 +2601,9 @@
 			"rarity": "rare",
 			"mana_cost": "{2}{U}",
 			"type": "Creature — Shark Illusion",
-			"collector_number": "46",
+			"collector_number": "47",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/46_Dazzling Lanternshark.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/47_Dazzling Lanternshark.png"
 			}
 		},
 		{
@@ -2628,14 +2628,14 @@
 			"rarity": "rare",
 			"mana_cost": "{1}{U}",
 			"type": "Enchantment",
-			"collector_number": "45",
+			"collector_number": "46",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/45_Cross-Promotion.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/46_Cross-Promotion.png"
 			}
 		},
 		{
 			"name": "Transcendent Conversion",
-			"rarity": "rare",
+			"rarity": "uncommon",
 			"mana_cost": "{2}{U}{U}",
 			"type": "Enchantment — Aura",
 			"collector_number": "78",
@@ -2646,7 +2646,7 @@
 		{
 			"name": "Singing Spitter",
 			"rarity": "rare",
-			"mana_cost": "{2}{R}{R}",
+			"mana_cost": "{3}{R}{R}",
 			"type": "Creature — Dragon Artist",
 			"collector_number": "147",
 			"image_uris": {
@@ -2656,7 +2656,7 @@
 		{
 			"name": "Festival Spoiler",
 			"rarity": "rare",
-			"mana_cost": "{2}{B}",
+			"mana_cost": "{1}{B}{B}",
 			"type": "Creature — Human Rogue",
 			"collector_number": "85",
 			"image_uris": {
@@ -2683,7 +2683,7 @@
 		{
 			"name": "Reckless Acrobatics",
 			"rarity": "rare",
-			"mana_cost": "{1}{R}",
+			"mana_cost": "{2}{R}",
 			"type": "Sorcery",
 			"collector_number": "143",
 			"image_uris": {
@@ -2710,7 +2710,7 @@
 		{
 			"name": "Baricol the Infinist",
 			"rarity": "rare",
-			"mana_cost": "{1}{U}{B}{R}",
+			"mana_cost": "{U}{B}{R}",
 			"type": "Legendary Planeswalker — Baricol",
 			"collector_number": "200",
 			"back": {
@@ -2759,16 +2759,16 @@
 			"rarity": "rare",
 			"mana_cost": "{1}{W}{W}",
 			"type": "Legendary Planeswalker — Cassia",
-			"collector_number": "7",
+			"collector_number": "8",
 			"back": {
 				"name": "",
 				"type": "",
 				"image_uris": {
-					"en": "https://platypeople.github.io/sets/POP2-files/img/7_Cassia Reinvented_back.png"
+					"en": "https://platypeople.github.io/sets/POP2-files/img/8_Cassia Reinvented_back.png"
 				}
 			},
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/7_Cassia Reinvented_front.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/8_Cassia Reinvented_front.png"
 			}
 		},
 		{
@@ -2786,15 +2786,15 @@
 			"rarity": "mythic",
 			"mana_cost": "{2}{W}",
 			"type": "Creature — Human Advisor",
-			"collector_number": "12",
+			"collector_number": "13",
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/12_Extraplanar Talent Scout.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/13_Extraplanar Talent Scout.png"
 			}
 		},
 		{
 			"name": "Jukebox of Mysteries",
 			"rarity": "rare",
-			"mana_cost": "{5}{U}{B}",
+			"mana_cost": "{4}{U}{B}",
 			"type": "Creature — Illusion",
 			"collector_number": "217",
 			"image_uris": {
@@ -2845,7 +2845,7 @@
 			"name": "Irradiated Ooze",
 			"rarity": "rare",
 			"mana_cost": "{X}{R}{G}",
-			"type": "Creature — Ooze",
+			"type": "Creature — Elemental Ooze",
 			"collector_number": "215",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/215_Irradiated Ooze.png"
@@ -2855,7 +2855,7 @@
 			"name": "Feedback Loop",
 			"rarity": "rare",
 			"mana_cost": "{3}{B}{G}",
-			"type": "Creature — Nightmare",
+			"type": "Creature — Horror",
 			"collector_number": "209",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/209_Feedback Loop.png"
@@ -2900,16 +2900,16 @@
 			"rarity": "mythic",
 			"mana_cost": "{2}{U}",
 			"type": "Legendary Creature — Spirit",
-			"collector_number": "52",
+			"collector_number": "53",
 			"back": {
 				"name": "",
 				"type": "",
 				"image_uris": {
-					"en": "https://platypeople.github.io/sets/POP2-files/img/52_Farrah Q, Grand Sampler_back.png"
+					"en": "https://platypeople.github.io/sets/POP2-files/img/53_Farrah Q, Grand Sampler_back.png"
 				}
 			},
 			"image_uris": {
-				"en": "https://platypeople.github.io/sets/POP2-files/img/52_Farrah Q, Grand Sampler_front.png"
+				"en": "https://platypeople.github.io/sets/POP2-files/img/53_Farrah Q, Grand Sampler_front.png"
 			}
 		},
 		{
@@ -3115,6 +3115,7 @@
 	2 Hit Factory
 	2 Morashan Wasteland
 	2 Eco Rave
+	2 Extended Outro
 	2 Halami the Dextrous
 	2 LonJon, Dynamic Duo
 	2 Ingrained Memory
@@ -3127,11 +3128,11 @@
 	2 Amped-Up Acrobats
 	1 Petrasian Derby Team
 	1 Hornswoggler
-	2 Heavy Inspiration
+	2 Clear the Stage
 	1 Tastemaking Authority
 	1 Rhythm Authority
 	1 Crowd Authority
-	1 Lifted Cargolift
+	1 Bandwagon
 	1 Vanity Dragster
 	1 Remote-Control Showdrone
 	1 Joyride Offroader
@@ -3157,7 +3158,6 @@
 	2 Dazzling Lanternshark
 	2 Otto Mollusco
 	2 Cross-Promotion
-	2 Transcendent Conversion
 	2 Singing Spitter
 	2 Festival Spoiler
 	2 Morashim the Wastelord
@@ -3199,12 +3199,11 @@
 	4 Meryel of Two Realities
 	4 Apalana, Apasionada
 	4 Stunned Silence
-	4 Extended Outro
 	4 Put in Their Place
 	4 Beat Switch
 	4 Fervent Schooling
 	4 Deep Sea Diva
-	4 Greatest Hits Tour
+	4 Harsh Criticism
 	4 Ishi, WeSing Star
 	4 A Star is Born
 	4 Baril, Static Selector
@@ -3231,7 +3230,7 @@
 	4 Scorched-Earth Songstress
 	4 Living Billboard
 	4 Expert Stagehand
-	4 Kuma's Sharkjumper
+	4 Apocalypse Sharkjumper
 	4 Anomalous Transmission
 	4 Ishi's Prismwing
 	4 Blissed-Out Bot
@@ -3287,6 +3286,7 @@
 	4 Fansite Maven
 	4 Presence of the Unending Rave
 	4 Return to the Classics
+	4 Transcendent Conversion
 [common(7)]
 	8 Action Close-Up
 	8 Online Teaser
@@ -3308,7 +3308,7 @@
 	8 Finishing Touches
 	8 Unplug
 	8 Automated Backup
-	8 Overwhelm the Network
+	8 Hijack the Network
 	8 Key Change
 	8 Ravek Glade Busker
 	8 Bright-Eyed Insurgent
@@ -3362,7 +3362,7 @@
 	8 Supersonic Drummer
 	8 Flamboyant Dresser
 	8 Surgeon for the Stars
-	8 Scorching Duet
+	8 Scorching Trio
 	8 Archaic Automaton
 	8 Blaring Streetbot
 	8 Hardlight Painter
@@ -3405,7 +3405,7 @@
 	6 Finishing Touches
 	6 Unplug
 	6 Automated Backup
-	6 Overwhelm the Network
+	6 Hijack the Network
 	6 Key Change
 	4 Hypnotic Formation
 	15 Tight Turnaround
@@ -3448,12 +3448,12 @@
 	7 Eco Rave
 	15 Apalana, Apasionada
 	15 Stunned Silence
-	15 Extended Outro
+	7 Extended Outro
 	15 Put in Their Place
 	15 Beat Switch
 	15 Fervent Schooling
 	15 Deep Sea Diva
-	15 Greatest Hits Tour
+	15 Harsh Criticism
 	15 Ishi, WeSing Star
 	15 A Star is Born
 	15 Baril, Static Selector
@@ -3490,7 +3490,7 @@
 	15 Living Billboard
 	4 Frequency Authority
 	15 Expert Stagehand
-	15 Kuma's Sharkjumper
+	15 Apocalypse Sharkjumper
 	15 Anomalous Transmission
 	15 Ishi's Prismwing
 	15 Blissed-Out Bot
@@ -3531,7 +3531,7 @@
 	6 Supersonic Drummer
 	6 Flamboyant Dresser
 	6 Surgeon for the Stars
-	6 Scorching Duet
+	6 Scorching Trio
 	6 Archaic Automaton
 	6 Blaring Streetbot
 	6 Hardlight Painter
@@ -3582,11 +3582,11 @@
 	15 Presence of the Unending Rave
 	15 Return to the Classics
 	4 Hornswoggler
-	7 Heavy Inspiration
+	7 Clear the Stage
 	4 Tastemaking Authority
 	4 Rhythm Authority
 	4 Crowd Authority
-	4 Lifted Cargolift
+	4 Bandwagon
 	4 Vanity Dragster
 	4 Remote-Control Showdrone
 	4 Joyride Offroader
@@ -3612,7 +3612,7 @@
 	7 Dazzling Lanternshark
 	7 Otto Mollusco
 	7 Cross-Promotion
-	7 Transcendent Conversion
+	15 Transcendent Conversion
 	7 Singing Spitter
 	7 Festival Spoiler
 	7 Morashim the Wastelord
