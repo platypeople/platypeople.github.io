@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link rel="icon" type="image/png" href="/sets/POP2-files/icon.png"/>
-	<link rel="stylesheet" href="/resources/header.css">
+	<link rel="icon" type="image/png" href="../sets/POP2-files/icon.png"/>
+	<link rel="stylesheet" href="../resources/header.css">
 	<title>POP2 visual preview</title>
+	<script title="root">
+		const rootPath = "..";
+	</script>
 	<style>
+		@font-face {
+			font-family: Beleren;
+			src: url('../resources/beleren.ttf');
+		}
 		body {
 			font-family: Arial, sans-serif;
 			margin: 0;
@@ -35,19 +42,21 @@
 			position: relative;
 		}
 		.sidebar-h-img {
-			display: none;
-			transform: rotate(90deg);
+			opacity: 0;
+			transform: rotateY(0deg) rotate(90deg);
 			position: absolute;
 			left: 10%;
 			top: 10%;
 			width: 85%;
+			border-radius: 3.733% / 2.677%;
 		}
 		.sidebar-img {
 			vertical-align: middle;
 			width: 100%;
+			border-radius: 3.733% / 2.677%;
 		}
 		.close-btn {
-			background: url('/img/close.png') no-repeat;
+			background: url('../img/close.png') no-repeat;
 			background-size: contain;
 			background-position: center;
 			width: 10%;
@@ -58,7 +67,7 @@
 			right: 4%;
 		}
 		.close-btn:hover {
-			background: url('/img/close-hover.png') no-repeat;
+			background: url('../img/close-hover.png') no-repeat;
 			background-size: contain;
 			background-position: center;
 		}
@@ -78,11 +87,12 @@
 			display: block;
 			visibility: hidden;
 			cursor: pointer;
+			border-radius: 3.733% / 2.677%;
 		}
 		.banner {
 			width: 100%;
 			height: auto;
-			padding-top: 20px;
+			padding-top: 80px;
 			padding-bottom: 50px;
 		}
 		.logo {
@@ -98,9 +108,10 @@
 		.container img {
 			width: 100%;
 			height: auto;
+			border-radius: 3.733% / 2.677%;
 		}
 		.flip-btn {
-			background: url('/img/flip.png') no-repeat;
+			background: url('../img/flip.png') no-repeat;
 			background-size: contain;
 			background-position: center;
 			width: 15%;
@@ -114,40 +125,54 @@
 			opacity: 0.5;
 		}
 		.flip-btn:hover {
-			background: url('/img/flip-hover.png') no-repeat;
+			background: url('../img/flip-hover.png') no-repeat;
 			background-size: contain;
 			background-position: center;
 		}
-		.icon-bar {
+		.dropdown {
+			background: rgba(23, 23, 23, 0.8);
+			border-radius: 8px;
+			position: absolute;
+			left: 5%;
+			width: fit-content;
+			max-width: 90%;
+			margin: 20px 0;
+			padding: 5px 0;
 			display: grid;
-			grid-template-columns: repeat(10, 3fr 2fr) 3fr;
-			gap: 1px;
-			padding-left: 5%;
-			padding-right: 5%;
-			padding-top: 2%;
-			padding-bottom: 1%;
-			justify-items: center;
+			grid-template-columns: 1fr;
+			z-index: 3;
+		}
+		.dropdown .set-bar {
+			font-family: Beleren;
+			font-size: 20px;
+			text-decoration: none;
+			color: #e3e3e3;
+			display: flex;
+			gap: 10px;
 			align-items: center;
+			padding: 0 12px;
+			margin: 5px;
 		}
-		.icon-bar .icon img {
-			width: 90%;
-			max-width: 80px;
-			height: auto;
-			display: block;
-			padding: 5%;
-			margin: auto;
-			text-align: center;
+		.dropdown .set-bar:hover {
+			background: rgba(163, 163, 163, 0.5);
+			color: #f3f3f3;
 		}
-		.icon-bar .dot img {
-			width: 50%;
-			max-width: 65px;
-			height: auto;
-			display: block;
-			margin: auto;
-			text-align: center;
+		.dropdown .set-bar img {
+			width: 32px;
+		}
+		.dropdown .inactive {
+			height: 0px;
+			overflow: hidden;
+			margin: 0px 5px;
 		}
 		.preload-hidden {
 			display: none;
+		}
+		.addenda-container {
+			text-align: center;
+			width: fit-content;
+			max-width: 1200px;
+			padding: 0 5%;
 		}
 		/* This is here to enable the stickiness in a Float environment. I don't know why it works but it does */
 		.footer {
@@ -156,374 +181,391 @@
 	</style>
 </head>
 <body>
-	<img class="preload-hidden" src="/img/dot.png" />
-	<img class="preload-hidden" src="/sets/POP2-files/logo.png" />
-	<img class="preload-hidden" src="/sets/POP2-files/icon.png" />
+	<img class="preload-hidden" src="../img/dot.png" />
+	<img class="preload-hidden" src="../sets/POP2-files/logo.png" />
+	<img class="preload-hidden" src="../sets/POP2-files/icon.png" />
 		<div class="header">
 		<div class="search-grid">
-			<a href="/"><img class="sg-logo" src="/img/banner.png"></a>
-			<img class="sg-icon" src="/img/search.png">
-			<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false">
-			<a href="/all-sets"><img src="/img/sets.png" class="sg-icon">Sets</a>
-			<a href="/deckbuilder"><img src="/img/deck.png" class="sg-icon">Deckbuilder</a>
-			<a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
+			<a onclick="window.location.href = rootPath + '/'"><img class="sg-logo" id="header-banner"></a>
+			<img class="sg-icon" id="header-search" onclick="goToSearch()">
+			<div style="position: relative; width: 100%;">
+				<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false">
+				<div id="tag-dropdown" style="display: none; position: absolute; top: 100%; left: 0; width: 100%; background: white; border: 1px solid #d5d9d9; z-index: 1000; max-height: 200px; overflow-y: auto; color: black; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"></div>
+			</div>
+			<a onclick="window.location.href = rootPath + '/all-sets'"><img id="header-sets" class="sg-icon">Sets</a>
+			<a onclick="window.location.href = rootPath + '/deckbuilder'"><img id="header-deck" class="sg-icon">Deckbuilder</a>
+			<a onclick="randomCard()"><img id="header-random" class="sg-icon">Random</a>
 		</div>
 	</div>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			document.getElementById("header-banner").src = rootPath + "/img/banner.png";
+			document.getElementById("header-search").src = rootPath + "/img/search.png";
+			document.getElementById("header-sets").src = rootPath + "/img/sets.png";
+			document.getElementById("header-deck").src = rootPath + "/img/deck.png";
+			document.getElementById("header-random").src = rootPath + "/img/random.png";
+		});
 
-	<div class="icon-bar">
-			<div class="icon"><a href="POP2"><img src="/sets/POP2-files/icon.png"></img></a></div>
+		function goToSearch() {
+			window.location.href = rootPath + "/search";
+		}
+	</script>
 
+	<div class="dropdown" id="dropdown" onmouseenter="rolldown()" onmouseleave="rollup()">
+	
+		<a class="set-bar" href="../previews/POP2"><img src="../sets/POP2-files/icon.png">Prismavision</a>
+	
 		</div>
 		<div class="banner">
-		<img class="logo" src="/sets/POP2-files/logo.png">
+		<img class="logo" src="../sets/POP2-files/logo.png">
 		</div>
 		<div class="main-content" id="main-content">
 			<div class="grid-container">
-				<div class="container"><img alt="/sets\POP2-files\img\5_Bandwagon.png" id="5_Bandwagon" data-flag="@X" onclick="openSidebar('5_Bandwagon',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\58_Hypnotic Formation.png" id="58_Hypnotic Formation" data-flag="@X" onclick="openSidebar('58_Hypnotic Formation',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\94_Hornswoggler.png" id="94_Hornswoggler" data-flag="@X" onclick="openSidebar('94_Hornswoggler',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\134_Judge of Impeccable Taste.png" id="134_Judge of Impeccable Taste" data-flag="@X" onclick="openSidebar('134_Judge of Impeccable Taste',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\175_Joyride Offroader.png" id="175_Joyride Offroader" data-flag="@X" onclick="openSidebar('175_Joyride Offroader',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\14_Extraplanar Talent Scout.png" id="14_Extraplanar Talent Scout" data-flag="@X" onclick="openSidebar('14_Extraplanar Talent Scout',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\62_Judge of Flawless Technique.png" id="62_Judge of Flawless Technique" data-flag="@X" onclick="openSidebar('62_Judge of Flawless Technique',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\97_Judge of Blind Ambition.png" id="97_Judge of Blind Ambition" data-flag="@X" onclick="openSidebar('97_Judge of Blind Ambition',false)"></div>
-			<div class="container"><img data-alt_src="/sets\POP2-files\img\141_Nekaru, Tyrannic Emcee_back.png" alt="/sets\POP2-files\img\141_Nekaru, Tyrannic Emcee_front.png" id="141_Nekaru, Tyrannic Emcee" data-flag="@XD" onclick="openSidebar('141_Nekaru, Tyrannic Emcee',false)"><button class="flip-btn" onclick="imgFlip('141_Nekaru, Tyrannic Emcee')"></button></div>
-			<div class="container"><img alt="/sets\POP2-files\img\176_Judge of Moving Rhythm.png" id="176_Judge of Moving Rhythm" data-flag="@X" onclick="openSidebar('176_Judge of Moving Rhythm',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\25_Judge of Mass Appeal.png" id="25_Judge of Mass Appeal" data-flag="@X" onclick="openSidebar('25_Judge of Mass Appeal',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\70_Remote-Control Showdrone.png" id="70_Remote-Control Showdrone" data-flag="@X" onclick="openSidebar('70_Remote-Control Showdrone',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\118_Vote Trading.png" id="118_Vote Trading" data-flag="@X" onclick="openSidebar('118_Vote Trading',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\144_Parade of Champions.png" id="144_Parade of Champions" data-flag="@X" onclick="openSidebar('144_Parade of Champions',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\178_Kaleidoscamp.png" id="178_Kaleidoscamp" data-flag="@X" onclick="openSidebar('178_Kaleidoscamp',false)"></div>
-			<div class="container"><img data-alt_src="/sets\POP2-files\img\9_Cassia Reinvented_back.png" alt="/sets\POP2-files\img\9_Cassia Reinvented_front.png" id="9_Cassia Reinvented" data-flag="@XD" onclick="openSidebar('9_Cassia Reinvented',false)"><button class="flip-btn" onclick="imgFlip('9_Cassia Reinvented')"></button></div>
-			<div class="container"><img data-alt_src="/sets\POP2-files\img\79_Zalek, the Brutalizer_back.png" alt="/sets\POP2-files\img\79_Zalek, the Brutalizer_front.png" id="79_Zalek, the Brutalizer" data-flag="@XD" onclick="openSidebar('79_Zalek, the Brutalizer',false)"><button class="flip-btn" onclick="imgFlip('79_Zalek, the Brutalizer')"></button></div>
-			<div class="container"><img data-alt_src="/sets\POP2-files\img\80_Baricol the Infinist_back.png" alt="/sets\POP2-files\img\80_Baricol the Infinist_front.png" id="80_Baricol the Infinist" data-flag="@XD" onclick="openSidebar('80_Baricol the Infinist',false)"><button class="flip-btn" onclick="imgFlip('80_Baricol the Infinist')"></button></div>
-			<div class="container"><img alt="/sets\POP2-files\img\155_Vanity Dragster.png" id="155_Vanity Dragster" data-flag="@X" onclick="openSidebar('155_Vanity Dragster',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\165_Closing Ceremony.png" id="165_Closing Ceremony" data-flag="@X" onclick="openSidebar('165_Closing Ceremony',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\11_Delegation Fixers.png" id="11_Delegation Fixers" data-flag="@X" onclick="openSidebar('11_Delegation Fixers',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\46_Clear the Stage.png" id="46_Clear the Stage" data-flag="@X" onclick="openSidebar('46_Clear the Stage',false)"></div>
-			<div class="container"><img data-alt_src="/sets\POP2-files\img\82_BXB Fessy_back.png" alt="/sets\POP2-files\img\82_BXB Fessy_front.png" id="82_BXB Fessy" data-flag="@XD" onclick="openSidebar('82_BXB Fessy',false)"><button class="flip-btn" onclick="imgFlip('82_BXB Fessy')"></button></div>
-			<div class="container"><img data-alt_src="/sets\POP2-files\img\120_Aka'a, Street Battler_back.png" alt="/sets\POP2-files\img\120_Aka'a, Street Battler_front.png" id="120_Akaa, Street Battler" data-flag="@XD" onclick="openSidebar('120_Akaa, Street Battler',false)"><button class="flip-btn" onclick="imgFlip('120_Akaa, Street Battler')"></button></div>
-			<div class="container"><img data-alt_src="/sets\POP2-files\img\171_Halami the Dextrous_back.png" alt="/sets\POP2-files\img\171_Halami the Dextrous_front.png" id="171_Halami the Dextrous" data-flag="@XD" onclick="openSidebar('171_Halami the Dextrous',false)"><button class="flip-btn" onclick="imgFlip('171_Halami the Dextrous')"></button></div>
-			<div class="container"><img data-alt_src="/sets\POP2-files\img\16_Ezri, Starmaking Producer_back.png" alt="/sets\POP2-files\img\16_Ezri, Starmaking Producer_front.png" id="16_Ezri, Starmaking Producer" data-flag="@XD" onclick="openSidebar('16_Ezri, Starmaking Producer',false)"><button class="flip-btn" onclick="imgFlip('16_Ezri, Starmaking Producer')"></button></div>
-			<div class="container"><img alt="/sets\POP2-files\img\47_Cross-Promotion.png" id="47_Cross-Promotion" data-flag="@X" onclick="openSidebar('47_Cross-Promotion',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\86_Festival Spoiler.png" id="86_Festival Spoiler" data-flag="@X" onclick="openSidebar('86_Festival Spoiler',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\123_Auditory Agitator.png" id="123_Auditory Agitator" data-flag="@X" onclick="openSidebar('123_Auditory Agitator',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\174_Hypebeast.png" id="174_Hypebeast" data-flag="@X" onclick="openSidebar('174_Hypebeast',false)"></div>
-			<div class="container"><img data-alt_src="/sets\POP2-files\img\28_LonJon, Dynamic Duo_back.png" alt="/sets\POP2-files\img\28_LonJon, Dynamic Duo_front.png" id="28_LonJon, Dynamic Duo" data-flag="@XD" onclick="openSidebar('28_LonJon, Dynamic Duo',false)"><button class="flip-btn" onclick="imgFlip('28_LonJon, Dynamic Duo')"></button></div>
-			<div class="container"><img alt="/sets\POP2-files\img\48_Dazzling Lanternshark.png" id="48_Dazzling Lanternshark" data-flag="@X" onclick="openSidebar('48_Dazzling Lanternshark',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\88_Grand Dissonance.png" id="88_Grand Dissonance" data-flag="@X" onclick="openSidebar('88_Grand Dissonance',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\136_Lightvein Eclipse.png" id="136_Lightvein Eclipse" data-flag="@X" onclick="openSidebar('136_Lightvein Eclipse',false)"></div>
-			<div class="container"><img data-alt_src="/sets\POP2-files\img\183_Maxime Maximalist_back.png" alt="/sets\POP2-files\img\183_Maxime Maximalist_front.png" id="183_Maxime Maximalist" data-flag="@XD" onclick="openSidebar('183_Maxime Maximalist',false)"><button class="flip-btn" onclick="imgFlip('183_Maxime Maximalist')"></button></div>
-			<div class="container"><img alt="/sets\POP2-files\img\33_Silencer of Critics.png" id="33_Silencer of Critics" data-flag="@X" onclick="openSidebar('33_Silencer of Critics',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\53_Extended Outro.png" id="53_Extended Outro" data-flag="@X" onclick="openSidebar('53_Extended Outro',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\96_Ingrained Memory.png" id="96_Ingrained Memory" data-flag="@X" onclick="openSidebar('96_Ingrained Memory',false)"></div>
-			<div class="container"><img data-alt_src="/sets\POP2-files\img\140_Miss Anthrope_back.png" alt="/sets\POP2-files\img\140_Miss Anthrope_front.png" id="140_Miss Anthrope" data-flag="@XD" onclick="openSidebar('140_Miss Anthrope',false)"><button class="flip-btn" onclick="imgFlip('140_Miss Anthrope')"></button></div>
-			<div class="container"><img data-alt_src="/sets\POP2-files\img\184_Mykian, Planetrotter_back.png" alt="/sets\POP2-files\img\184_Mykian, Planetrotter_front.png" id="184_Mykian, Planetrotter" data-flag="@XD" onclick="openSidebar('184_Mykian, Planetrotter',false)"><button class="flip-btn" onclick="imgFlip('184_Mykian, Planetrotter')"></button></div>
-			<div class="container"><img alt="/sets\POP2-files\img\34_The Song That Changed It All.png" id="34_The Song That Changed It All" data-flag="@X" onclick="openSidebar('34_The Song That Changed It All',false)"></div>
-			<div class="container"><img data-alt_src="/sets\POP2-files\img\59_Irana, Viral Sensation_back.png" alt="/sets\POP2-files\img\59_Irana, Viral Sensation_front.png" id="59_Irana, Viral Sensation" data-flag="@XD" onclick="openSidebar('59_Irana, Viral Sensation',false)"><button class="flip-btn" onclick="imgFlip('59_Irana, Viral Sensation')"></button></div>
-			<div class="container"><img data-alt_src="/sets\POP2-files\img\103_Morashim the Wastelord_back.png" alt="/sets\POP2-files\img\103_Morashim the Wastelord_front.png" id="103_Morashim the Wastelord" data-flag="@XD" onclick="openSidebar('103_Morashim the Wastelord',false)"><button class="flip-btn" onclick="imgFlip('103_Morashim the Wastelord')"></button></div>
-			<div class="container"><img alt="/sets\POP2-files\img\145_Reckless Acrobatics.png" id="145_Reckless Acrobatics" data-flag="@X" onclick="openSidebar('145_Reckless Acrobatics',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\187_Petrasian Derby Team.png" id="187_Petrasian Derby Team" data-flag="@X" onclick="openSidebar('187_Petrasian Derby Team',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\37_Surprise Interlude.png" id="37_Surprise Interlude" data-flag="@X" onclick="openSidebar('37_Surprise Interlude',false)"></div>
-			<div class="container"><img data-alt_src="/sets\POP2-files\img\66_Otto Mollusco_back.png" alt="/sets\POP2-files\img\66_Otto Mollusco_front.png" id="66_Otto Mollusco" data-flag="@XD" onclick="openSidebar('66_Otto Mollusco',false)"><button class="flip-btn" onclick="imgFlip('66_Otto Mollusco')"></button></div>
-			<div class="container"><img alt="/sets\POP2-files\img\114_Stray Hologram.png" id="114_Stray Hologram" data-flag="@X" onclick="openSidebar('114_Stray Hologram',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\149_Singing Spitter.png" id="149_Singing Spitter" data-flag="@X" onclick="openSidebar('149_Singing Spitter',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\195_Surprise Feature.png" id="195_Surprise Feature" data-flag="@X" onclick="openSidebar('195_Surprise Feature',false)"></div>
-			<div class="container"><img data-alt_src="/sets\POP2-files\img\3_The Artist with No Name_back.png" alt="/sets\POP2-files\img\3_The Artist with No Name_front.png" id="3_The Artist with No Name" data-flag="@XD" onclick="openSidebar('3_The Artist with No Name',false)"><button class="flip-btn" onclick="imgFlip('3_The Artist with No Name')"></button></div>
-			<div class="container"><img alt="/sets\POP2-files\img\41_Beat Switch.png" id="41_Beat Switch" data-flag="@X" onclick="openSidebar('41_Beat Switch',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\87_Flanger Flayer.png" id="87_Flanger Flayer" data-flag="@X" onclick="openSidebar('87_Flanger Flayer',false)"></div>
-			<div class="container"><img data-alt_src="/sets\POP2-files\img\121_Apalana, Apasionada_back.png" alt="/sets\POP2-files\img\121_Apalana, Apasionada_front.png" id="121_Apalana, Apasionada" data-flag="@XD" onclick="openSidebar('121_Apalana, Apasionada',false)"><button class="flip-btn" onclick="imgFlip('121_Apalana, Apasionada')"></button></div>
-			<div class="container"><img alt="/sets\POP2-files\img\158_Anomalous Transmission.png" id="158_Anomalous Transmission" data-flag="@X" onclick="openSidebar('158_Anomalous Transmission',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\7_Blissed-Out Bot.png" id="7_Blissed-Out Bot" data-flag="@X" onclick="openSidebar('7_Blissed-Out Bot',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\42_Bedazzled Soloist.png" id="42_Bedazzled Soloist" data-flag="@X" onclick="openSidebar('42_Bedazzled Soloist',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\89_Guerilla Promoter.png" id="89_Guerilla Promoter" data-flag="@X" onclick="openSidebar('89_Guerilla Promoter',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\122_Apocalypse Sharkjumper.png" id="122_Apocalypse Sharkjumper" data-flag="@X" onclick="openSidebar('122_Apocalypse Sharkjumper',false)"></div>
-			<div class="container"><img data-alt_src="/sets\POP2-files\img\159_Anomaly DX397_back.png" alt="/sets\POP2-files\img\159_Anomaly DX397_front.png" id="159_Anomaly DX397" data-flag="@XD" onclick="openSidebar('159_Anomaly DX397',false)"><button class="flip-btn" onclick="imgFlip('159_Anomaly DX397')"></button></div>
-			<div class="container"><img alt="/sets\POP2-files\img\10_Cover Art Designer.png" id="10_Cover Art Designer" data-flag="@X" onclick="openSidebar('10_Cover Art Designer',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\43_Beguiling Chorus.png" id="43_Beguiling Chorus" data-flag="@X" onclick="openSidebar('43_Beguiling Chorus',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\91_Hardlight Tailor.png" id="91_Hardlight Tailor" data-flag="@X" onclick="openSidebar('91_Hardlight Tailor',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\127_Disco Inferno.png" id="127_Disco Inferno" data-flag="@X" onclick="openSidebar('127_Disco Inferno',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\160_Beckon the Clapalong.png" id="160_Beckon the Clapalong" data-flag="@X" onclick="openSidebar('160_Beckon the Clapalong',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\12_Delegation Orchestrator.png" id="12_Delegation Orchestrator" data-flag="@X" onclick="openSidebar('12_Delegation Orchestrator',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\49_Deep Sea Diva.png" id="49_Deep Sea Diva" data-flag="@X" onclick="openSidebar('49_Deep Sea Diva',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\92_Harsh Criticism.png" id="92_Harsh Criticism" data-flag="@X" onclick="openSidebar('92_Harsh Criticism',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\128_Expert Stagehand.png" id="128_Expert Stagehand" data-flag="@X" onclick="openSidebar('128_Expert Stagehand',false)"></div>
-			<div class="container"><img data-alt_src="/sets\POP2-files\img\161_Bravi, the City Alive_back.png" alt="/sets\POP2-files\img\161_Bravi, the City Alive_front.png" id="161_Bravi, the City Alive" data-flag="@XD" onclick="openSidebar('161_Bravi, the City Alive',false)"><button class="flip-btn" onclick="imgFlip('161_Bravi, the City Alive')"></button></div>
-			<div class="container"><img alt="/sets\POP2-files\img\15_Eyes in the Sky.png" id="15_Eyes in the Sky" data-flag="@X" onclick="openSidebar('15_Eyes in the Sky',false)"></div>
-			<div class="container"><img data-alt_src="/sets\POP2-files\img\50_Devrinn, Pitch Perfect_back.png" alt="/sets\POP2-files\img\50_Devrinn, Pitch Perfect_front.png" id="50_Devrinn, Pitch Perfect" data-flag="@XD" onclick="openSidebar('50_Devrinn, Pitch Perfect',false)"><button class="flip-btn" onclick="imgFlip('50_Devrinn, Pitch Perfect')"></button></div>
-			<div class="container"><img alt="/sets\POP2-files\img\99_Mashup Machine.png" id="99_Mashup Machine" data-flag="@X" onclick="openSidebar('99_Mashup Machine',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\132_Holographic Mirror.png" id="132_Holographic Mirror" data-flag="@X" onclick="openSidebar('132_Holographic Mirror',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\164_Cloistered Harmonizer.png" id="164_Cloistered Harmonizer" data-flag="@X" onclick="openSidebar('164_Cloistered Harmonizer',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\17_Ezri's Street Team.png" id="17_Ezris Street Team" data-flag="@X" onclick="openSidebar('17_Ezris Street Team',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\54_Fervent Schooling.png" id="54_Fervent Schooling" data-flag="@X" onclick="openSidebar('54_Fervent Schooling',false)"></div>
-			<div class="container"><img data-alt_src="/sets\POP2-files\img\100_Meryel of Two Realities_back.png" alt="/sets\POP2-files\img\100_Meryel of Two Realities_front.png" id="100_Meryel of Two Realities" data-flag="@XD" onclick="openSidebar('100_Meryel of Two Realities',false)"><button class="flip-btn" onclick="imgFlip('100_Meryel of Two Realities')"></button></div>
-			<div class="container"><img alt="/sets\POP2-files\img\135_Jurjurian Ritualists.png" id="135_Jurjurian Ritualists" data-flag="@X" onclick="openSidebar('135_Jurjurian Ritualists',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\166_Club Patron.png" id="166_Club Patron" data-flag="@X" onclick="openSidebar('166_Club Patron',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\20_Flash Mob.png" id="20_Flash Mob" data-flag="@X" onclick="openSidebar('20_Flash Mob',false)"></div>
-			<div class="container"><img data-alt_src="/sets\POP2-files\img\60_Ishi, WeSing Star_back.png" alt="/sets\POP2-files\img\60_Ishi, WeSing Star_front.png" id="60_Ishi, WeSing Star" data-flag="@XD" onclick="openSidebar('60_Ishi, WeSing Star',false)"><button class="flip-btn" onclick="imgFlip('60_Ishi, WeSing Star')"></button></div>
-			<div class="container"><img alt="/sets\POP2-files\img\102_Morashan Mischief Makers.png" id="102_Morashan Mischief Makers" data-flag="@X" onclick="openSidebar('102_Morashan Mischief Makers',false)"></div>
-			<div class="container"><img data-alt_src="/sets\POP2-files\img\137_The Masked Rider_back.png" alt="/sets\POP2-files\img\137_The Masked Rider_front.png" id="137_The Masked Rider" data-flag="@XD" onclick="openSidebar('137_The Masked Rider',false)"><button class="flip-btn" onclick="imgFlip('137_The Masked Rider')"></button></div>
-			<div class="container"><img alt="/sets\POP2-files\img\168_Extraplanar Aficionado.png" id="168_Extraplanar Aficionado" data-flag="@X" onclick="openSidebar('168_Extraplanar Aficionado',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\21_Forbidden Harmony.png" id="21_Forbidden Harmony" data-flag="@X" onclick="openSidebar('21_Forbidden Harmony',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\61_Ishi's Prismwing.png" id="61_Ishis Prismwing" data-flag="@X" onclick="openSidebar('61_Ishis Prismwing',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\105_Oddsmaking Oracle.png" id="105_Oddsmaking Oracle" data-flag="@X" onclick="openSidebar('105_Oddsmaking Oracle',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\142_Neon Blitz.png" id="142_Neon Blitz" data-flag="@X" onclick="openSidebar('142_Neon Blitz',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\169_Fansite Maven.png" id="169_Fansite Maven" data-flag="@X" onclick="openSidebar('169_Fansite Maven',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\22_Group Power Pose.png" id="22_Group Power Pose" data-flag="@X" onclick="openSidebar('22_Group Power Pose',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\63_Lightkin Conjurer.png" id="63_Lightkin Conjurer" data-flag="@X" onclick="openSidebar('63_Lightkin Conjurer',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\107_Phantom of the Amplifier.png" id="107_Phantom of the Amplifier" data-flag="@X" onclick="openSidebar('107_Phantom of the Amplifier',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\146_Reckless Drifter.png" id="146_Reckless Drifter" data-flag="@X" onclick="openSidebar('146_Reckless Drifter',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\172_Hardlight Exhibition.png" id="172_Hardlight Exhibition" data-flag="@X" onclick="openSidebar('172_Hardlight Exhibition',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\24_Highly-Anticipated Collab.png" id="24_Highly-Anticipated Collab" data-flag="@X" onclick="openSidebar('24_Highly-Anticipated Collab',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\69_Put in Their Place.png" id="69_Put in Their Place" data-flag="@X" onclick="openSidebar('69_Put in Their Place',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\108_Phosphorescent Patrician.png" id="108_Phosphorescent Patrician" data-flag="@X" onclick="openSidebar('108_Phosphorescent Patrician',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\147_Scorched-Earth Songstress.png" id="147_Scorched-Earth Songstress" data-flag="@X" onclick="openSidebar('147_Scorched-Earth Songstress',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\186_Overwhelm the Airwaves.png" id="186_Overwhelm the Airwaves" data-flag="@X" onclick="openSidebar('186_Overwhelm the Airwaves',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\26_Lightrunner Duo.png" id="26_Lightrunner Duo" data-flag="@X" onclick="openSidebar('26_Lightrunner Duo',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\74_Staggering Showbot.png" id="74_Staggering Showbot" data-flag="@X" onclick="openSidebar('74_Staggering Showbot',false)"></div>
-			<div class="container"><img data-alt_src="/sets\POP2-files\img\109_Polya, Duchess of Grime_back.png" alt="/sets\POP2-files\img\109_Polya, Duchess of Grime_front.png" id="109_Polya, Duchess of Grime" data-flag="@XD" onclick="openSidebar('109_Polya, Duchess of Grime',false)"><button class="flip-btn" onclick="imgFlip('109_Polya, Duchess of Grime')"></button></div>
-			<div class="container"><img alt="/sets\POP2-files\img\150_Smokescreen.png" id="150_Smokescreen" data-flag="@X" onclick="openSidebar('150_Smokescreen',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\188_Presence of the Unending Rave.png" id="188_Presence of the Unending Rave" data-flag="@X" onclick="openSidebar('188_Presence of the Unending Rave',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\27_Living Billboard.png" id="27_Living Billboard" data-flag="@X" onclick="openSidebar('27_Living Billboard',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\75_Stunned Silence.png" id="75_Stunned Silence" data-flag="@X" onclick="openSidebar('75_Stunned Silence',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\112_Stage Fright.png" id="112_Stage Fright" data-flag="@X" onclick="openSidebar('112_Stage Fright',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\151_Starmaker Mic.png" id="151_Starmaker Mic" data-flag="@X" onclick="openSidebar('151_Starmaker Mic',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\190_Rafter Riggers.png" id="190_Rafter Riggers" data-flag="@X" onclick="openSidebar('190_Rafter Riggers',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\38_Throes of the Masses.png" id="38_Throes of the Masses" data-flag="@X" onclick="openSidebar('38_Throes of the Masses',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\77_Tight Turnaround.png" id="77_Tight Turnaround" data-flag="@X" onclick="openSidebar('77_Tight Turnaround',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\115_Understudy's Envy.png" id="115_Understudys Envy" data-flag="@X" onclick="openSidebar('115_Understudys Envy',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\154_Tympanic Titan.png" id="154_Tympanic Titan" data-flag="@X" onclick="openSidebar('154_Tympanic Titan',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\192_Return to the Classics.png" id="192_Return to the Classics" data-flag="@X" onclick="openSidebar('192_Return to the Classics',false)"></div>
-			<div class="container"><img data-alt_src="/sets\POP2-files\img\40_Voo Won, Indisputable_back.png" alt="/sets\POP2-files\img\40_Voo Won, Indisputable_front.png" id="40_Voo Won, Indisputable" data-flag="@XD" onclick="openSidebar('40_Voo Won, Indisputable',false)"><button class="flip-btn" onclick="imgFlip('40_Voo Won, Indisputable')"></button></div>
-			<div class="container"><img alt="/sets\POP2-files\img\78_Transcendent Conversion.png" id="78_Transcendent Conversion" data-flag="@X" onclick="openSidebar('78_Transcendent Conversion',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\117_Unsettling Seance.png" id="117_Unsettling Seance" data-flag="@X" onclick="openSidebar('117_Unsettling Seance',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\156_Vivacious Host.png" id="156_Vivacious Host" data-flag="@X" onclick="openSidebar('156_Vivacious Host',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\193_Stage Rhino.png" id="193_Stage Rhino" data-flag="@X" onclick="openSidebar('193_Stage Rhino',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\2_All Hands Rehearsal.png" id="2_All Hands Rehearsal" data-flag="@X" onclick="openSidebar('2_All Hands Rehearsal',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\44_Botnet Engineer.png" id="44_Botnet Engineer" data-flag="@X" onclick="openSidebar('44_Botnet Engineer',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\81_Brooding Ascetic.png" id="81_Brooding Ascetic" data-flag="@X" onclick="openSidebar('81_Brooding Ascetic',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\119_Action Close-Up.png" id="119_Action Close-Up" data-flag="@X" onclick="openSidebar('119_Action Close-Up',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\162_Bright-Eyed Insurgent.png" id="162_Bright-Eyed Insurgent" data-flag="@X" onclick="openSidebar('162_Bright-Eyed Insurgent',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\4_Automated Backup.png" id="4_Automated Backup" data-flag="@X" onclick="openSidebar('4_Automated Backup',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\45_Brief Appearance.png" id="45_Brief Appearance" data-flag="@X" onclick="openSidebar('45_Brief Appearance',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\83_Cast Down.png" id="83_Cast Down" data-flag="@X" onclick="openSidebar('83_Cast Down',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\124_Blazing Spotlight.png" id="124_Blazing Spotlight" data-flag="@X" onclick="openSidebar('124_Blazing Spotlight',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\163_Brutish Bodyguard.png" id="163_Brutish Bodyguard" data-flag="@X" onclick="openSidebar('163_Brutish Bodyguard',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\6_Beloved PrismaVeteran.png" id="6_Beloved PrismaVeteran" data-flag="@X" onclick="openSidebar('6_Beloved PrismaVeteran',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\51_Disarming Lilt.png" id="51_Disarming Lilt" data-flag="@X" onclick="openSidebar('51_Disarming Lilt',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\84_Death-Defying Stunt.png" id="84_Death-Defying Stunt" data-flag="@X" onclick="openSidebar('84_Death-Defying Stunt',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\125_Cabaret Aspirant.png" id="125_Cabaret Aspirant" data-flag="@X" onclick="openSidebar('125_Cabaret Aspirant',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\167_Drumset Duo.png" id="167_Drumset Duo" data-flag="@X" onclick="openSidebar('167_Drumset Duo',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\8_Bright-Eyed Bushytail.png" id="8_Bright-Eyed Bushytail" data-flag="@X" onclick="openSidebar('8_Bright-Eyed Bushytail',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\52_Enamored Stan.png" id="52_Enamored Stan" data-flag="@X" onclick="openSidebar('52_Enamored Stan',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\85_Disrupt the Program.png" id="85_Disrupt the Program" data-flag="@X" onclick="openSidebar('85_Disrupt the Program',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\126_Camerawise Crooner.png" id="126_Camerawise Crooner" data-flag="@X" onclick="openSidebar('126_Camerawise Crooner',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\170_Frenzied Publicist.png" id="170_Frenzied Publicist" data-flag="@X" onclick="openSidebar('170_Frenzied Publicist',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\13_Enraptured Patron.png" id="13_Enraptured Patron" data-flag="@X" onclick="openSidebar('13_Enraptured Patron',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\55_Finishing Touches.png" id="55_Finishing Touches" data-flag="@X" onclick="openSidebar('55_Finishing Touches',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\90_Guttural Scream.png" id="90_Guttural Scream" data-flag="@X" onclick="openSidebar('90_Guttural Scream',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\129_Flamboyant Dresser.png" id="129_Flamboyant Dresser" data-flag="@X" onclick="openSidebar('129_Flamboyant Dresser',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\173_Hijack the Network.png" id="173_Hijack the Network" data-flag="@X" onclick="openSidebar('173_Hijack the Network',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\18_Fandom Commander.png" id="18_Fandom Commander" data-flag="@X" onclick="openSidebar('18_Fandom Commander',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\56_Heart-Shaking Drop.png" id="56_Heart-Shaking Drop" data-flag="@X" onclick="openSidebar('56_Heart-Shaking Drop',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\93_Highrise Vagrant.png" id="93_Highrise Vagrant" data-flag="@X" onclick="openSidebar('93_Highrise Vagrant',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\130_Hard Rock Hailers.png" id="130_Hard Rock Hailers" data-flag="@X" onclick="openSidebar('130_Hard Rock Hailers',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\177_Kaleidomeleon.png" id="177_Kaleidomeleon" data-flag="@X" onclick="openSidebar('177_Kaleidomeleon',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\19_Festival Greeter.png" id="19_Festival Greeter" data-flag="@X" onclick="openSidebar('19_Festival Greeter',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\57_Highwire Star.png" id="57_Highwire Star" data-flag="@X" onclick="openSidebar('57_Highwire Star',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\95_Inescapable Earworm.png" id="95_Inescapable Earworm" data-flag="@X" onclick="openSidebar('95_Inescapable Earworm',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\131_Hip Choreographer.png" id="131_Hip Choreographer" data-flag="@X" onclick="openSidebar('131_Hip Choreographer',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\179_Key Change.png" id="179_Key Change" data-flag="@X" onclick="openSidebar('179_Key Change',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\23_Herald of New Sounds.png" id="23_Herald of New Sounds" data-flag="@X" onclick="openSidebar('23_Herald of New Sounds',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\64_Manufactured Hype.png" id="64_Manufactured Hype" data-flag="@X" onclick="openSidebar('64_Manufactured Hype',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\98_Lightseeker.png" id="98_Lightseeker" data-flag="@X" onclick="openSidebar('98_Lightseeker',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\133_Improvised Solo.png" id="133_Improvised Solo" data-flag="@X" onclick="openSidebar('133_Improvised Solo',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\180_Knock Your Socks Off.png" id="180_Knock Your Socks Off" data-flag="@X" onclick="openSidebar('180_Knock Your Socks Off',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\29_Magnetic Presence.png" id="29_Magnetic Presence" data-flag="@X" onclick="openSidebar('29_Magnetic Presence',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\65_On-Call Dancer.png" id="65_On-Call Dancer" data-flag="@X" onclick="openSidebar('65_On-Call Dancer',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\101_Moonlighting Stagehand.png" id="101_Moonlighting Stagehand" data-flag="@X" onclick="openSidebar('101_Moonlighting Stagehand',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\138_Masked Street Drummer.png" id="138_Masked Street Drummer" data-flag="@X" onclick="openSidebar('138_Masked Street Drummer',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\181_Lightshow Technician.png" id="181_Lightshow Technician" data-flag="@X" onclick="openSidebar('181_Lightshow Technician',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\30_Nightlife Nightlight.png" id="30_Nightlife Nightlight" data-flag="@X" onclick="openSidebar('30_Nightlife Nightlight',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\67_Phosphorescent Showcase.png" id="67_Phosphorescent Showcase" data-flag="@X" onclick="openSidebar('67_Phosphorescent Showcase',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\104_Nightlife Lurkers.png" id="104_Nightlife Lurkers" data-flag="@X" onclick="openSidebar('104_Nightlife Lurkers',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\139_Mic Passer.png" id="139_Mic Passer" data-flag="@X" onclick="openSidebar('139_Mic Passer',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\182_Magnanimous Socialite.png" id="182_Magnanimous Socialite" data-flag="@X" onclick="openSidebar('182_Magnanimous Socialite',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\31_Ravek Glade Busker.png" id="31_Ravek Glade Busker" data-flag="@X" onclick="openSidebar('31_Ravek Glade Busker',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\68_Public Detail.png" id="68_Public Detail" data-flag="@X" onclick="openSidebar('68_Public Detail',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\106_Party Monster.png" id="106_Party Monster" data-flag="@X" onclick="openSidebar('106_Party Monster',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\143_Online Teaser.png" id="143_Online Teaser" data-flag="@X" onclick="openSidebar('143_Online Teaser',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\185_Overpowering Reprise.png" id="185_Overpowering Reprise" data-flag="@X" onclick="openSidebar('185_Overpowering Reprise',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\32_Resounding Chorus.png" id="32_Resounding Chorus" data-flag="@X" onclick="openSidebar('32_Resounding Chorus',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\71_Shy First-Timers.png" id="71_Shy First-Timers" data-flag="@X" onclick="openSidebar('71_Shy First-Timers',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\110_Posthumous Hologram.png" id="110_Posthumous Hologram" data-flag="@X" onclick="openSidebar('110_Posthumous Hologram',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\148_Scorching Trio.png" id="148_Scorching Trio" data-flag="@X" onclick="openSidebar('148_Scorching Trio',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\189_Prismclaw Regent.png" id="189_Prismclaw Regent" data-flag="@X" onclick="openSidebar('189_Prismclaw Regent',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\35_Stage Manager.png" id="35_Stage Manager" data-flag="@X" onclick="openSidebar('35_Stage Manager',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\72_Silkdance.png" id="72_Silkdance" data-flag="@X" onclick="openSidebar('72_Silkdance',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\111_Sinister Spinner.png" id="111_Sinister Spinner" data-flag="@X" onclick="openSidebar('111_Sinister Spinner',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\152_Supersonic Drummer.png" id="152_Supersonic Drummer" data-flag="@X" onclick="openSidebar('152_Supersonic Drummer',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\191_Recurrent Virus.png" id="191_Recurrent Virus" data-flag="@X" onclick="openSidebar('191_Recurrent Virus',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\36_Stunted By Success.png" id="36_Stunted By Success" data-flag="@X" onclick="openSidebar('36_Stunted By Success',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\73_Smear Campaign.png" id="73_Smear Campaign" data-flag="@X" onclick="openSidebar('73_Smear Campaign',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\113_Stage Invaders.png" id="113_Stage Invaders" data-flag="@X" onclick="openSidebar('113_Stage Invaders',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\153_Surgeon for the Stars.png" id="153_Surgeon for the Stars" data-flag="@X" onclick="openSidebar('153_Surgeon for the Stars',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\194_Sudden Inspiration.png" id="194_Sudden Inspiration" data-flag="@X" onclick="openSidebar('194_Sudden Inspiration',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\39_Undercover Security.png" id="39_Undercover Security" data-flag="@X" onclick="openSidebar('39_Undercover Security',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\76_Swooping Socialite.png" id="76_Swooping Socialite" data-flag="@X" onclick="openSidebar('76_Swooping Socialite',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\116_Unplug.png" id="116_Unplug" data-flag="@X" onclick="openSidebar('116_Unplug',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\157_Worldwide Smear.png" id="157_Worldwide Smear" data-flag="@X" onclick="openSidebar('157_Worldwide Smear',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\196_Wildstyle Romper.png" id="196_Wildstyle Romper" data-flag="@X" onclick="openSidebar('196_Wildstyle Romper',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-<div id="gold" class="anchor"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\220_Maybe Next Year.png" id="220_Maybe Next Year" data-flag="@X" onclick="openSidebar('220_Maybe Next Year',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\217_Jukebox of Mysteries.png" id="217_Jukebox of Mysteries" data-flag="@X" onclick="openSidebar('217_Jukebox of Mysteries',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\206_Encore of Dread.png" id="206_Encore of Dread" data-flag="@X" onclick="openSidebar('206_Encore of Dread',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\215_Irradiated Ooze.png" id="215_Irradiated Ooze" data-flag="@X" onclick="openSidebar('215_Irradiated Ooze',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\208_Familiar-Blessed Folkist.png" id="208_Familiar-Blessed Folkist" data-flag="@X" onclick="openSidebar('208_Familiar-Blessed Folkist',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\224_Party Platform.png" id="224_Party Platform" data-flag="@X" onclick="openSidebar('224_Party Platform',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\223_Otherworldly Exchange.png" id="223_Otherworldly Exchange" data-flag="@X" onclick="openSidebar('223_Otherworldly Exchange',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\216_Jester of the Lightveins.png" id="216_Jester of the Lightveins" data-flag="@X" onclick="openSidebar('216_Jester of the Lightveins',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\227_Remix Reality.png" id="227_Remix Reality" data-flag="@X" onclick="openSidebar('227_Remix Reality',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\211_Four on the Floor.png" id="211_Four on the Floor" data-flag="@X" onclick="openSidebar('211_Four on the Floor',false)"></div>
-			<div class="container"><img data-alt_src="/sets\POP2-files\img\218_Mai Lim, Defending Champ_back.png" alt="/sets\POP2-files\img\218_Mai Lim, Defending Champ_front.png" id="218_Mai Lim, Defending Champ" data-flag="@XD" onclick="openSidebar('218_Mai Lim, Defending Champ',false)"><button class="flip-btn" onclick="imgFlip('218_Mai Lim, Defending Champ')"></button></div>
-			<div class="container"><img alt="/sets\POP2-files\img\214_In Memoriam.png" id="214_In Memoriam" data-flag="@X" onclick="openSidebar('214_In Memoriam',false)"></div>
-			<div class="container"><img data-alt_src="/sets\POP2-files\img\200_The Apocalypse Sisters_back.png" alt="/sets\POP2-files\img\200_The Apocalypse Sisters_front.png" id="200_The Apocalypse Sisters" data-flag="@XD" onclick="openSidebar('200_The Apocalypse Sisters',false)"><button class="flip-btn" onclick="imgFlip('200_The Apocalypse Sisters')"></button></div>
-			<div class="container"><img alt="/sets\POP2-files\img\199_Amplified Switchbot.png" id="199_Amplified Switchbot" data-flag="@X" onclick="openSidebar('199_Amplified Switchbot',false)"></div>
-			<div class="container"><img data-alt_src="/sets\POP2-files\img\219_Manis, StarKid_back.png" alt="/sets\POP2-files\img\219_Manis, StarKid_front.png" id="219_Manis, StarKid" data-flag="@XD" onclick="openSidebar('219_Manis, StarKid',false)"><button class="flip-btn" onclick="imgFlip('219_Manis, StarKid')"></button></div>
-			<div class="container"><img alt="/sets\POP2-files\img\234_Tempo Accelerator.png" id="234_Tempo Accelerator" data-flag="@X" onclick="openSidebar('234_Tempo Accelerator',false)"></div>
-			<div class="container"><img data-alt_src="/sets\POP2-files\img\230_Sinthia, the Mindrazer_back.png" alt="/sets\POP2-files\img\230_Sinthia, the Mindrazer_front.png" id="230_Sinthia, the Mindrazer" data-flag="@XD" onclick="openSidebar('230_Sinthia, the Mindrazer',false)"><button class="flip-btn" onclick="imgFlip('230_Sinthia, the Mindrazer')"></button></div>
-			<div class="container"><img alt="/sets\POP2-files\img\229_Shambling Scratcher.png" id="229_Shambling Scratcher" data-flag="@X" onclick="openSidebar('229_Shambling Scratcher',false)"></div>
-			<div class="container"><img data-alt_src="/sets\POP2-files\img\201_Baril, Static Selector_back.png" alt="/sets\POP2-files\img\201_Baril, Static Selector_front.png" id="201_Baril, Static Selector" data-flag="@XD" onclick="openSidebar('201_Baril, Static Selector',false)"><button class="flip-btn" onclick="imgFlip('201_Baril, Static Selector')"></button></div>
-			<div class="container"><img alt="/sets\POP2-files\img\233_A Star is Born.png" id="233_A Star is Born" data-flag="@X" onclick="openSidebar('233_A Star is Born',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\205_Disqualify.png" id="205_Disqualify" data-flag="@X" onclick="openSidebar('205_Disqualify',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\222_Opening Night Bash.png" id="222_Opening Night Bash" data-flag="@X" onclick="openSidebar('222_Opening Night Bash',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\209_Feedback Loop.png" id="209_Feedback Loop" data-flag="@X" onclick="openSidebar('209_Feedback Loop',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\198_Amped-Up Acrobats.png" id="198_Amped-Up Acrobats" data-flag="@X" onclick="openSidebar('198_Amped-Up Acrobats',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\212_Holocrafter.png" id="212_Holocrafter" data-flag="@X" onclick="openSidebar('212_Holocrafter',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\207_Endless Soloist.png" id="207_Endless Soloist" data-flag="@X" onclick="openSidebar('207_Endless Soloist',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\236_Trained Showdragon.png" id="236_Trained Showdragon" data-flag="@X" onclick="openSidebar('236_Trained Showdragon',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\225_Price of Greatness.png" id="225_Price of Greatness" data-flag="@X" onclick="openSidebar('225_Price of Greatness',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\226_Rapid Revamp.png" id="226_Rapid Revamp" data-flag="@X" onclick="openSidebar('226_Rapid Revamp',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\232_Spare No Expense.png" id="232_Spare No Expense" data-flag="@X" onclick="openSidebar('232_Spare No Expense',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\204_Broadcast Executive.png" id="204_Broadcast Executive" data-flag="@X" onclick="openSidebar('204_Broadcast Executive',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\197_Aerial Stunt Specialists.png" id="197_Aerial Stunt Specialists" data-flag="@X" onclick="openSidebar('197_Aerial Stunt Specialists',false)"></div>
-			<div class="container"><img data-alt_src="/sets\POP2-files\img\231_The Skeleton Keys_back.png" alt="/sets\POP2-files\img\231_The Skeleton Keys_front.png" id="231_The Skeleton Keys" data-flag="@XD" onclick="openSidebar('231_The Skeleton Keys',false)"><button class="flip-btn" onclick="imgFlip('231_The Skeleton Keys')"></button></div>
-			<div class="container"><img data-alt_src="/sets\POP2-files\img\202_Bebop Bob_back.png" alt="/sets\POP2-files\img\202_Bebop Bob_front.png" id="202_Bebop Bob" data-flag="@XD" onclick="openSidebar('202_Bebop Bob',false)"><button class="flip-btn" onclick="imgFlip('202_Bebop Bob')"></button></div>
-			<div class="container"><img data-alt_src="/sets\POP2-files\img\203_Boma, Miss Worldwide_back.png" alt="/sets\POP2-files\img\203_Boma, Miss Worldwide_front.png" id="203_Boma, Miss Worldwide" data-flag="@XD" onclick="openSidebar('203_Boma, Miss Worldwide',false)"><button class="flip-btn" onclick="imgFlip('203_Boma, Miss Worldwide')"></button></div>
-			<div class="container"><img data-alt_src="/sets\POP2-files\img\221_Mia Mia & Vic Villain_back.png" alt="/sets\POP2-files\img\221_Mia Mia & Vic Villain_front.png" id="221_Mia Mia & Vic Villain" data-flag="@XD" onclick="openSidebar('221_Mia Mia & Vic Villain',false)"><button class="flip-btn" onclick="imgFlip('221_Mia Mia & Vic Villain')"></button></div>
-			<div class="container"><img data-alt_src="/sets\POP2-files\img\228_Samaya Soundwave_back.png" alt="/sets\POP2-files\img\228_Samaya Soundwave_front.png" id="228_Samaya Soundwave" data-flag="@XD" onclick="openSidebar('228_Samaya Soundwave',false)"><button class="flip-btn" onclick="imgFlip('228_Samaya Soundwave')"></button></div>
-			<div class="container"><img alt="/sets\POP2-files\img\235_Toxic Shredder.png" id="235_Toxic Shredder" data-flag="@X" onclick="openSidebar('235_Toxic Shredder',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\210_Festival Kickoff.png" id="210_Festival Kickoff" data-flag="@X" onclick="openSidebar('210_Festival Kickoff',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\213_Hologram Technician.png" id="213_Hologram Technician" data-flag="@X" onclick="openSidebar('213_Hologram Technician',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-<div id="colorless" class="anchor"></div>
-			<div class="container"><img data-alt_src="/sets\POP2-files\img\1_Farrah Q, Grand Sampler_back.png" alt="/sets\POP2-files\img\1_Farrah Q, Grand Sampler_front.png" id="1_Farrah Q, Grand Sampler" data-flag="@XD" onclick="openSidebar('1_Farrah Q, Grand Sampler',false)"><button class="flip-btn" onclick="imgFlip('1_Farrah Q, Grand Sampler')"></button></div>
-			<div class="container"><img alt="/sets\POP2-files\img\243_Overclocked Spinmaster.png" id="243_Overclocked Spinmaster" data-flag="@X" onclick="openSidebar('243_Overclocked Spinmaster',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\245_Staff of Moresso.png" id="245_Staff of Moresso" data-flag="@X" onclick="openSidebar('245_Staff of Moresso',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\240_Engineered Virus.png" id="240_Engineered Virus" data-flag="@X" onclick="openSidebar('240_Engineered Virus',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\244_Prismatic Heirloom.png" id="244_Prismatic Heirloom" data-flag="@X" onclick="openSidebar('244_Prismatic Heirloom',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\242_Lightvein Overdriver.png" id="242_Lightvein Overdriver" data-flag="@X" onclick="openSidebar('242_Lightvein Overdriver',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\237_Archaic Automaton.png" id="237_Archaic Automaton" data-flag="@X" onclick="openSidebar('237_Archaic Automaton',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\238_Blaring Streetbot.png" id="238_Blaring Streetbot" data-flag="@X" onclick="openSidebar('238_Blaring Streetbot',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\239_Broadcast Hub.png" id="239_Broadcast Hub" data-flag="@X" onclick="openSidebar('239_Broadcast Hub',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\241_Hardlight Painter.png" id="241_Hardlight Painter" data-flag="@X" onclick="openSidebar('241_Hardlight Painter',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-<div id="land" class="anchor"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\264_Thriving Heath.png" id="264_Thriving Heath" data-flag="@X" onclick="openSidebar('264_Thriving Heath',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\265_Thriving Isle.png" id="265_Thriving Isle" data-flag="@X" onclick="openSidebar('265_Thriving Isle',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\266_Thriving Moor.png" id="266_Thriving Moor" data-flag="@X" onclick="openSidebar('266_Thriving Moor',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\262_Thriving Bluff.png" id="262_Thriving Bluff" data-flag="@X" onclick="openSidebar('262_Thriving Bluff',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\263_Thriving Grove.png" id="263_Thriving Grove" data-flag="@X" onclick="openSidebar('263_Thriving Grove',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\254_Resonant Expanse.png" id="254_Resonant Expanse" data-flag="@X" onclick="openSidebar('254_Resonant Expanse',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\260_Resonant Tidepool.png" id="260_Resonant Tidepool" data-flag="@X" onclick="openSidebar('260_Resonant Tidepool',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\261_Resonant Valley.png" id="261_Resonant Valley" data-flag="@X" onclick="openSidebar('261_Resonant Valley',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\256_Resonant Highland.png" id="256_Resonant Highland" data-flag="@X" onclick="openSidebar('256_Resonant Highland',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\255_Resonant Grove.png" id="255_Resonant Grove" data-flag="@X" onclick="openSidebar('255_Resonant Grove',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\258_Resonant Moor.png" id="258_Resonant Moor" data-flag="@X" onclick="openSidebar('258_Resonant Moor',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\259_Resonant Springs.png" id="259_Resonant Springs" data-flag="@X" onclick="openSidebar('259_Resonant Springs',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\257_Resonant Marsh.png" id="257_Resonant Marsh" data-flag="@X" onclick="openSidebar('257_Resonant Marsh',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\253_Resonant Crag.png" id="253_Resonant Crag" data-flag="@X" onclick="openSidebar('253_Resonant Crag',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\252_Resonant Cove.png" id="252_Resonant Cove" data-flag="@X" onclick="openSidebar('252_Resonant Cove',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\246_Burgeoning Linktree.png" id="246_Burgeoning Linktree" data-flag="@X" onclick="openSidebar('246_Burgeoning Linktree',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\247_Construction Zone.png" id="247_Construction Zone" data-flag="@X" onclick="openSidebar('247_Construction Zone',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\249_Eco Rave.png" id="249_Eco Rave" data-flag="@X" onclick="openSidebar('249_Eco Rave',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\250_Hit Factory.png" id="250_Hit Factory" data-flag="@X" onclick="openSidebar('250_Hit Factory',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\251_Morashan Wasteland.png" id="251_Morashan Wasteland" data-flag="@X" onclick="openSidebar('251_Morashan Wasteland',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\248_Digital Landscape.png" id="248_Digital Landscape" data-flag="@X" onclick="openSidebar('248_Digital Landscape',false)"></div>
-			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
-			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
-			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
-			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\269_Swamp.png" id="269_Swamp" data-flag="@X" onclick="openSidebar('269_Swamp',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\267_Plains.png" id="267_Plains" data-flag="@X" onclick="openSidebar('267_Plains',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\270_Mountain.png" id="270_Mountain" data-flag="@X" onclick="openSidebar('270_Mountain',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\271_Forest.png" id="271_Forest" data-flag="@X" onclick="openSidebar('271_Forest',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\268_Island.png" id="268_Island" data-flag="@X" onclick="openSidebar('268_Island',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-<div id="token" class="anchor"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\1t_The Stage.png" id="1t_The Stage" data-flag="@X" onclick="openSidebar('1t_The Stage',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\12t_Servo.png" id="12t_Servo" data-flag="@X" onclick="openSidebar('12t_Servo',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\13t_Treasure.png" id="13t_Treasure" data-flag="@X" onclick="openSidebar('13t_Treasure',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\14t_Everywhere.png" id="14t_Everywhere" data-flag="@X" onclick="openSidebar('14t_Everywhere',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\2t_Illusion.png" id="2t_Illusion" data-flag="@X" onclick="openSidebar('2t_Illusion',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\3t_Performer.png" id="3t_Performer" data-flag="@X" onclick="openSidebar('3t_Performer',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\4t_Mutant.png" id="4t_Mutant" data-flag="@X" onclick="openSidebar('4t_Mutant',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\5t_Noble.png" id="5t_Noble" data-flag="@X" onclick="openSidebar('5t_Noble',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\6t_Fan.png" id="6t_Fan" data-flag="@X" onclick="openSidebar('6t_Fan',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\7t_Fan.png" id="7t_Fan" data-flag="@X" onclick="openSidebar('7t_Fan',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\8t_Fan.png" id="8t_Fan" data-flag="@X" onclick="openSidebar('8t_Fan',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\9t_Fan.png" id="9t_Fan" data-flag="@X" onclick="openSidebar('9t_Fan',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\10t_Centaur.png" id="10t_Centaur" data-flag="@X" onclick="openSidebar('10t_Centaur',false)"></div>
-			<div class="container"><img alt="/sets\POP2-files\img\11t_Elemental.png" id="11t_Elemental" data-flag="@X" onclick="openSidebar('11t_Elemental',false)"></div>
-			<div class="container"><img alt="/img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
-			<div class="container"><img alt="/img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+					<div class="container"><img loading="lazy" alt="sets\POP2-files\img\217.png" id="POP2_217" data-flag="@X" onclick="openSidebar('POP2_217',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\33.png" id="POP2_33" data-flag="@X" onclick="openSidebar('POP2_33',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\212.png" id="POP2_212" data-flag="@X" onclick="openSidebar('POP2_212',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\214.png" id="POP2_214" data-flag="@X" onclick="openSidebar('POP2_214',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\220.png" id="POP2_220" data-flag="@X" onclick="openSidebar('POP2_220',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\255.png" id="POP2_255" data-flag="@X" onclick="openSidebar('POP2_255',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\114.png" id="POP2_114" data-flag="@X" onclick="openSidebar('POP2_114',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\121.png" id="POP2_121" data-flag="@X" onclick="openSidebar('POP2_121',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\POP2-files\img\263_back.png" alt="sets\POP2-files\img\263_front.png" id="POP2_263" data-flag="@XD" onclick="openSidebar('POP2_263',false)"><button class="flip-btn" onclick="imgFlip('POP2_263')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\215.png" id="POP2_215" data-flag="@X" onclick="openSidebar('POP2_215',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\216.png" id="POP2_216" data-flag="@X" onclick="openSidebar('POP2_216',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\219.png" id="POP2_219" data-flag="@X" onclick="openSidebar('POP2_219',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\265.png" id="POP2_265" data-flag="@X" onclick="openSidebar('POP2_265',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\266.png" id="POP2_266" data-flag="@X" onclick="openSidebar('POP2_266',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\23.png" id="POP2_23" data-flag="@X" onclick="openSidebar('POP2_23',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\POP2-files\img\253_back.png" alt="sets\POP2-files\img\253_front.png" id="POP2_253" data-flag="@XD" onclick="openSidebar('POP2_253',false)"><button class="flip-btn" onclick="imgFlip('POP2_253')"></button></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\POP2-files\img\284_back.png" alt="sets\POP2-files\img\284_front.png" id="POP2_284" data-flag="@XD" onclick="openSidebar('POP2_284',false)"><button class="flip-btn" onclick="imgFlip('POP2_284')"></button></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\POP2-files\img\249_back.png" alt="sets\POP2-files\img\249_front.png" id="POP2_249" data-flag="@XD" onclick="openSidebar('POP2_249',false)"><button class="flip-btn" onclick="imgFlip('POP2_249')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\218.png" id="POP2_218" data-flag="@X" onclick="openSidebar('POP2_218',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\221.png" id="POP2_221" data-flag="@X" onclick="openSidebar('POP2_221',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\258.png" id="POP2_258" data-flag="@X" onclick="openSidebar('POP2_258',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\213.png" id="POP2_213" data-flag="@X" onclick="openSidebar('POP2_213',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\POP2-files\img\223_back.png" alt="sets\POP2-files\img\223_front.png" id="POP2_223" data-flag="@XD" onclick="openSidebar('POP2_223',false)"><button class="flip-btn" onclick="imgFlip('POP2_223')"></button></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\POP2-files\img\227_back.png" alt="sets\POP2-files\img\227_front.png" id="POP2_227" data-flag="@XD" onclick="openSidebar('POP2_227',false)"><button class="flip-btn" onclick="imgFlip('POP2_227')"></button></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\POP2-files\img\86_back.png" alt="sets\POP2-files\img\86_front.png" id="POP2_86" data-flag="@XD" onclick="openSidebar('POP2_86',false)"><button class="flip-btn" onclick="imgFlip('POP2_86')"></button></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\POP2-files\img\94_back.png" alt="sets\POP2-files\img\94_front.png" id="POP2_94" data-flag="@XD" onclick="openSidebar('POP2_94',false)"><button class="flip-btn" onclick="imgFlip('POP2_94')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\242.png" id="POP2_242" data-flag="@X" onclick="openSidebar('POP2_242',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\245.png" id="POP2_245" data-flag="@X" onclick="openSidebar('POP2_245',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\110.png" id="POP2_110" data-flag="@X" onclick="openSidebar('POP2_110',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\97.png" id="POP2_97" data-flag="@X" onclick="openSidebar('POP2_97',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\POP2-files\img\92_back.png" alt="sets\POP2-files\img\92_front.png" id="POP2_92" data-flag="@XD" onclick="openSidebar('POP2_92',false)"><button class="flip-btn" onclick="imgFlip('POP2_92')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\240.png" id="POP2_240" data-flag="@X" onclick="openSidebar('POP2_240',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\105.png" id="POP2_105" data-flag="@X" onclick="openSidebar('POP2_105',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\225.png" id="POP2_225" data-flag="@X" onclick="openSidebar('POP2_225',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\POP2-files\img\228_back.png" alt="sets\POP2-files\img\228_front.png" id="POP2_228" data-flag="@XD" onclick="openSidebar('POP2_228',false)"><button class="flip-btn" onclick="imgFlip('POP2_228')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\10.png" id="POP2_10" data-flag="@X" onclick="openSidebar('POP2_10',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\74.png" id="POP2_74" data-flag="@X" onclick="openSidebar('POP2_74',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\93.png" id="POP2_93" data-flag="@X" onclick="openSidebar('POP2_93',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\POP2-files\img\222_back.png" alt="sets\POP2-files\img\222_front.png" id="POP2_222" data-flag="@XD" onclick="openSidebar('POP2_222',false)"><button class="flip-btn" onclick="imgFlip('POP2_222')"></button></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\POP2-files\img\112_back.png" alt="sets\POP2-files\img\112_front.png" id="POP2_112" data-flag="@XD" onclick="openSidebar('POP2_112',false)"><button class="flip-btn" onclick="imgFlip('POP2_112')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\22.png" id="POP2_22" data-flag="@X" onclick="openSidebar('POP2_22',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\POP2-files\img\229_back.png" alt="sets\POP2-files\img\229_front.png" id="POP2_229" data-flag="@XD" onclick="openSidebar('POP2_229',false)"><button class="flip-btn" onclick="imgFlip('POP2_229')"></button></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\POP2-files\img\246_back.png" alt="sets\POP2-files\img\246_front.png" id="POP2_246" data-flag="@XD" onclick="openSidebar('POP2_246',false)"><button class="flip-btn" onclick="imgFlip('POP2_246')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\247.png" id="POP2_247" data-flag="@X" onclick="openSidebar('POP2_247',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\205.png" id="POP2_205" data-flag="@X" onclick="openSidebar('POP2_205',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\224.png" id="POP2_224" data-flag="@X" onclick="openSidebar('POP2_224',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\POP2-files\img\241_back.png" alt="sets\POP2-files\img\241_front.png" id="POP2_241" data-flag="@XD" onclick="openSidebar('POP2_241',false)"><button class="flip-btn" onclick="imgFlip('POP2_241')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\239.png" id="POP2_239" data-flag="@X" onclick="openSidebar('POP2_239',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\244.png" id="POP2_244" data-flag="@X" onclick="openSidebar('POP2_244',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\1.png" id="POP2_1" data-flag="@X" onclick="openSidebar('POP2_1',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\POP2-files\img\248_back.png" alt="sets\POP2-files\img\248_front.png" id="POP2_248" data-flag="@XD" onclick="openSidebar('POP2_248',false)"><button class="flip-btn" onclick="imgFlip('POP2_248')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\76.png" id="POP2_76" data-flag="@X" onclick="openSidebar('POP2_76',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\103.png" id="POP2_103" data-flag="@X" onclick="openSidebar('POP2_103',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\POP2-files\img\72_back.png" alt="sets\POP2-files\img\72_front.png" id="POP2_72" data-flag="@XD" onclick="openSidebar('POP2_72',false)"><button class="flip-btn" onclick="imgFlip('POP2_72')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\117.png" id="POP2_117" data-flag="@X" onclick="openSidebar('POP2_117',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\119.png" id="POP2_119" data-flag="@X" onclick="openSidebar('POP2_119',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\183.png" id="POP2_183" data-flag="@X" onclick="openSidebar('POP2_183',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\193.png" id="POP2_193" data-flag="@X" onclick="openSidebar('POP2_193',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\116.png" id="POP2_116" data-flag="@X" onclick="openSidebar('POP2_116',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\POP2-files\img\87_back.png" alt="sets\POP2-files\img\87_front.png" id="POP2_87" data-flag="@XD" onclick="openSidebar('POP2_87',false)"><button class="flip-btn" onclick="imgFlip('POP2_87')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\201.png" id="POP2_201" data-flag="@X" onclick="openSidebar('POP2_201',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\102.png" id="POP2_102" data-flag="@X" onclick="openSidebar('POP2_102',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\120.png" id="POP2_120" data-flag="@X" onclick="openSidebar('POP2_120',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\106.png" id="POP2_106" data-flag="@X" onclick="openSidebar('POP2_106',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\9.png" id="POP2_9" data-flag="@X" onclick="openSidebar('POP2_9',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\202.png" id="POP2_202" data-flag="@X" onclick="openSidebar('POP2_202',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\78.png" id="POP2_78" data-flag="@X" onclick="openSidebar('POP2_78',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\79.png" id="POP2_79" data-flag="@X" onclick="openSidebar('POP2_79',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\115.png" id="POP2_115" data-flag="@X" onclick="openSidebar('POP2_115',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\POP2-files\img\35_back.png" alt="sets\POP2-files\img\35_front.png" id="POP2_35" data-flag="@XD" onclick="openSidebar('POP2_35',false)"><button class="flip-btn" onclick="imgFlip('POP2_35')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\199.png" id="POP2_199" data-flag="@X" onclick="openSidebar('POP2_199',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\POP2-files\img\4_back.png" alt="sets\POP2-files\img\4_front.png" id="POP2_4" data-flag="@XD" onclick="openSidebar('POP2_4',false)"><button class="flip-btn" onclick="imgFlip('POP2_4')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\191.png" id="POP2_191" data-flag="@X" onclick="openSidebar('POP2_191',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\186.png" id="POP2_186" data-flag="@X" onclick="openSidebar('POP2_186',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\2.png" id="POP2_2" data-flag="@X" onclick="openSidebar('POP2_2',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\204.png" id="POP2_204" data-flag="@X" onclick="openSidebar('POP2_204',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\77.png" id="POP2_77" data-flag="@X" onclick="openSidebar('POP2_77',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\POP2-files\img\66_back.png" alt="sets\POP2-files\img\66_front.png" id="POP2_66" data-flag="@XD" onclick="openSidebar('POP2_66',false)"><button class="flip-btn" onclick="imgFlip('POP2_66')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\188.png" id="POP2_188" data-flag="@X" onclick="openSidebar('POP2_188',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\208.png" id="POP2_208" data-flag="@X" onclick="openSidebar('POP2_208',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\3.png" id="POP2_3" data-flag="@X" onclick="openSidebar('POP2_3',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\POP2-files\img\80_back.png" alt="sets\POP2-files\img\80_front.png" id="POP2_80" data-flag="@XD" onclick="openSidebar('POP2_80',false)"><button class="flip-btn" onclick="imgFlip('POP2_80')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\192.png" id="POP2_192" data-flag="@X" onclick="openSidebar('POP2_192',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\POP2-files\img\187_back.png" alt="sets\POP2-files\img\187_front.png" id="POP2_187" data-flag="@XD" onclick="openSidebar('POP2_187',false)"><button class="flip-btn" onclick="imgFlip('POP2_187')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\109.png" id="POP2_109" data-flag="@X" onclick="openSidebar('POP2_109',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\203.png" id="POP2_203" data-flag="@X" onclick="openSidebar('POP2_203',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\118.png" id="POP2_118" data-flag="@X" onclick="openSidebar('POP2_118',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\195.png" id="POP2_195" data-flag="@X" onclick="openSidebar('POP2_195',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\96.png" id="POP2_96" data-flag="@X" onclick="openSidebar('POP2_96',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\209.png" id="POP2_209" data-flag="@X" onclick="openSidebar('POP2_209',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\98.png" id="POP2_98" data-flag="@X" onclick="openSidebar('POP2_98',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\56.png" id="POP2_56" data-flag="@X" onclick="openSidebar('POP2_56',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\194.png" id="POP2_194" data-flag="@X" onclick="openSidebar('POP2_194',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\107.png" id="POP2_107" data-flag="@X" onclick="openSidebar('POP2_107',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\207.png" id="POP2_207" data-flag="@X" onclick="openSidebar('POP2_207',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\88.png" id="POP2_88" data-flag="@X" onclick="openSidebar('POP2_88',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\75.png" id="POP2_75" data-flag="@X" onclick="openSidebar('POP2_75',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\152.png" id="POP2_152" data-flag="@X" onclick="openSidebar('POP2_152',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\111.png" id="POP2_111" data-flag="@X" onclick="openSidebar('POP2_111',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\100.png" id="POP2_100" data-flag="@X" onclick="openSidebar('POP2_100',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\200.png" id="POP2_200" data-flag="@X" onclick="openSidebar('POP2_200',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\184.png" id="POP2_184" data-flag="@X" onclick="openSidebar('POP2_184',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\POP2-files\img\99_back.png" alt="sets\POP2-files\img\99_front.png" id="POP2_99" data-flag="@XD" onclick="openSidebar('POP2_99',false)"><button class="flip-btn" onclick="imgFlip('POP2_99')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\12.png" id="POP2_12" data-flag="@X" onclick="openSidebar('POP2_12',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\210.png" id="POP2_210" data-flag="@X" onclick="openSidebar('POP2_210',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\113.png" id="POP2_113" data-flag="@X" onclick="openSidebar('POP2_113',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\73.png" id="POP2_73" data-flag="@X" onclick="openSidebar('POP2_73',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\196.png" id="POP2_196" data-flag="@X" onclick="openSidebar('POP2_196',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\185.png" id="POP2_185" data-flag="@X" onclick="openSidebar('POP2_185',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\104.png" id="POP2_104" data-flag="@X" onclick="openSidebar('POP2_104',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\198.png" id="POP2_198" data-flag="@X" onclick="openSidebar('POP2_198',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\34.png" id="POP2_34" data-flag="@X" onclick="openSidebar('POP2_34',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\150.png" id="POP2_150" data-flag="@X" onclick="openSidebar('POP2_150',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\189.png" id="POP2_189" data-flag="@X" onclick="openSidebar('POP2_189',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\211.png" id="POP2_211" data-flag="@X" onclick="openSidebar('POP2_211',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\POP2-files\img\108_back.png" alt="sets\POP2-files\img\108_front.png" id="POP2_108" data-flag="@XD" onclick="openSidebar('POP2_108',false)"><button class="flip-btn" onclick="imgFlip('POP2_108')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\243.png" id="POP2_243" data-flag="@X" onclick="openSidebar('POP2_243',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\8.png" id="POP2_8" data-flag="@X" onclick="openSidebar('POP2_8',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\190.png" id="POP2_190" data-flag="@X" onclick="openSidebar('POP2_190',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\206.png" id="POP2_206" data-flag="@X" onclick="openSidebar('POP2_206',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\143.png" id="POP2_143" data-flag="@X" onclick="openSidebar('POP2_143',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\59.png" id="POP2_59" data-flag="@X" onclick="openSidebar('POP2_59',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\20.png" id="POP2_20" data-flag="@X" onclick="openSidebar('POP2_20',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\0.png" id="POP2_0" data-flag="@X" onclick="openSidebar('POP2_0',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\37.png" id="POP2_37" data-flag="@X" onclick="openSidebar('POP2_37',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\30.png" id="POP2_30" data-flag="@X" onclick="openSidebar('POP2_30',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\54.png" id="POP2_54" data-flag="@X" onclick="openSidebar('POP2_54',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\101.png" id="POP2_101" data-flag="@X" onclick="openSidebar('POP2_101',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\17.png" id="POP2_17" data-flag="@X" onclick="openSidebar('POP2_17',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\40.png" id="POP2_40" data-flag="@X" onclick="openSidebar('POP2_40',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\24.png" id="POP2_24" data-flag="@X" onclick="openSidebar('POP2_24',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\13.png" id="POP2_13" data-flag="@X" onclick="openSidebar('POP2_13',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\42.png" id="POP2_42" data-flag="@X" onclick="openSidebar('POP2_42',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\153.png" id="POP2_153" data-flag="@X" onclick="openSidebar('POP2_153',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\46.png" id="POP2_46" data-flag="@X" onclick="openSidebar('POP2_46',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\135.png" id="POP2_135" data-flag="@X" onclick="openSidebar('POP2_135',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\63.png" id="POP2_63" data-flag="@X" onclick="openSidebar('POP2_63',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\151.png" id="POP2_151" data-flag="@X" onclick="openSidebar('POP2_151',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\64.png" id="POP2_64" data-flag="@X" onclick="openSidebar('POP2_64',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\47.png" id="POP2_47" data-flag="@X" onclick="openSidebar('POP2_47',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\140.png" id="POP2_140" data-flag="@X" onclick="openSidebar('POP2_140',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\28.png" id="POP2_28" data-flag="@X" onclick="openSidebar('POP2_28',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\122.png" id="POP2_122" data-flag="@X" onclick="openSidebar('POP2_122',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\155.png" id="POP2_155" data-flag="@X" onclick="openSidebar('POP2_155',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\31.png" id="POP2_31" data-flag="@X" onclick="openSidebar('POP2_31',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\138.png" id="POP2_138" data-flag="@X" onclick="openSidebar('POP2_138',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\53.png" id="POP2_53" data-flag="@X" onclick="openSidebar('POP2_53',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\148.png" id="POP2_148" data-flag="@X" onclick="openSidebar('POP2_148',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\49.png" id="POP2_49" data-flag="@X" onclick="openSidebar('POP2_49',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\26.png" id="POP2_26" data-flag="@X" onclick="openSidebar('POP2_26',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\14.png" id="POP2_14" data-flag="@X" onclick="openSidebar('POP2_14',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\62.png" id="POP2_62" data-flag="@X" onclick="openSidebar('POP2_62',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\149.png" id="POP2_149" data-flag="@X" onclick="openSidebar('POP2_149',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\27.png" id="POP2_27" data-flag="@X" onclick="openSidebar('POP2_27',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\32.png" id="POP2_32" data-flag="@X" onclick="openSidebar('POP2_32',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\136.png" id="POP2_136" data-flag="@X" onclick="openSidebar('POP2_136',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\38.png" id="POP2_38" data-flag="@X" onclick="openSidebar('POP2_38',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\145.png" id="POP2_145" data-flag="@X" onclick="openSidebar('POP2_145',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\11.png" id="POP2_11" data-flag="@X" onclick="openSidebar('POP2_11',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\21.png" id="POP2_21" data-flag="@X" onclick="openSidebar('POP2_21',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\142.png" id="POP2_142" data-flag="@X" onclick="openSidebar('POP2_142',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\65.png" id="POP2_65" data-flag="@X" onclick="openSidebar('POP2_65',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\144.png" id="POP2_144" data-flag="@X" onclick="openSidebar('POP2_144',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\58.png" id="POP2_58" data-flag="@X" onclick="openSidebar('POP2_58',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\44.png" id="POP2_44" data-flag="@X" onclick="openSidebar('POP2_44',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\137.png" id="POP2_137" data-flag="@X" onclick="openSidebar('POP2_137',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\48.png" id="POP2_48" data-flag="@X" onclick="openSidebar('POP2_48',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\147.png" id="POP2_147" data-flag="@X" onclick="openSidebar('POP2_147',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\57.png" id="POP2_57" data-flag="@X" onclick="openSidebar('POP2_57',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\52.png" id="POP2_52" data-flag="@X" onclick="openSidebar('POP2_52',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\36.png" id="POP2_36" data-flag="@X" onclick="openSidebar('POP2_36',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\60.png" id="POP2_60" data-flag="@X" onclick="openSidebar('POP2_60',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\146.png" id="POP2_146" data-flag="@X" onclick="openSidebar('POP2_146',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\6.png" id="POP2_6" data-flag="@X" onclick="openSidebar('POP2_6',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\43.png" id="POP2_43" data-flag="@X" onclick="openSidebar('POP2_43',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\91.png" id="POP2_91" data-flag="@X" onclick="openSidebar('POP2_91',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\39.png" id="POP2_39" data-flag="@X" onclick="openSidebar('POP2_39',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\18.png" id="POP2_18" data-flag="@X" onclick="openSidebar('POP2_18',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\157.png" id="POP2_157" data-flag="@X" onclick="openSidebar('POP2_157',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\45.png" id="POP2_45" data-flag="@X" onclick="openSidebar('POP2_45',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\7.png" id="POP2_7" data-flag="@X" onclick="openSidebar('POP2_7',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\16.png" id="POP2_16" data-flag="@X" onclick="openSidebar('POP2_16',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\50.png" id="POP2_50" data-flag="@X" onclick="openSidebar('POP2_50',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\154.png" id="POP2_154" data-flag="@X" onclick="openSidebar('POP2_154',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\25.png" id="POP2_25" data-flag="@X" onclick="openSidebar('POP2_25',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\139.png" id="POP2_139" data-flag="@X" onclick="openSidebar('POP2_139',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\55.png" id="POP2_55" data-flag="@X" onclick="openSidebar('POP2_55',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\41.png" id="POP2_41" data-flag="@X" onclick="openSidebar('POP2_41',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\156.png" id="POP2_156" data-flag="@X" onclick="openSidebar('POP2_156',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\19.png" id="POP2_19" data-flag="@X" onclick="openSidebar('POP2_19',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\141.png" id="POP2_141" data-flag="@X" onclick="openSidebar('POP2_141',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\15.png" id="POP2_15" data-flag="@X" onclick="openSidebar('POP2_15',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\29.png" id="POP2_29" data-flag="@X" onclick="openSidebar('POP2_29',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\61.png" id="POP2_61" data-flag="@X" onclick="openSidebar('POP2_61',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\51.png" id="POP2_51" data-flag="@X" onclick="openSidebar('POP2_51',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div id="gold" class="anchor"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\235.png" id="POP2_235" data-flag="@X" onclick="openSidebar('POP2_235',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\256.png" id="POP2_256" data-flag="@X" onclick="openSidebar('POP2_256',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\236.png" id="POP2_236" data-flag="@X" onclick="openSidebar('POP2_236',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\261.png" id="POP2_261" data-flag="@X" onclick="openSidebar('POP2_261',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\260.png" id="POP2_260" data-flag="@X" onclick="openSidebar('POP2_260',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\257.png" id="POP2_257" data-flag="@X" onclick="openSidebar('POP2_257',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\230.png" id="POP2_230" data-flag="@X" onclick="openSidebar('POP2_230',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\252.png" id="POP2_252" data-flag="@X" onclick="openSidebar('POP2_252',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\233.png" id="POP2_233" data-flag="@X" onclick="openSidebar('POP2_233',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\226.png" id="POP2_226" data-flag="@X" onclick="openSidebar('POP2_226',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\POP2-files\img\83_back.png" alt="sets\POP2-files\img\83_front.png" id="POP2_83" data-flag="@XD" onclick="openSidebar('POP2_83',false)"><button class="flip-btn" onclick="imgFlip('POP2_83')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\127.png" id="POP2_127" data-flag="@X" onclick="openSidebar('POP2_127',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\POP2-files\img\85_back.png" alt="sets\POP2-files\img\85_front.png" id="POP2_85" data-flag="@XD" onclick="openSidebar('POP2_85',false)"><button class="flip-btn" onclick="imgFlip('POP2_85')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\90.png" id="POP2_90" data-flag="@X" onclick="openSidebar('POP2_90',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\POP2-files\img\128_back.png" alt="sets\POP2-files\img\128_front.png" id="POP2_128" data-flag="@XD" onclick="openSidebar('POP2_128',false)"><button class="flip-btn" onclick="imgFlip('POP2_128')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\84.png" id="POP2_84" data-flag="@X" onclick="openSidebar('POP2_84',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\POP2-files\img\123_back.png" alt="sets\POP2-files\img\123_front.png" id="POP2_123" data-flag="@XD" onclick="openSidebar('POP2_123',false)"><button class="flip-btn" onclick="imgFlip('POP2_123')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\126.png" id="POP2_126" data-flag="@X" onclick="openSidebar('POP2_126',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\POP2-files\img\82_back.png" alt="sets\POP2-files\img\82_front.png" id="POP2_82" data-flag="@XD" onclick="openSidebar('POP2_82',false)"><button class="flip-btn" onclick="imgFlip('POP2_82')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\81.png" id="POP2_81" data-flag="@X" onclick="openSidebar('POP2_81',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\237.png" id="POP2_237" data-flag="@X" onclick="openSidebar('POP2_237',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\232.png" id="POP2_232" data-flag="@X" onclick="openSidebar('POP2_232',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\262.png" id="POP2_262" data-flag="@X" onclick="openSidebar('POP2_262',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\197.png" id="POP2_197" data-flag="@X" onclick="openSidebar('POP2_197',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\254.png" id="POP2_254" data-flag="@X" onclick="openSidebar('POP2_254',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\259.png" id="POP2_259" data-flag="@X" onclick="openSidebar('POP2_259',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\269.png" id="POP2_269" data-flag="@X" onclick="openSidebar('POP2_269',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\231.png" id="POP2_231" data-flag="@X" onclick="openSidebar('POP2_231',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\238.png" id="POP2_238" data-flag="@X" onclick="openSidebar('POP2_238',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\234.png" id="POP2_234" data-flag="@X" onclick="openSidebar('POP2_234',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\124.png" id="POP2_124" data-flag="@X" onclick="openSidebar('POP2_124',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\129.png" id="POP2_129" data-flag="@X" onclick="openSidebar('POP2_129',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\POP2-files\img\131_back.png" alt="sets\POP2-files\img\131_front.png" id="POP2_131" data-flag="@XD" onclick="openSidebar('POP2_131',false)"><button class="flip-btn" onclick="imgFlip('POP2_131')"></button></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\POP2-files\img\134_back.png" alt="sets\POP2-files\img\134_front.png" id="POP2_134" data-flag="@XD" onclick="openSidebar('POP2_134',false)"><button class="flip-btn" onclick="imgFlip('POP2_134')"></button></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\POP2-files\img\5_back.png" alt="sets\POP2-files\img\5_front.png" id="POP2_5" data-flag="@XD" onclick="openSidebar('POP2_5',false)"><button class="flip-btn" onclick="imgFlip('POP2_5')"></button></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\POP2-files\img\95_back.png" alt="sets\POP2-files\img\95_front.png" id="POP2_95" data-flag="@XD" onclick="openSidebar('POP2_95',false)"><button class="flip-btn" onclick="imgFlip('POP2_95')"></button></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\POP2-files\img\130_back.png" alt="sets\POP2-files\img\130_front.png" id="POP2_130" data-flag="@XD" onclick="openSidebar('POP2_130',false)"><button class="flip-btn" onclick="imgFlip('POP2_130')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\132.png" id="POP2_132" data-flag="@X" onclick="openSidebar('POP2_132',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\133.png" id="POP2_133" data-flag="@X" onclick="openSidebar('POP2_133',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\125.png" id="POP2_125" data-flag="@X" onclick="openSidebar('POP2_125',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div id="colorless" class="anchor"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\POP2-files\img\264_back.png" alt="sets\POP2-files\img\264_front.png" id="POP2_264" data-flag="@XD" onclick="openSidebar('POP2_264',false)"><button class="flip-btn" onclick="imgFlip('POP2_264')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\268.png" id="POP2_268" data-flag="@X" onclick="openSidebar('POP2_268',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\267.png" id="POP2_267" data-flag="@X" onclick="openSidebar('POP2_267',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\250.png" id="POP2_250" data-flag="@X" onclick="openSidebar('POP2_250',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\251.png" id="POP2_251" data-flag="@X" onclick="openSidebar('POP2_251',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\89.png" id="POP2_89" data-flag="@X" onclick="openSidebar('POP2_89',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\158.png" id="POP2_158" data-flag="@X" onclick="openSidebar('POP2_158',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\159.png" id="POP2_159" data-flag="@X" onclick="openSidebar('POP2_159',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\161.png" id="POP2_161" data-flag="@X" onclick="openSidebar('POP2_161',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\160.png" id="POP2_160" data-flag="@X" onclick="openSidebar('POP2_160',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div id="land" class="anchor"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\166.png" id="POP2_166" data-flag="@X" onclick="openSidebar('POP2_166',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\163.png" id="POP2_163" data-flag="@X" onclick="openSidebar('POP2_163',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\165.png" id="POP2_165" data-flag="@X" onclick="openSidebar('POP2_165',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\164.png" id="POP2_164" data-flag="@X" onclick="openSidebar('POP2_164',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\167.png" id="POP2_167" data-flag="@X" onclick="openSidebar('POP2_167',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\180.png" id="POP2_180" data-flag="@X" onclick="openSidebar('POP2_180',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\174.png" id="POP2_174" data-flag="@X" onclick="openSidebar('POP2_174',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\177.png" id="POP2_177" data-flag="@X" onclick="openSidebar('POP2_177',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\179.png" id="POP2_179" data-flag="@X" onclick="openSidebar('POP2_179',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\173.png" id="POP2_173" data-flag="@X" onclick="openSidebar('POP2_173',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\181.png" id="POP2_181" data-flag="@X" onclick="openSidebar('POP2_181',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\176.png" id="POP2_176" data-flag="@X" onclick="openSidebar('POP2_176',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\182.png" id="POP2_182" data-flag="@X" onclick="openSidebar('POP2_182',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\175.png" id="POP2_175" data-flag="@X" onclick="openSidebar('POP2_175',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\178.png" id="POP2_178" data-flag="@X" onclick="openSidebar('POP2_178',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\68.png" id="POP2_68" data-flag="@X" onclick="openSidebar('POP2_68',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\67.png" id="POP2_67" data-flag="@X" onclick="openSidebar('POP2_67',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\71.png" id="POP2_71" data-flag="@X" onclick="openSidebar('POP2_71',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\69.png" id="POP2_69" data-flag="@X" onclick="openSidebar('POP2_69',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\70.png" id="POP2_70" data-flag="@X" onclick="openSidebar('POP2_70',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\162.png" id="POP2_162" data-flag="@X" onclick="openSidebar('POP2_162',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="POP2_e" data-flag="@E" onclick="openSidebar('POP2_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="POP2_e" data-flag="@E" onclick="openSidebar('POP2_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="POP2_e" data-flag="@E" onclick="openSidebar('POP2_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="POP2_e" data-flag="@E" onclick="openSidebar('POP2_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\168.png" id="POP2_168" data-flag="@X" onclick="openSidebar('POP2_168',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\169.png" id="POP2_169" data-flag="@X" onclick="openSidebar('POP2_169',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\170.png" id="POP2_170" data-flag="@X" onclick="openSidebar('POP2_170',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\171.png" id="POP2_171" data-flag="@X" onclick="openSidebar('POP2_171',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\172.png" id="POP2_172" data-flag="@X" onclick="openSidebar('POP2_172',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div id="token" class="anchor"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\283.png" id="POP2_283" data-flag="@X" onclick="openSidebar('POP2_283',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\273.png" id="POP2_273" data-flag="@X" onclick="openSidebar('POP2_273',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\281.png" id="POP2_281" data-flag="@X" onclick="openSidebar('POP2_281',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\280.png" id="POP2_280" data-flag="@X" onclick="openSidebar('POP2_280',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\279.png" id="POP2_279" data-flag="@X" onclick="openSidebar('POP2_279',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\271.png" id="POP2_271" data-flag="@X" onclick="openSidebar('POP2_271',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\277.png" id="POP2_277" data-flag="@X" onclick="openSidebar('POP2_277',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\272.png" id="POP2_272" data-flag="@X" onclick="openSidebar('POP2_272',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\270.png" id="POP2_270" data-flag="@X" onclick="openSidebar('POP2_270',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\274.png" id="POP2_274" data-flag="@X" onclick="openSidebar('POP2_274',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\275.png" id="POP2_275" data-flag="@X" onclick="openSidebar('POP2_275',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\276.png" id="POP2_276" data-flag="@X" onclick="openSidebar('POP2_276',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\282.png" id="POP2_282" data-flag="@X" onclick="openSidebar('POP2_282',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\POP2-files\img\278.png" id="POP2_278" data-flag="@X" onclick="openSidebar('POP2_278',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="POP2_e" data-flag="@E" onclick="openSidebar('POP2_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="POP2_er" data-flag="@E" onclick="openSidebar('POP2_er',false)"></div>
 	</div>
-</div>
+	</div>
 	<div class="sidebar" id="sidebar">
 		<div class="sidebar-container">
-			<img id="sidebar_img" class="sidebar-img" src="/img/er.png">
+			<img id="sidebar_img" class="sidebar-img">
 			<img id="sidebar_h_img" class="sidebar-h-img">
 			<button class="flip-btn" id="sidebar-flip-btn" onclick="imgFlip('sidebar_img')"></button>
 		</div>
@@ -536,13 +578,13 @@
 		let specialchars = "";
 
 	document.addEventListener('DOMContentLoaded', async function() {
-		await fetch('/lists/all-cards.json')
+		await fetch(rootPath + '/lists/all-cards.json')
 					.then(response => response.json())
 					.then(json => {
 						card_list = json;
 				}).catch(error => console.error('Error:', error));
 
-				await fetch('/resources/replacechars.txt')
+				await fetch(rootPath + '/resources/replacechars.txt')
 					.then(response => response.text())
 					.then(text => {
 						specialchars = text; 
@@ -550,8 +592,100 @@
 
 				card_list_arrayified = card_list.cards;
 
+				let all_tags = new Set();
+				card_list_arrayified.forEach(card => {
+					if (card.notes) {
+						const tagMatches = card.notes.matchAll(/!tag(?:<\w+>)?\s+([^\s\n\b]+)/g);
+						for (const match of tagMatches) {
+							all_tags.add(match[1]);
+						}
+					}
+				});
+
+				const searchInput = document.getElementById("search");
+				const tagDropdown = document.getElementById("tag-dropdown");
+
+				// Create a mirror element for position calculation
+				const mirror = document.createElement("div");
+				Object.assign(mirror.style, {
+					position: "absolute",
+					visibility: "hidden",
+					whiteSpace: "pre",
+					font: getComputedStyle(searchInput).font,
+					padding: "0", // No padding for pure text measurement
+					border: "none",
+					boxSizing: "content-box"
+				});
+				document.body.appendChild(mirror);
+
+				if (searchInput && tagDropdown) {
+					tagDropdown.style.width = "auto";
+					tagDropdown.style.minWidth = "75px";
+					tagDropdown.style.maxWidth = "300px";
+					tagDropdown.style.maxHeight = "200px";
+					tagDropdown.style.overflowY = "auto";
+
+					const updateDropdown = function() {
+						const value = searchInput.value;
+						const cursorPosition = searchInput.selectionStart;
+						
+						// Find the tag: prefix immediately preceding the cursor
+						const lastTagIndex = value.substring(0, cursorPosition).lastIndexOf("tag:");
+						
+						if (lastTagIndex !== -1) {
+							const queryStart = lastTagIndex + 4;
+							const query = value.substring(queryStart, cursorPosition);
+							
+							if (!query.includes(" ")) {
+								const filteredTags = Array.from(all_tags).filter(tag => tag.toLowerCase().startsWith(query.toLowerCase())).sort();
+								if (filteredTags.length > 0) {
+									tagDropdown.innerHTML = "";
+									filteredTags.forEach(tag => {
+										const div = document.createElement("div");
+										div.innerText = tag;
+										div.style.padding = "5px 10px";
+										div.style.cursor = "pointer";
+										div.style.whiteSpace = "nowrap";
+										div.onmouseover = () => div.style.background = "#f0f0f0";
+										div.onmouseout = () => div.style.background = "white";
+										div.onclick = () => {
+											const newValue = value.substring(0, queryStart) + tag + " " + value.substring(cursorPosition);
+											searchInput.value = newValue;
+											tagDropdown.style.display = "none";
+											searchInput.focus();
+											const newCursorPos = queryStart + tag.length + 1;
+											searchInput.setSelectionRange(newCursorPos, newCursorPos);
+										};
+										tagDropdown.appendChild(div);
+									});
+
+									// Calculate position
+									mirror.textContent = value.substring(0, lastTagIndex + 4);
+									const textWidth = mirror.getBoundingClientRect().width;
+									const inputPaddingLeft = parseFloat(getComputedStyle(searchInput).paddingLeft) || 0;
+									
+									tagDropdown.style.left = Math.min(textWidth + inputPaddingLeft, searchInput.offsetWidth - tagDropdown.offsetWidth) + "px";
+									tagDropdown.style.display = "block";
+									return;
+								}
+							}
+						}
+						tagDropdown.style.display = "none";
+					};
+
+					searchInput.addEventListener("input", updateDropdown);
+					searchInput.addEventListener("click", updateDropdown);
+					searchInput.addEventListener("keyup", updateDropdown);
+
+					document.addEventListener("click", function(e) {
+						if (e.target !== searchInput && e.target !== tagDropdown) {
+							tagDropdown.style.display = "none";
+						}
+					});
+				}
+
 		preloadImgs = document.getElementsByClassName('preload-hidden');
-		
+
 		let images_loaded = [];
 
 		do {
@@ -583,13 +717,16 @@
 			const flag = img.getAttribute('data-flag');
 
 			if (flag === '@N') {
-				img.src = '/img/card_back.png';
+				img.src = rootPath + '/img/card_back.png';
 				img.removeAttribute("onclick");
 				img.style.cursor = 'default';
 			}
 			else
 			{
-				img.src = img.alt;
+				img.src = rootPath + '/' + img.alt;
+				if (img.dataset.alt_src) {
+					img.dataset.alt_src = rootPath + '/' + img.dataset.alt_src;
+				}
 
 				if (flag === '@E') {
 					img.removeAttribute("onclick");
@@ -615,49 +752,75 @@
 	let horizontal = false;
 
 	function imgFlip(num) {
-		tmp = document.getElementById(num).src;
-		console.log(num);
-		document.getElementById(num).src = document.getElementById(num).dataset.alt_src;
-		document.getElementById(num).dataset.alt_src = tmp;
+		const img = document.getElementById(num);
+		const seconds = 0.2;
+		const rotated_img = document.getElementById('sidebar_h_img');
 
-		if (num == 'sidebar_img')
+        img.style.transition = seconds.toString() + "s";
+        img.style.transform = "rotateY(90deg)";
+
+        if (num == 'sidebar_img')
 		{
-			const rotated_img = document.getElementById('sidebar_h_img');
 			const sidebar_img = document.getElementById('sidebar_img');
 
-			if (horizontal && rotated_img.style.display == 'none')
-			{
-				rotated_img.style.display = "block";
-				sidebar_img.style.filter = "blur(2px) brightness(0.7)";
-			}
-			else
-			{
-				rotated_img.style.display = "none";
-				sidebar_img.style.filter = "";
-			}
+			if (horizontal)
+            {
+            	rotated_img.style.transition = seconds.toString() + "s";
+           		rotated_img.style.transform = "rotateY(90deg) rotate(90deg)";
+
+           		if (rotated_img.style.opacity != "0") {
+		            setTimeout(() => {
+		                rotated_img.style.opacity = "0";
+		                img.style.filter = "none";
+		            }, (seconds / 2) * 1000);
+		        }
+		        else {
+		        	setTimeout(() => {
+		                rotated_img.style.opacity = "1";
+		                img.style.filter = "blur(2px) brightness(0.7)";
+		            }, (seconds / 2) * 1000);
+		        }
+            }
 		}
+
+         setTimeout(function() {
+            tmp = document.getElementById(num).src;
+			document.getElementById(num).src = document.getElementById(num).dataset.alt_src;
+			document.getElementById(num).dataset.alt_src = tmp;
+
+            img.style.transition = seconds.toString() + "s";
+            img.style.transform = "rotateY(0deg)";
+
+            if (horizontal)
+            {
+            	rotated_img.style.transition = seconds.toString() + "s";
+           		rotated_img.style.transform = "rotateY(0deg) rotate(90deg)";
+            }
+        }, seconds * 1000);
 	}
 
 	function openSidebar(id, h = false) {
 		horizontal = h;
 		scroll_pct = window.scrollY / document.documentElement.scrollHeight;
-		
+
 		document.getElementById('sidebar').style.display = 'grid';
 
 		const rotated_img = document.getElementById('sidebar_h_img');
 		const sidebar_img = document.getElementById('sidebar_img');
 
+		sidebar_img.style.transition = "none";
+		rotated_img.style.transition = "none";
 		sidebar_img.src = document.getElementById(id).src;
 		rotated_img.src = document.getElementById(id).src.replace("_back", "_front");
 
 		if (horizontal && !sidebar_img.src.includes("_back"))
 		{
-			rotated_img.style.display = "block";
+			rotated_img.style.opacity = "1";
 			sidebar_img.style.filter = "blur(2px) brightness(0.7)";
 		}
 		else
 		{
-			rotated_img.style.display = "none";
+			rotated_img.style.opacity = "0";
 			sidebar_img.style.filter = "";
 		}
 
@@ -672,7 +835,7 @@
 			document.getElementById('sidebar-flip-btn').style.display = 'none';
 		}
 		document.getElementById('main-content').style.width = '60%';
-		
+
 		scroll_pos = scroll_pct * document.documentElement.scrollHeight;
 		window.scrollTo(window.scrollX, scroll_pos);
 		setSidebarTop();
@@ -683,10 +846,30 @@
 
 		document.getElementById('sidebar').style.display = 'none';
 		document.getElementById('main-content').style.width = '100%';
-		
+
 
 		scroll_pos = scroll_pct * document.documentElement.scrollHeight;
 		window.scrollTo(window.scrollX, scroll_pos);
+	}
+
+	function rolldown() {
+		dropdown.style.gridTemplateColumns = "repeat(3, 1fr)";
+		var sets = document.querySelectorAll('.inactive');
+		for(const set of sets)
+		{
+			set.style.height = "auto";
+			set.style.margin = "5px";
+		}
+	}
+
+	function rollup() {
+		dropdown.style.gridTemplateColumns = "1fr";
+		var sets = document.querySelectorAll('.inactive');
+		for(const set of sets)
+		{
+			set.style.height = "0px";
+			set.style.margin = "0px 5px";
+		}
 	}
 
 	document.getElementById("search").addEventListener("keypress", function(event) {
@@ -697,16 +880,16 @@
 	});
 
 	function search() {
-		const url = new URL('search', window.location.origin);
+		const url = new URL(rootPath + '/search', window.location.href.split('?')[0].split('/').slice(0, -1).join('/') + '/');
 		url.searchParams.append('search', document.getElementById("search").value);
-		window.location.href = url;
+		window.location.href = url.pathname + url.search;
 	}
 
 		function randomCard() {
 				let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
 				let random_card = card_list_arrayified[i];
 
-				const url = new URL('card', window.location.origin);
+				const url = new URL(rootPath + '/card', window.location.href.split('?')[0].split('/').slice(0, -1).join('/') + '/');
 				const params = {
 					set: random_card.set,
 					num: random_card.number,
@@ -716,7 +899,7 @@
 					url.searchParams.append(key, params[key]);
 				}
 
-				window.location.href = url;
+				window.location.href = url.pathname + url.search;
 			}
 	</script>
 </body>

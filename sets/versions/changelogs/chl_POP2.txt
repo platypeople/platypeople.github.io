@@ -1,4 +1,609 @@
-﻿VERSION 1 CHANGELOG
+﻿VERSION 2 CHANGELOG
+====================
+
+
+
+Action Close-Up
+
+Surprise Feature
+
+Cloistered Harmonizer
+
+Flash Mob
+
+Devrinn, Pitch Perfect
+rules_text:  => At the beginning of your end step, untap up to two target permanents.
+[-2]: Build hype. [i](Create a tapped 3/2 red Fan creature token. Put a stun counter on it. If it would become untapped, remove a stun counter from it instead.)[/i]
+
+
+Boma, Miss Worldwide
+
+Online Teaser
+
+Stage Manager
+
+Unsettling Seance
+
+Beckon the Clapalong
+
+Silencer of Critics
+
+Improvised Solo
+
+Smokescreen
+
+Disarming Lilt
+
+Festival Greeter
+
+Swooping Socialite
+
+Silkdance
+
+Blazing Spotlight
+
+Posthumous Hologram
+
+Sudden Inspiration
+
+Brooding Ascetic
+
+Knock Your Socks Off
+
+The Song That Changed It All
+
+Kaleidoscamp
+
+Beloved PrismaVeteran
+
+Recurrent Virus
+
+Kaleidomeleon
+
+Hip Choreographer
+
+Finishing Touches
+
+Unplug
+
+Automated Backup
+
+Hijack the Network
+
+Key Change
+
+Hypnotic Formation
+
+Tight Turnaround
+
+Bravi, the City Alive
+
+Ravek Glade Busker
+
+Bright-Eyed Insurgent
+
+Manufactured Hype
+
+Shy First-Timers
+
+Brutish Bodyguard
+
+Stage Invaders
+
+Death-Defying Stunt
+
+Overpowering Reprise
+
+Lightshow Technician
+
+Prismclaw Regent
+
+Drumset Duo
+
+Frenzied Publicist
+
+Phosphorescent Showcase
+
+Hard Rock Hailers
+
+Sinister Spinner
+
+Wildstyle Romper
+
+Magnanimous Socialite
+
+Heart-Shaking Drop
+
+Brief Appearance
+
+Smear Campaign
+
+Lightkin Conjurer
+
+Mic Passer
+
+Masked Street Drummer
+
+Botnet Engineer
+
+Public Detail
+
+Worldwide Smear
+
+Highwire Star
+
+Enamored Stan
+
+Camerawise Crooner
+
+On-Call Dancer
+
+Meryel of Two Realities
+
+Construction Zone
+
+Burgeoning Linktree
+
+Hit Factory
+
+Morashan Wasteland
+
+Eco Rave
+
+Apalana, Apasionada
+rules_text:  => The second spell you cast each turn costs {2} less to cast and can't be countered.
+[-1]: Exile the top card of your library. You may play it this turn.
+
+
+Stunned Silence
+
+Extended Outro
+
+Put in Their Place
+
+Beat Switch
+
+Fervent Schooling
+
+Deep Sea Diva
+
+Harsh Criticism
+
+Ishi, WeSing Star
+
+A Star is Born
+
+Baril, Static Selector
+
+Mai Lim, Defending Champ
+
+Tempo Accelerator
+
+The Apocalypse Sisters
+
+Halami the Dextrous
+
+Anomaly DX397
+rules_text:  => At the beginning of your end step, if you've spent {W}{U}{B}{R}{G} to cast spells this turn, draw a card.
+[-2]: Until end of turn, creatures you control gain “{T}: Add one mana of any color.”
+
+
+Highly-Anticipated Collab
+
+Lightvein Overdriver
+
+Amplified Switchbot
+
+Resounding Chorus
+
+LonJon, Dynamic Duo
+
+Ingrained Memory
+
+Ezri, Starmaking Producer
+
+Mia Mia & Vic Villain
+
+Neon Blitz
+
+Hypebeast
+
+Group Power Pose
+
+Polya, Duchess of Grime
+rules_text:  => If a card would be put into an opponent's graveyard from anywhere other than their hand, exile it instead.
+[-1]: Target opponent discards a card, then you discard a card. Draw a card if you discarded the card with the highest mana value among those cards.
+
+
+Overwhelm the Airwaves
+rules_text: Kicker {S}{S}{G} [i](You may pay an additional {S}{S}{G} as you cast this spell. Spend a different nongreen color of mana on each {S}.)[/i]
+Target creature you control deals damage equal to its power to target creature an opponent controls. If this spell was kicked, destroy target noncreature, nonland permanent. => Kicker {S}{S}{G} [i](You may pay an additional {S}{S}{G} as you cast this spell. Spend a different nongreen color of mana on each {S}.)[/i]
+Target creature you control deals damage equal to its power to target creature or planeswalker an opponent controls. If this spell was kicked, creatures can't block this turn.
+
+Cast Down
+
+Beguiling Chorus
+
+Flanger Flayer
+
+Rafter Riggers
+
+Grand Dissonance
+
+Disco Inferno
+
+Reckless Drifter
+
+Voo Won, Indisputable
+rules_text:  => Permanents entering the battlefield or dying under your opponents' control don't cause abilities to trigger.
+[-2]: Destroy target tapped creature.
+
+
+Extraplanar Aficionado
+
+Auditory Agitator
+
+Scorched-Earth Songstress
+
+Mykian, Planetrotter
+rules_text:  => Lands you control are every basic land type in addition to their other types.
+[+1]: Untap two target permanents.
+[-1]: Create a 3/3 green Centaur creature token.
+
+Living Billboard
+
+Judge of Flawless Technique
+
+Expert Stagehand
+
+Apocalypse Sharkjumper
+
+Anomalous Transmission
+
+Ishi's Prismwing
+
+Blissed-Out Bot
+
+Hardlight Tailor
+
+Judge of Blind Ambition
+
+Guttural Scream
+
+Sinthia, the Mindrazer
+
+Broadcast Executive
+
+Hologram Technician
+
+Shambling Scratcher
+
+In Memoriam
+
+Manis, StarKid
+
+Aerial Stunt Specialists
+
+Samaya Soundwave
+
+The Skeleton Keys
+type: Legendary Creature — Skeleton Orc Bard => Legendary Creature — Skeleton Bard
+
+Toxic Shredder
+
+Festival Kickoff
+
+Bebop Bob
+
+Bright-Eyed Bushytail
+
+Herald of New Sounds
+
+Nightlife Nightlight
+
+Fandom Commander
+
+Stunted By Success
+
+Enraptured Patron
+
+Undercover Security
+
+Magnetic Presence
+
+All Hands Rehearsal
+
+Moonlighting Stagehand
+
+Lightseeker
+
+Party Monster
+
+Nightlife Lurkers
+
+Highrise Vagrant
+
+Inescapable Earworm
+
+Understudy's Envy
+
+Disrupt the Program
+
+Phosphorescent Patrician
+
+Cabaret Aspirant
+
+Supersonic Drummer
+
+Flamboyant Dresser
+
+Surgeon for the Stars
+
+Scorching Trio
+
+Archaic Automaton
+
+Blaring Streetbot
+
+Hardlight Painter
+
+Broadcast Hub
+
+Digital Landscape
+
+Thriving Isle
+
+Thriving Bluff
+
+Thriving Moor
+
+Thriving Heath
+
+Thriving Grove
+
+Resonant Grove
+
+Resonant Tidepool
+
+Resonant Crag
+
+Resonant Springs
+
+Resonant Valley
+
+Resonant Cove
+
+Resonant Highland
+
+Resonant Expanse
+
+Resonant Moor
+
+Resonant Marsh
+
+Bedazzled Soloist
+
+Staggering Showbot
+
+Starmaker Mic
+
+Holographic Mirror
+
+The Masked Rider
+
+Jurjurian Ritualists
+
+Tympanic Titan
+
+Vivacious Host
+
+Mashup Machine
+
+Morashan Mischief Makers
+
+Guerilla Promoter
+
+Phantom of the Amplifier
+
+Oddsmaking Oracle
+
+Stage Fright
+
+Amped-Up Acrobats
+
+Throes of the Masses
+
+Eyes in the Sky
+
+Lightrunner Duo
+
+Cover Art Designer
+
+Delegation Orchestrator
+
+Forbidden Harmony
+
+Ezri's Street Team
+
+Petrasian Derby Team
+
+Stage Rhino
+
+Hardlight Exhibition
+
+Club Patron
+
+Fansite Maven
+
+Presence of the Unending Rave
+
+Return to the Classics
+
+Hornswoggler
+
+Clear the Stage
+
+Judge of Impeccable Taste
+
+Judge of Moving Rhythm
+
+Judge of Mass Appeal
+
+Bandwagon
+
+Vanity Dragster
+
+Remote-Control Showdrone
+
+Joyride Offroader
+
+Closing Ceremony
+
+Miss Anthrope
+
+BXB Fessy
+
+Surprise Interlude
+
+Lightvein Eclipse
+
+Four on the Floor
+
+Aka'a, Street Battler
+
+Maxime Maximalist
+
+Irana, Viral Sensation
+
+Otherworldly Exchange
+
+Price of Greatness
+
+Opening Night Bash
+
+Remix Reality
+
+Spare No Expense
+
+Maybe Next Year
+
+Encore of Dread
+
+Disqualify
+
+Rapid Revamp
+
+Stray Hologram
+
+Dazzling Lanternshark
+
+Otto Mollusco
+
+Cross-Promotion
+
+Transcendent Conversion
+
+Singing Spitter
+
+Festival Spoiler
+
+Morashim the Wastelord
+
+Reckless Acrobatics
+
+The Artist with No Name
+
+Baricol the Infinist
+rules_text:  => Whenever a player draws a card, they lose 1 life.
+[+1]: Target player draws two cards, then discards a card.
+[-2]: Destroy target creature. Its controller draws two cards.
+
+Engineered Virus
+
+Prismatic Heirloom
+
+Jester of the Lightveins
+
+Cassia Reinvented
+rules_text:  => You may have Cassia enter as a 3/3 creature that isn't a planeswalker. [i](She'll enter without loyalty counters.)[/i]
+[+1]: Put a +1/+1 counter on another creature you control.
+[-2]: Exile target creature. For as long as that card remains exiled, its owner may play it. A spell cast by an opponent this way costs {2} more to cast.
+
+Holocrafter
+
+Extraplanar Talent Scout
+
+Jukebox of Mysteries
+
+Party Platform
+
+Delegation Fixers
+
+Endless Soloist
+
+Familiar-Blessed Folkist
+
+Irradiated Ooze
+
+Feedback Loop
+
+Nekaru, Tyrannic Emcee
+rules_text:  => Legendary creatures you control have haste.
+[+1]: Up to one target creature you control that isn't onstage takes the stage. [i](Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)[/i]
+[-2]: Nekaru deals damage equal to the number of legendary permanents you control to any target.
+[-4]: You may cast a copy of a legendary spell on the other face of a legendary permanent you control without paying its mana cost.
+
+Farrah Q, Grand Sampler
+
+Vote Trading
+
+Parade of Champions
+
+Staff of Moresso
+
+Overclocked Spinmaster
+
+Trained Showdragon
+rules_text: Flying, haste
+Whenever this creature attacks, you may cast a copy of each spell card with choreography taught to creatures you control without paying their mana costs. => Flying, haste
+Whenever this creature attacks, you may cast a copy of each spell card with choreography taught to a creature you control without paying their mana costs.
+
+Fan
+
+Performer
+
+Noble
+
+Servo
+
+Fan
+
+Fan
+
+Fan
+
+Mutant
+
+Elemental
+
+Illusion
+
+Everywhere
+
+Treasure
+
+Centaur
+
+The Stage
+
+Zalek, the Brutalizer
+rules_text:  => Whenever you draw a card, put a loyalty counter on Zalek.
+[0]: If an opponent has more cards in hand than you, draw two cards. Otherwise, draw a card.
+[-4]: Return up to two other target nonland permanents to their owners' hands.
+[-13]: Each opponent chooses three permanents they control. Gain control of the rest.
+
+
+VERSION 1 CHANGELOG
 ====================
 
 First version published.

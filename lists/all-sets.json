@@ -1,1 +1,9 @@
-﻿{"sets": [{"set_code": "POP2", "set_name": "Prismavision", "formats": ""}]}
+﻿{
+    "sets": [
+        {
+            "set_code": "POP2",
+            "set_name": "Prismavision",
+            "formats": ""
+        }
+    ]
+}
