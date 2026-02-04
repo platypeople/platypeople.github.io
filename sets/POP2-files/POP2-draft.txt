@@ -981,7 +981,7 @@
 			"name": "Amplified Switchbot",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{R}{G}",
-			"type": "Artifact Creature",
+			"type": "Artifact Creature — Performer",
 			"collector_number": "199",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/90.png"
@@ -1226,7 +1226,7 @@
 			"name": "Scorched-Earth Songstress",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{R}",
-			"type": "Creature — Human Sorceror Bard",
+			"type": "Creature — Human Sorcerer Bard",
 			"collector_number": "147",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/111.png"
@@ -1332,7 +1332,7 @@
 		{
 			"name": "Judge of Blind Ambition",
 			"rarity": "mythic",
-			"mana_cost": "{2}{B}{B}",
+			"mana_cost": "{3}{B}{B}",
 			"type": "Creature — Avatar",
 			"collector_number": "97",
 			"image_uris": {
