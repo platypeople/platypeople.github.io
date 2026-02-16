@@ -1,4 +1,97 @@
-﻿VERSION 3 CHANGELOG
+﻿VERSION 4 CHANGELOG
+====================
+
+Octopus added.
+
+
+Reckless Drifter
+rules_text: {1}{R}: If this creature isn't onstage, it takes the stage. [i](Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)[/i]
+When this creature takes the stage, you may cast a noncreature spell with mana value 3 or less from your hand without paying its mana cost. => First strike
+{2}{R}{R}: If this creature isn't onstage, it takes the stage. [i](Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)[/i]
+When this creature takes the stage, return target creature card from your graveyard to the battlefield. It gains haste. Exile it at the beginning of the next end step.
+pt: 2/1 => 2/2
+
+Auditory Agitator
+rules_text: {1}{R}: If Auditory Agitator isn't onstage, it takes the stage. [i](Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)[/i]
+When this creature takes the stage, target creature can't block this turn. => Haste
+{R}: If Auditory Agitator isn't onstage, it takes the stage. [i](Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)[/i]
+When this creature takes the stage, target creature can't block this turn.
+pt: 2/1 => 1/1
+
+Scorched-Earth Songstress
+rules_text: Haste
+Discard a card: If this creature isn't onstage, it takes the stage. [i](Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)[/i]
+Whenever this creature attacks while onstage, exile the top card of your library. You may play that card this turn. => Haste
+When this creature enters, destroy target land you control and target land you don't control. You and the controller of the land you don't control each create a tapped colorless land token named Everywhere that is every basic land type. Put a stun counter on those lands.
+pt: 3/2 => 3/3
+
+Living Billboard
+cost: {1}{W} => {W}
+rules_text: Kicker {S}{S}{W} [i](You may pay an additional {S}{S}{W} as you cast this spell. Spend a different nonwhite color of mana on each {S}.)[/i]
+Enchant creature
+When this Aura enters, draw a card. If it was kicked, create a 4/4 colorless Illusion creature token. You may attach this Aura to that token.
+Enchanted creature has flying. => Kicker {S}{S}{W} [i](You may pay an additional {S}{S}{W} as you cast this spell. Spend a different nonwhite color of mana on each {S}.)[/i]
+Enchant creature you control
+When this Aura enters, exile target creature an opponent controls until this Aura leaves the battlefield.
+If this spell was kicked, enchanted creature is a copy of the exiled creature, except it has ward {2}. Otherwise, enchanted creature has ward {1}.
+
+Judge of Flawless Technique
+
+Expert Stagehand
+cost: {R} => {1}{R}
+rules_text: When this creature becomes the target of a spell or ability you control, if it isn't onstage, it takes the stage. [i](Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)[/i]
+When this creature takes the stage, exile the top card of your library. You may play that card until the end of your next turn. => When this creature becomes the target of a spell or ability you control, if it isn't onstage, you may have it take the stage. [i](Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)[/i]
+When this creature takes the stage, exile the top card of your library. You may play that card until the end of your next turn.
+pt: 1/2 => 3/2
+
+Judge of Blind Ambition
+
+Hornswoggler
+
+Clear the Stage
+
+Judge of Impeccable Taste
+
+Judge of Moving Rhythm
+
+Judge of Mass Appeal
+
+Miss Anthrope
+rules_text: Your opponents can't gain life.
+At the beginning of combat on your turn, target creature you control gets +1/+0 and gains haste and “when this creature dies, it deals damage equal to its power to any target” until end of turn. => Your opponents can't gain life.
+At the beginning of combat on your turn, target creature you control gets +1/+0 and gains haste and “When this creature dies, it deals damage equal to its power to any target” until end of turn.
+
+Otto Mollusco
+rules_text: {T}: Draw a card, then discard a card.
+Exile cards with total mana value 8 or greater from your graveyard: Put a +1/+1 counter on this creature. If this is the first time this ability has resolved this turn, untap this creature. => {T}: Draw a card, then discard a card.
+At the beginning of your end step, you may exile any number of cards from your graveyard with total mana value 8 or greater. If you do, put a +1/+1 counter on this creature and untap it.
+
+Cross-Promotion
+cost: {2}{U} => {1}{U}
+
+The Artist with No Name
+
+Baricol the Infinist
+
+Farrah Q, Grand Sampler
+cost: {4} => {5}
+rules_text: Flash
+You may cast legendary spells as though they had flash.
+Whenever you cast a legendary instant or legendary sorcery spell, copy it. You may choose new targets for the copy. => Whenever you cast a legendary instant or legendary sorcery spell, copy it. You may choose new targets for the copy.
+pt: 3/4 => 4/5
+
+Staff of Moresso
+type: Artifact => Artifact — Equipment
+cost: {4} => {2}
+rules_text: {T}: Draw a card, then discard a card.
+Once during each of your turns, you may cast a spell from your hand without paying its mana cost if it has four or more mana symbols in its mana cost and its mana value is less than or equal to the number of lands you control. => Equipped creature gets +4/+4 and has hexproof from monocolored.
+At the beginning of combat on your turn, if you cast a spell with four or more mana symbols in its mana cost this turn, you may attach this equipment to a creature you control.
+Equip {5}
+
+Zalek, the Brutalizer
+
+
+VERSION 3 CHANGELOG
 ====================
 
 
