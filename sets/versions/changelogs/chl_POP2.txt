@@ -1,4 +1,130 @@
-﻿VERSION 4 CHANGELOG
+﻿VERSION 5 CHANGELOG
+====================
+
+Scorching Duet added.
+
+Scorching Trio removed.
+
+Blazing Spotlight
+cost: {1}{S}{R} => {S}{R}
+rules_text: [i](This card is red. Spend a nonred color of mana on {S}.)[/i]
+Blazing Spotlight deals 4 damage to target creature or planeswalker. If that permanent would die this turn, exile it instead.
+{1}, Exile this card from your graveyard: Add one mana of any color. => [i](This card is red. Spend a nonred color of mana on {S}.)[/i]
+Blazing Spotlight deals 3 damage to any nonplayer target. If that permanent would die this turn, exile it instead.
+{1}, Exile this card from your graveyard: Add one mana of any color.
+
+Unplug
+cost: {1}{S}{B} => {S}{B}
+rules_text: [i](This card is black. Spend a nonblack color of mana on {S}.)[/i]
+Target opponent loses 3 life, then reveals their hand. You may choose a nonland card from it. That player exiles that card.
+{1}, Exile this card from your graveyard: Add one mana of any color. => [i](This card is black. Spend a nonblack color of mana on {S}.)[/i]
+Target opponent loses 1 life, then reveals their hand. You may choose a nonland card from it. That player discards that card.
+{1}, Exile this card from your graveyard: Add one mana of any color.
+
+Phosphorescent Showcase
+pt: 6/5 => 6/6
+
+Lightkin Conjurer
+
+Worldwide Smear
+rules_text: Worldwide Smear deals damage to any nonplayer target equal to the number of lands you control. => Worldwide Smear deals 6 damage to target creature or planeswalker. You may put a card from your hand on the bottom of your library. If you do, draw a card.
+
+LonJon, Dynamic Duo
+rules_text: When this creature enters, if it isn't a token, create a token that's a copy of it, except it's not legendary.
+Creatures you control get +1/+0 for each other creature you control that shares a name with that creature. => When this creature enters, if it isn't a token, create a token that's a copy of it.
+If you control exactly two permanents named LonJon, Dynamic Duo, the “legend rule” doesn't apply to them.
+Creatures you control get +1/+0 for each other creature you control that shares a name with that creature.
+
+Ezri, Starmaking Producer
+rules_text: When this creature enters, legendary creatures you control gain first strike until end of turn.
+Other legendary creatures you control get +1/+1. => Other legendary creatures you control get +1/+1.
+
+Group Power Pose
+rules_text: Create two 1/1 white Performer creature tokens. If you control an attacking creature, the tokens enter tapped and attacking.
+Choreography [i](Then you may exile this spell card taught to a creature you control. Whenever that creature attacks, you may cast a copy of this spell. You still pay its costs.)[/i] => Create two 1/1 white Performer creature tokens. If this spell was choreographed, the tokens enter tapped and attacking.
+Choreography [i](Then you may exile this spell card taught to a creature you control. Whenever that creature attacks, you may cast a copy of this spell. You still pay its costs.)[/i]
+
+Rafter Riggers
+
+Grand Dissonance
+rules_text: [i](This card is black. Spend a different nonblack color of mana on each {S}.)[/i]
+For each permanent type, choose up to one target permanent of that type. Exile those permanents. You lose 1 life for each permanent exiled this way. [i](The permanent types are artifact, battle, creature, enchantment, land, and planeswalker.)[/i] => [i](This card is black. Spend a different nonblack color of mana on each {S}.)[/i]
+For each nonland permanent type, choose up to one target permanent of that type. Destroy those permanents. You lose 1 life for each permanent exiled this way. [i](The nonland permanent types are artifact, battle, creature, enchantment, and planeswalker.)[/i]
+
+Voo Won, Indisputable
+cost: {3}{W} => {2}{W}{W}
+rules_text: Permanents entering the battlefield or dying under your opponents' control don't cause abilities to trigger.
+[-2]: Destroy target tapped creature.
+ => Artifacts and creatures entering the battlefield or dying don't cause abilities to trigger.
+[-2]: Destroy target tapped creature.
+
+special_text: Permanents entering the battlefield or dying under your opponents' control don't cause abilities to trigger.
+[-2]: Destroy target tapped creature.
+ => Artifacts and creatures entering the battlefield or dying don't cause abilities to trigger.
+[-2]: Destroy target tapped creature.
+
+
+Scorched-Earth Songstress
+rules_text: Haste
+When this creature enters, destroy target land you control and target land you don't control. You and the controller of the land you don't control each create a tapped colorless land token named Everywhere that is every basic land type. Put a stun counter on those lands. => Haste
+When this creature enters, destroy target land you control and target land you don't control. You and the controller of the land you don't control each create a tapped colorless land token named Everywhere that is every basic land type.
+
+Holographic Mirror
+type: Instant => Sorcery
+rules_text: Create a tapped and attacking token copy of target attacking creature you control. Sacrifice that token at end of combat.
+Choreography [i](Then you may exile this spell card taught to a creature you control. Whenever that creature attacks, you may cast a copy of this spell. You still pay its costs.)[/i] => Create a token that's a copy of target creature you control, except it has haste and “At the beginning of the end step, sacrifice this token.” If this spell was choreographed, the token enters tapped and attacking.
+Choreography [i](Then you may exile this spell card taught to a creature you control. Whenever that creature attacks, you may cast a copy of this spell. You still pay its costs.)[/i]
+
+The Artist with No Name
+rules_text: Sacrifice this creature: Target legendary permanent gains hexproof and indestructible until end of turn. => Sacrifice this creature: Target legendary permanent gains indestructible until end of turn.
+
+Baricol the Infinist
+
+Cassia Reinvented
+rules_text: You may have Cassia enter as a 3/3 creature that isn't a planeswalker. [i](She'll enter without loyalty counters.)[/i]
+[+1]: Put a +1/+1 counter on another creature you control.
+[-2]: Exile target creature. For as long as that card remains exiled, its owner may play it. A spell cast by an opponent this way costs {2} more to cast. => You may have Cassia enter as a 3/3 creature that isn't a planeswalker. [i](She'll enter without loyalty counters.)[/i]
+[+1]: Put a +1/+1 counter on up to one other target creature you control.
+[-2]: Exile target creature. For as long as that card remains exiled, its owner may play it. A spell cast by an opponent this way costs {2} more to cast.
+special_text: You may have Cassia enter as a 3/3 creature that isn't a planeswalker. [i](She'll enter without loyalty counters.)[/i]
+[+1]: Put a +1/+1 counter on another creature you control.
+[-2]: Exile target creature. For as long as that card remains exiled, its owner may play it. A spell cast by an opponent this way costs {2} more to cast. => You may have Cassia enter as a 3/3 creature that isn't a planeswalker. [i](She'll enter without loyalty counters.)[/i]
+[+1]: Put a +1/+1 counter on up to one other target creature you control.
+[-2]: Exile target creature. For as long as that card remains exiled, its owner may play it. A spell cast by an opponent this way costs {2} more to cast.
+
+Extraplanar Talent Scout
+rules_text: Vigilance
+When this creature enters, reveal the top seven cards of your library. You may put a planeswalker card from among them into your hand. Put the rest on the bottom of your library in a random order.
+Whenever this creature attacks, you may activate loyalty abilities of planeswalkers you control an additional time this turn. => Vigilance
+When this creature enters, reveal the top seven cards of your library. You may put a planeswalker card from among them into your hand. Put the rest on the bottom of your library in a random order.
+Whenever this creature attacks, choose target planeswalker you control. You may activate one of its loyalty abilities once this turn as though none of its loyalty abilities have been activated this turn.
+
+Endless Soloist
+rules_text: Ward—Pay 3 life.
+At the beginning of your end step, put a reprise counter on this creature, then return up to one target nonland permanent card with mana value equal to the number of reprise counters on this creature from your graveyard to the battlefield. => At the beginning of your end step, you may put a reprise counter on this creature, then return up to one target nonland permanent card with mana value equal to the number of reprise counters on this creature from your graveyard to the battlefield.
+pt: 4/4 => 4/5
+
+Farrah Q, Grand Sampler
+
+Zalek, the Brutalizer
+rules_text: Whenever you draw a card, put a loyalty counter on Zalek.
+[0]: If an opponent has more cards in hand than you, draw two cards. Otherwise, draw a card.
+[-4]: Return up to two other target nonland permanents to their owners' hands.
+[-13]: Each opponent chooses three permanents they control. Gain control of the rest. => Whenever you draw a card, put a loyalty counter on Zalek.
+[0]: If an opponent has more cards in hand than you, draw two cards. Otherwise, draw a card.
+[-2]: Until end of turn, Zalek becomes a 0/0 Human Pilot creature and gains hexproof, “This creature can't be blocked,” and “This creature gets +1/+1 for each card in your hand.”
+[-5]: Return up to two other target nonland permanents to their owners' hands.
+special_text: Whenever you draw a card, put a loyalty counter on Zalek.
+[0]: If an opponent has more cards in hand than you, draw two cards. Otherwise, draw a card.
+[-4]: Return up to two other target nonland permanents to their owners' hands.
+[-13]: Each opponent chooses three permanents they control. Gain control of the rest. => Whenever you draw a card, put a loyalty counter on Zalek.
+[0]: If an opponent has more cards in hand than you, draw two cards. Otherwise, draw a card.
+[-2]: Until end of turn, Zalek becomes a 0/0 Human Pilot creature and gains hexproof, “This creature can't be blocked,” and “This creature gets +1/+1 for each card in your hand.”
+[-5]: Return up to two other target nonland permanents to their owners' hands.
+loyalty: 5 => 6
+
+
+VERSION 4 CHANGELOG
 ====================
 
 Octopus added.

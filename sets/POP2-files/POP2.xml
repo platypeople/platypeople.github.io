@@ -5,7 +5,7 @@
 			<name>POP2</name>
 			<longname>Prismavision</longname>
 			<settype>Custom</settype>
-			<releasedate>2026-02-15</releasedate>
+			<releasedate>2026-03-13</releasedate>
 		</set>
 	</sets>
 	<cards>
@@ -354,7 +354,7 @@ Choreography (Then you may exile this spell card taught to a creature you contro
 		<card>
 			<name>Blazing Spotlight</name>
 			<text>(This card is red. Spend a nonred color of mana on {S}.)
-Blazing Spotlight deals 4 damage to target creature or planeswalker. If that permanent would die this turn, exile it instead.
+Blazing Spotlight deals 3 damage to any nonplayer target. If that permanent would die this turn, exile it instead.
 {1}, Exile this card from your graveyard: Add one mana of any color.</text>
 			<set rarity="common" picurl="https://platypeople.github.io/sets/POP2-files/img/17.png" num="124">POP2</set>
 			<prop>
@@ -362,8 +362,8 @@ Blazing Spotlight deals 4 damage to target creature or planeswalker. If that per
 				<side>front</side>
 				<type>Instant</type>
 				<maintype>Instant</maintype>
-				<manacost>1SR</manacost>
-				<cmc>3</cmc>
+				<manacost>SR</manacost>
+				<cmc>2</cmc>
 				<colors>R</colors>
 				<coloridentity>R</coloridentity>
 			</prop>
@@ -565,7 +565,7 @@ Look at the top four cards of your library. Put two of them into your hand and t
 		<card>
 			<name>Unplug</name>
 			<text>(This card is black. Spend a nonblack color of mana on {S}.)
-Target opponent loses 3 life, then reveals their hand. You may choose a nonland card from it. That player exiles that card.
+Target opponent loses 1 life, then reveals their hand. You may choose a nonland card from it. That player discards that card.
 {1}, Exile this card from your graveyard: Add one mana of any color.</text>
 			<set rarity="common" picurl="https://platypeople.github.io/sets/POP2-files/img/29.png" num="116">POP2</set>
 			<prop>
@@ -573,8 +573,8 @@ Target opponent loses 3 life, then reveals their hand. You may choose a nonland 
 				<side>front</side>
 				<type>Sorcery</type>
 				<maintype>Sorcery</maintype>
-				<manacost>1SB</manacost>
-				<cmc>3</cmc>
+				<manacost>SB</manacost>
+				<cmc>2</cmc>
 				<colors>B</colors>
 				<coloridentity>B</coloridentity>
 			</prop>
@@ -934,7 +934,7 @@ Basic landcycling {1}{U} ({1}{U}, Discard this card: Search your library for a b
 				<cmc>7</cmc>
 				<colors>U</colors>
 				<coloridentity>U</coloridentity>
-				<pt>6/5</pt>
+				<pt>6/6</pt>
 			</prop>
 			<tablerow>2</tablerow>
 		</card>
@@ -1155,7 +1155,7 @@ When this creature enters, target creature gains hexproof until end of turn.</te
 		</card>
 		<card>
 			<name>Worldwide Smear</name>
-			<text>Worldwide Smear deals damage to any nonplayer target equal to the number of lands you control.</text>
+			<text>Worldwide Smear deals 6 damage to target creature or planeswalker. You may put a card from your hand on the bottom of your library. If you do, draw a card.</text>
 			<set rarity="common" picurl="https://platypeople.github.io/sets/POP2-files/img/61.png" num="157">POP2</set>
 			<prop>
 				<layout>normal</layout>
@@ -1881,7 +1881,8 @@ Whenever you attack, target creature gets +X/+0 until end of turn, where X is th
 		</card>
 		<card>
 			<name>LonJon, Dynamic Duo</name>
-			<text>When this creature enters, if it isn&apos;t a token, create a token that&apos;s a copy of it, except it&apos;s not legendary.
+			<text>When this creature enters, if it isn&apos;t a token, create a token that&apos;s a copy of it.
+If you control exactly two permanents named LonJon, Dynamic Duo, the &quot;legend rule&quot; doesn&apos;t apply to them.
 Creatures you control get +1/+0 for each other creature you control that shares a name with that creature.
 ---
 (Back): SoulSync</text>
@@ -1914,8 +1915,8 @@ Exile &quot;SoulSync&quot;.
 				<side>back</side>
 				<type>Legendary Instant</type>
 				<maintype>Instant</maintype>
-				<manacost>XXU</manacost>
-				<cmc>1</cmc>
+				<manacost>XXUU</manacost>
+				<cmc>2</cmc>
 				<colors>U</colors>
 				<coloridentity>WU</coloridentity>
 			</prop>
@@ -1941,8 +1942,7 @@ Choreography (Then you may exile this spell card taught to a creature you contro
 		</card>
 		<card>
 			<name>Ezri, Starmaking Producer</name>
-			<text>When this creature enters, legendary creatures you control gain first strike until end of turn.
-Other legendary creatures you control get +1/+1.
+			<text>Other legendary creatures you control get +1/+1.
 ---
 (Back): Popular</text>
 			<set rarity="rare" picurl="https://platypeople.github.io/sets/POP2-files/img/94_front.png" num="16a">POP2</set>
@@ -2058,7 +2058,7 @@ Neon Blitz deals 4 damage to any target. If this spell was kicked, instead it de
 		</card>
 		<card>
 			<name>Group Power Pose</name>
-			<text>Create two 1/1 white Performer creature tokens. If you control an attacking creature, the tokens enter tapped and attacking.
+			<text>Create two 1/1 white Performer creature tokens. If this spell was choreographed, the tokens enter tapped and attacking.
 Choreography (Then you may exile this spell card taught to a creature you control. Whenever that creature attacks, you may cast a copy of this spell. You still pay its costs.)</text>
 			<set rarity="uncommon" picurl="https://platypeople.github.io/sets/POP2-files/img/98.png" num="22">POP2</set>
 			<prop>
@@ -2205,7 +2205,7 @@ When this creature enters, you gain 4 life. If creatures you control have total 
 		<card>
 			<name>Grand Dissonance</name>
 			<text>(This card is black. Spend a different nonblack color of mana on each {S}.)
-For each permanent type, choose up to one target permanent of that type. Exile those permanents. You lose 1 life for each permanent exiled this way. (The permanent types are artifact, battle, creature, enchantment, land, and planeswalker.)</text>
+For each nonland permanent type, choose up to one target permanent of that type. Destroy those permanents. You lose 1 life for each permanent exiled this way. (The nonland permanent types are artifact, battle, creature, enchantment, and planeswalker.)</text>
 			<set rarity="rare" picurl="https://platypeople.github.io/sets/POP2-files/img/105.png" num="88">POP2</set>
 			<prop>
 				<layout>normal</layout>
@@ -2256,7 +2256,7 @@ When this creature takes the stage, return target creature card from your gravey
 		</card>
 		<card>
 			<name>Voo Won, Indisputable</name>
-			<text>Permanents entering the battlefield or dying under your opponents&apos; control don&apos;t cause abilities to trigger.
+			<text>Artifacts and creatures entering the battlefield or dying don&apos;t cause abilities to trigger.
 [-2]: Destroy target tapped creature.
 
 ---
@@ -2267,7 +2267,7 @@ When this creature takes the stage, return target creature card from your gravey
 				<side>front</side>
 				<type>Legendary Planeswalker — Voo</type>
 				<maintype>Planeswalker</maintype>
-				<manacost>3W</manacost>
+				<manacost>2WW</manacost>
 				<cmc>4</cmc>
 				<colors>W</colors>
 				<coloridentity>W</coloridentity>
@@ -2336,7 +2336,7 @@ When this creature takes the stage, target creature can&apos;t block this turn.<
 		<card>
 			<name>Scorched-Earth Songstress</name>
 			<text>Haste
-When this creature enters, destroy target land you control and target land you don&apos;t control. You and the controller of the land you don&apos;t control each create a tapped colorless land token named Everywhere that is every basic land type. Put a stun counter on those lands.</text>
+When this creature enters, destroy target land you control and target land you don&apos;t control. You and the controller of the land you don&apos;t control each create a tapped colorless land token named Everywhere that is every basic land type.</text>
 			<set rarity="uncommon" picurl="https://platypeople.github.io/sets/POP2-files/img/111.png" num="147">POP2</set>
 			<prop>
 				<layout>normal</layout>
@@ -3285,14 +3285,14 @@ Instant and sorcery spells you cast cost {1} less to cast.</text>
 			<tablerow>2</tablerow>
 		</card>
 		<card>
-			<name>Scorching Trio</name>
-			<text>Scorching Trio deals 3 damage to target creature or planeswalker.</text>
+			<name>Scorching Duet</name>
+			<text>Scorching Duet deals 2 damage to any target. If you control two or more legendary creatures, scry 1.</text>
 			<set rarity="common" picurl="https://platypeople.github.io/sets/POP2-files/img/157.png" num="148">POP2</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
-				<type>Sorcery</type>
-				<maintype>Sorcery</maintype>
+				<type>Instant</type>
+				<maintype>Instant</maintype>
 				<manacost>R</manacost>
 				<cmc>1</cmc>
 				<colors>R</colors>
@@ -3749,14 +3749,14 @@ Equip {2}</text>
 		</card>
 		<card>
 			<name>Holographic Mirror</name>
-			<text>Create a tapped and attacking token copy of target attacking creature you control. Sacrifice that token at end of combat.
+			<text>Create a token that&apos;s a copy of target creature you control, except it has haste and &quot;At the beginning of the end step, sacrifice this token.&quot; If this spell was choreographed, the token enters tapped and attacking.
 Choreography (Then you may exile this spell card taught to a creature you control. Whenever that creature attacks, you may cast a copy of this spell. You still pay its costs.)</text>
 			<set rarity="uncommon" picurl="https://platypeople.github.io/sets/POP2-files/img/186.png" num="132">POP2</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
-				<type>Instant</type>
-				<maintype>Instant</maintype>
+				<type>Sorcery</type>
+				<maintype>Sorcery</maintype>
 				<manacost>3R</manacost>
 				<cmc>4</cmc>
 				<colors>R</colors>
@@ -5035,7 +5035,7 @@ Choreography (Then you may exile this spell card taught to a creature you contro
 		</card>
 		<card>
 			<name>The Artist with No Name</name>
-			<text>Sacrifice this creature: Target legendary permanent gains hexproof and indestructible until end of turn.
+			<text>Sacrifice this creature: Target legendary permanent gains indestructible until end of turn.
 ---
 (Back): The New Me</text>
 			<set rarity="uncommon" picurl="https://platypeople.github.io/sets/POP2-files/img/248_front.png" num="3a">POP2</set>
@@ -5056,7 +5056,7 @@ Choreography (Then you may exile this spell card taught to a creature you contro
 		<card>
 			<name>The New Me</name>
 			<text>(You may cast a legendary sorcery only if you control a legendary creature or planeswalker.)
-Search your library for a legendary card not named The Artist with No Name, reveal it, put it into your hand, then shuffle.
+Search your library for a legendary card not named The Artist with No Name, reveal it, put it into your hand, then shuffle. You gain 2 life.
 ---
 (Front): The Artist with No Name</text>
 			<set rarity="uncommon" picurl="https://platypeople.github.io/sets/POP2-files/img/248_back.png" num="3b">POP2</set>
@@ -5065,8 +5065,8 @@ Search your library for a legendary card not named The Artist with No Name, reve
 				<side>back</side>
 				<type>Legendary Sorcery</type>
 				<maintype>Sorcery</maintype>
-				<manacost>W</manacost>
-				<cmc>1</cmc>
+				<manacost>1W</manacost>
+				<cmc>2</cmc>
 				<colors>W</colors>
 				<coloridentity>W</coloridentity>
 			</prop>
@@ -5167,7 +5167,7 @@ This creature gets +2/+2 for each opponent whose life total is less than half th
 		<card>
 			<name>Cassia Reinvented</name>
 			<text>You may have Cassia enter as a 3/3 creature that isn&apos;t a planeswalker. (She&apos;ll enter without loyalty counters.)
-[+1]: Put a +1/+1 counter on another creature you control.
+[+1]: Put a +1/+1 counter on up to one other target creature you control.
 [-2]: Exile target creature. For as long as that card remains exiled, its owner may play it. A spell cast by an opponent this way costs {2} more to cast.
 ---
 (Back): Hymn of the Mokar</text>
@@ -5229,7 +5229,7 @@ When this creature enters, counter target spell. It&apos;s controller creates a 
 			<name>Extraplanar Talent Scout</name>
 			<text>Vigilance
 When this creature enters, reveal the top seven cards of your library. You may put a planeswalker card from among them into your hand. Put the rest on the bottom of your library in a random order.
-Whenever this creature attacks, you may activate loyalty abilities of planeswalkers you control an additional time this turn.</text>
+Whenever this creature attacks, choose target planeswalker you control. You may activate one of its loyalty abilities once this turn as though none of its loyalty abilities have been activated this turn.</text>
 			<set rarity="mythic" picurl="https://platypeople.github.io/sets/POP2-files/img/255.png" num="14">POP2</set>
 			<prop>
 				<layout>normal</layout>
@@ -5304,8 +5304,7 @@ Creatures have &quot;{2}: If this creature isn&apos;t onstage, it takes the stag
 		</card>
 		<card>
 			<name>Endless Soloist</name>
-			<text>Ward—Pay 3 life.
-At the beginning of your end step, put a reprise counter on this creature, then return up to one target nonland permanent card with mana value equal to the number of reprise counters on this creature from your graveyard to the battlefield.</text>
+			<text>At the beginning of your end step, you may put a reprise counter on this creature, then return up to one target nonland permanent card with mana value equal to the number of reprise counters on this creature from your graveyard to the battlefield.</text>
 			<set rarity="rare" picurl="https://platypeople.github.io/sets/POP2-files/img/259.png" num="207">POP2</set>
 			<prop>
 				<layout>normal</layout>
@@ -5316,7 +5315,7 @@ At the beginning of your end step, put a reprise counter on this creature, then 
 				<cmc>4</cmc>
 				<colors>WB</colors>
 				<coloridentity>WB</coloridentity>
-				<pt>4/4</pt>
+				<pt>4/5</pt>
 			</prop>
 			<tablerow>2</tablerow>
 		</card>
@@ -5786,8 +5785,8 @@ Whenever this creature attacks, you may cast a copy of each instant or sorcery c
 			<name>Zalek, the Brutalizer</name>
 			<text>Whenever you draw a card, put a loyalty counter on Zalek.
 [0]: If an opponent has more cards in hand than you, draw two cards. Otherwise, draw a card.
-[-4]: Return up to two other target nonland permanents to their owners&apos; hands.
-[-13]: Each opponent chooses three permanents they control. Gain control of the rest.
+[-2]: Until end of turn, Zalek becomes a 0/0 Human Pilot creature and gains hexproof, &quot;This creature can&apos;t be blocked,&quot; and &quot;This creature gets +1/+1 for each card in your hand.&quot;
+[-5]: Return up to two other target nonland permanents to their owners&apos; hands.
 ---
 (Back): Immortal</text>
 			<set rarity="mythic" picurl="https://platypeople.github.io/sets/POP2-files/img/284_front.png" num="79a">POP2</set>
@@ -5800,7 +5799,7 @@ Whenever this creature attacks, you may cast a copy of each instant or sorcery c
 				<cmc>5</cmc>
 				<colors>U</colors>
 				<coloridentity>U</coloridentity>
-				<loyalty>5</loyalty>
+				<loyalty>6</loyalty>
 			</prop>
 			<tablerow>1</tablerow>
 			<related attach="transform">Immortal</related>
