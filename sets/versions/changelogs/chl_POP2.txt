@@ -1,4 +1,289 @@
-﻿VERSION 5 CHANGELOG
+﻿VERSION 6 CHANGELOG
+====================
+
+The Winner Takes It All added.
+Halami the Dexterous added.
+Guerrilla Promoter added.
+Zalek, Lightspeed added.
+
+The Song That Changed It All removed.
+Halami the Dextrous removed.
+Guerilla Promoter removed.
+Zalek, the Brutalizer removed.
+
+Flash Mob
+type: Sorcery => Instant
+cost: {1}{W} => {2}{W}
+rules_text: Any number of target creatures you control that aren't onstage take the stage. [i](Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)[/i] => Create two 1/1 white Performer creature tokens. If this spell was choreographed, the tokens enter tapped and attacking.
+Choreography [i](Then you may exile this spell card taught to a creature you control. Whenever that creature attacks, you may cast a copy of this spell. You still pay its costs.)[/i]
+
+Smokescreen
+
+Hypnotic Formation
+rules_text: When this enchantment enters, tap all permanents your opponents control.
+Your opponents can't untap more than two permanents during each of their untap steps. => When this enchantment enters, tap all permanents your opponents control.
+Your opponents can't untap more than four permanents during each of their untap steps.
+
+Tight Turnaround
+cost: {2}{U} => {U}
+rules_text: Build hype. [i](Create a tapped 3/2 red Fan creature token. Put a stun counter on it. If it would become untapped, remove a stun counter from it instead.)[/i]
+Choreography [i](Then you may exile this spell card taught to a creature you control. Whenever that creature attacks, you may cast a copy of this spell. You still pay its costs.)[/i] => Scry 2. Whenever the creature this spell is taught to deals combat damage to a player this turn, draw a card.
+Choreography [i](Then you may exile this spell card taught to a creature you control. Whenever that creature attacks, you may cast a copy of this spell. You still pay its costs.)[/i]
+
+Bright-Eyed Insurgent
+rules_text: Deathtouch
+{2}{S}{S}{S}: If this creature isn't onstage, it takes the stage. [i](Spend a different color of mana on each {S}. Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)[/i]
+When this creature takes the stage draw a card. => Deathtouch
+{2}{S}{S}{S}: If this creature isn't onstage, it takes the stage. [i](Spend a different color of mana on each {S}. Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)[/i]
+When this creature takes the stage, draw a card.
+
+Smear Campaign
+
+Ishi, WeSing Star
+rules_text: Flash
+Whenever you cast a spell, you may pay {2}. If you do, Ishi, WeSing Star phases out. When it next phases in, it can't be blocked until end of turn. [i](Treat it and anything attached to it as though they don't exist until its controller's next turn.)[/i] => When Ishi enters, return up to one target creature to its owner's hand.
+Whenever Ishi deals combat damage to a player, draw two cards, then discard two cards unless you discard a legendary card.
+pt: 3/2 => 3/1
+
+The Apocalypse Sisters
+
+Highly-Anticipated Collab
+rules_text: You and target opponent each draw two cards.
+Build hype. [i](Create a tapped 3/2 red Fan creature token. Put a stun counter on it. If it would become untapped, remove a stun counter from it instead.)[/i] => Kicker {S}{S}{W} [i](You may pay an additional {S}{S}{W} as you cast this spell. Spend a different nonwhite color of mana on each {S}.)[/i]
+You draw three cards and build hype. If this spell wasn't kicked, choose an opponent to do the same. [i](Create a tapped 3/2 red Fan creature token. Put a stun counter on it. If it would become untapped, remove a stun counter from it instead.)[/i]
+
+LonJon, Dynamic Duo
+rules_text: When this creature enters, if it isn't a token, create a token that's a copy of it.
+If you control exactly two permanents named LonJon, Dynamic Duo, the “legend rule” doesn't apply to them.
+Creatures you control get +1/+0 for each other creature you control that shares a name with that creature. => When this creature enters, create a legendary 2/1 white Human Performer creature token named JonLon, Dynamic Duo.
+Whenever you attack, if two or more attacking creatures you control have equal power and toughness, draw a card.
+pt: 1/2 => 2/1
+
+Mia Mia & Vic Villain
+
+Group Power Pose
+type: Instant => Sorcery
+cost: {2}{W} => {1}{W}
+rules_text: Create two 1/1 white Performer creature tokens. If this spell was choreographed, the tokens enter tapped and attacking.
+Choreography [i](Then you may exile this spell card taught to a creature you control. Whenever that creature attacks, you may cast a copy of this spell. You still pay its costs.)[/i] => Any number of target creatures you control that aren't onstage take the stage. [i](Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)[/i]
+
+Beguiling Chorus
+
+Disco Inferno
+
+Reckless Drifter
+rules_text: First strike
+{2}{R}{R}: If this creature isn't onstage, it takes the stage. [i](Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)[/i]
+When this creature takes the stage, return target creature card from your graveyard to the battlefield. It gains haste. Exile it at the beginning of the next end step. => First strike
+{2}{R}{R}: If this creature isn't onstage, it takes the stage. [i](Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)[/i]
+When this creature takes the stage, return target creature card from your graveyard to the battlefield. It gains haste and can't block. Exile it at the beginning of the next end step.
+pt: 2/2 => 2/1
+
+Extraplanar Aficionado
+rules_text: Trample
+Remove a counter from a permanent you control: Put two +1/+1 counters on this creature. Activate only as a sorcery and only if there are no +1/+1 counters on this creature. => Trample
+At the beginning of combat on your turn, you may remove a counter from another artifact or creature you control. If you do, put a +1/+1 counter on this creature and scry 2.
+
+Scorched-Earth Songstress
+rules_text: Haste
+When this creature enters, destroy target land you control and target land you don't control. You and the controller of the land you don't control each create a tapped colorless land token named Everywhere that is every basic land type. => When this creature enters, destroy target land you control and target land you don't control. You and the controller of the land you don't control each create a tapped colorless land token named Everywhere that is every basic land type.
+pt: 3/3 => 4/3
+
+Mykian, Planetrotter
+
+Living Billboard
+rules_text: Kicker {S}{S}{W} [i](You may pay an additional {S}{S}{W} as you cast this spell. Spend a different nonwhite color of mana on each {S}.)[/i]
+Enchant creature you control
+When this Aura enters, exile target creature an opponent controls until this Aura leaves the battlefield.
+If this spell was kicked, enchanted creature is a copy of the exiled creature, except it has ward {2}. Otherwise, enchanted creature has ward {1}. => Enchant artifact, creature, land, or planeswalker an opponent controls
+Enchanted permanent is a colorless land named Everywhere that is every basic land type and loses all other types and abilities except mana abilities. [i](It has “{T}: Add one mana of any color”)[/i]
+
+Ishi's Prismwing
+type: Creature — Bird => Creature — Elemental Bird
+
+Sinthia, the Mindrazer
+
+Toxic Shredder
+rules_text: Deathtouch
+{T}: Add one mana of any color. If creatures you control have total power 8 or greater, each opponent loses 2 life. => Deathtouch
+{T}: Add one mana of any color. 
+Whenever you tap this creature for mana while creatures you control have total power 8 or greater, each opponent loses 2 life.
+
+Lightseeker
+
+Scorching Duet
+rules_text: Scorching Duet deals 2 damage to any target. If you control two or more legendary creatures, scry 1. => Scorching Duet deals 2 damage to any target. If you control two or more legendary creatures, scry 2.
+
+Resonant Grove
+rules_text: {T}, Pay 1 life: Add {G} or {W}.
+{G}{W}, {T}, Sacrifice this land: You gain 4 life. Create a tapped colorless land token named Everywhere that is every basic land type. => {T}, Pay 1 life: Add {G} or {W}.
+{G}{W}, {T}, Sacrifice this land: Draw a card, then discard a card. Create a tapped colorless land token named Everywhere that is every basic land type.
+
+Resonant Tidepool
+rules_text: {T}, Pay 1 life: Add {U} or {B}.
+{U}{B}, {T}, Sacrifice this land: Target player mills five cards. Create a tapped colorless land token named Everywhere that is every basic land type. => {T}, Pay 1 life: Add {U} or {B}.
+{U}{B}, {T}, Sacrifice this land: Draw a card, then discard a card. Create a tapped colorless land token named Everywhere that is every basic land type.
+
+Resonant Crag
+rules_text: {T}, Pay 1 life: Add {R} or {W}.
+{1}{R}{W}, {T}, Sacrifice this land: Create a tapped 1/1 white Performer creature token and a tapped colorless land token named Everywhere that is every basic land type. => {T}, Pay 1 life: Add {R} or {W}.
+{R}{W}, {T}, Sacrifice this land: Draw a card, then discard a card. Create a tapped colorless land token named Everywhere that is every basic land type.
+
+Resonant Valley
+rules_text: {T}, Pay 1 life: Add {B} or {R}.
+{1}{B}{R}, {T}, Sacrifice this land: It deals 2 damage to each opponent. Create a tapped colorless land token named Everywhere that is every basic land type. => {T}, Pay 1 life: Add {B} or {R}.
+{B}{R}, {T}, Sacrifice this land: Draw a card, then discard a card. Create a tapped colorless land token named Everywhere that is every basic land type.
+
+Resonant Cove
+rules_text: {T}, Pay 1 life: Add {G} or {U}.
+{2}{G}{U}, {T}, Sacrifice this land: Create two tapped colorless land tokens named Everywhere that are every basic land type. => {T}, Pay 1 life: Add {G} or {U}.
+{G}{U}, {T}, Sacrifice this land: Draw a card, then discard a card. Create a tapped colorless land token named Everywhere that is every basic land type.
+
+Resonant Highland
+rules_text: {T}, Pay 1 life: Add {R} or {G}.
+{1}{R}{G}, {T}, Sacrifice this land: Create a tapped Treasure token and a tapped colorless land token named Everywhere that is every basic land type. => {T}, Pay 1 life: Add {R} or {G}.
+{R}{G}, {T}, Sacrifice this land: Draw a card, then discard a card. Create a tapped colorless land token named Everywhere that is every basic land type.
+
+Resonant Expanse
+rules_text: {T}, Pay 1 life: Add {W} or {U}.
+{W}{U}, {T}, Sacrifice this land: Tap up to one target creature. Create a tapped colorless land token named Everywhere that is every basic land type. => {T}, Pay 1 life: Add {W} or {U}.
+{W}{U}, {T}, Sacrifice this land: Draw a card, then discard a card. Create a tapped colorless land token named Everywhere that is every basic land type.
+
+Resonant Moor
+rules_text: {T}, Pay 1 life: Add {W} or {B}.
+{W}{B}, {T}, Sacrifice this land: Exile up to two target cards from graveyards. Create a tapped colorless land token named Everywhere that is every basic land type. => {T}, Pay 1 life: Add {W} or {B}.
+{W}{B}, {T}, Sacrifice this land: Draw a card, then discard a card. Create a tapped colorless land token named Everywhere that is every basic land type.
+
+Resonant Marsh
+rules_text: {T}, Pay 1 life: Add {B} or {G}.
+{1}{B}{G}, {T}, Sacrifice this land: Put up to one creature card from your graveyard on top of your library. Create a tapped colorless land token named Everywhere that is every basic land type. => {T}, Pay 1 life: Add {B} or {G}.
+{B}{G}, {T}, Sacrifice this land: Draw a card, then discard a card. Create a tapped colorless land token named Everywhere that is every basic land type.
+
+Bedazzled Soloist
+rules_text: Flash
+When this creature enters, return up to one target nonland permanent to its owner's hand. If you controlled that permanent, draw a card. => When this creature enters, build hype. [i](Create a tapped 3/2 red Fan creature token. Put a stun counter on it. If it would become untapped, remove a stun counter from it instead.)[/i]
+At the beginning of combat on your turn, tap up to one target creature. When you do, you may move a stun counter from a permanent you control onto that creature.
+pt: 3/2 => 1/1
+
+Staggering Showbot
+
+Throes of the Masses
+rules_text: Exile target legendary creature, legendary planeswalker, creature with power 4 or greater, or artifact. => Exile target nonland permanent if it's legendary or if its mana value is less than or equal to the number of creatures you control.
+
+Petrasian Derby Team
+rules_text: Trample
+When this creature enters, if it isn't a token, create two tokens that are copies of it.
+Tap another untapped creature you control named Petrasian Derby Team: This creature gets +3/+3 until end of turn. => When this creature enters, if it isn't a token, create two tokens that are copies of it.
+{T}: Each other creature you control named Petrasian Derby Team gets +X/+0 until end of turn, where X is this creature's power.
+
+Bandwagon
+cost: {2}{W} => {1}{W}
+rules_text: Fans you control crew Vehicles as though their power were 2 greater.
+Whenever this Vehicle attacks, build hype. [i](Create a tapped 3/2 red Fan creature token. Put a stun counter on it. If it would become untapped, remove a stun counter from it instead.)[/i]
+Crew 5 => This Vehicle enters tapped with a stun counter on it.
+Whenever this Vehicle attacks, build hype. [i](Create a tapped 3/2 red Fan creature token. Put a stun counter on it. If it would become untapped, remove a stun counter from it instead.)[/i]
+Crew 2
+
+Vanity Dragster
+cost: {2}{R} => {3}{R}
+rules_text: Haste
+Whenever a legendary creature you control enters, you may pay {1}{R} and tap it. If you do, return this Vehicle from your graveyard to the battlefield. It becomes an artifact creature until end of turn.
+Crew 1 => Haste
+Whenever a legendary creature you control enters or a creature you control takes the stage, you may pay {1}{R} and tap that creature. If you do, return this card from your graveyard to the battlefield. It becomes an artifact creature until end of turn.
+Crew 1
+pt: 4/2 => 4/3
+
+Closing Ceremony
+type: Instant => Sorcery
+
+Miss Anthrope
+rules_text: Your opponents can't gain life.
+At the beginning of combat on your turn, target creature you control gets +1/+0 and gains haste and “When this creature dies, it deals damage equal to its power to any target” until end of turn. => Your opponents can't gain life.
+At the beginning of combat on your turn, choose target creature you control. Until end of turn, that creature gets +1/+0 and gains haste and “When this creature dies, it deals damage equal to its power to any target.”
+
+Four on the Floor
+rules_text: Creatures you control have base power and toughness 4/4.
+{4}, Sacrifice this enchantment: Create four 1/1 white Performer creature tokens. => Whenever you attack, create a 4/4 creature token. That token gains “Sacrifice this creature at the beginning of the next end step” unless you control exactly four attacking creatures.
+
+Irana, Viral Sensation
+rules_text: You may look at the top card of your library any time.
+You may play legendary lands and cast legendary spells from the top of your library. => You may look at the top card of your library any time.
+You may cast legendary spells from the top of your library.
+
+Encore of Dread
+rules_text: At the beginning of your end step, draw two cards. For each card drawn this way, you lose 2 life unless you sacrifice a permanent. => At the beginning of combat on your turn, return up to one target creature card with mana value 2 or less from your graveyard to the battlefield with a finality counter on it. It gains haste until end of turn.
+
+Dazzling Lanternshark
+rules_text: Flying
+At the beginning of combat on your turn, tap up to one target creature. When you do, you may move a stun counter from a permanent you control onto that creature. => Flash
+Flying
+When this creature enters, you may return target spell or nonland permanent to its owner's hand. If you do, tap this creature and put a stun counter on it.
+
+Otto Mollusco
+
+Cross-Promotion
+rules_text: Whenever you draw your second card each turn, build hype. [i](Create a tapped 3/2 red Fan creature token. Put a stun counter on it. If it would become untapped, remove a stun counter from it instead.)[/i]
+{2}{U}: Each player draws a card. => When this enchantment enters, build hype. [i](Create a tapped 3/2 red Fan creature token. Put a stun counter on it. If it would become untapped, remove a stun counter from it instead.)[/i]
+Whenever you cast a legendary spell, you may return this enchantment to its owner's hand.
+
+Morashim the Wastelord
+
+Engineered Virus
+rules_text: As this artifact enters, choose a card name.
+Activated abilities of sources with the chosen name cost {3} more to activate unless they're mana abilities.
+Whenever a triggered ability of a source an opponent controls with the chosen name triggers, counter it unless its controller pays {3}. => As this artifact enters, choose a nonland card name.
+Activated abilities of sources with the chosen name cost {3} more to activate unless they're mana abilities.
+Whenever a triggered ability of a source with the chosen name triggers, counter it unless its controller pays {3}.
+
+Jester of the Lightveins
+pt: 4/4 => 3/3
+
+Extraplanar Talent Scout
+rules_text: Vigilance
+When this creature enters, reveal the top seven cards of your library. You may put a planeswalker card from among them into your hand. Put the rest on the bottom of your library in a random order.
+Whenever this creature attacks, choose target planeswalker you control. You may activate one of its loyalty abilities once this turn as though none of its loyalty abilities have been activated this turn. => Vigilance
+When this creature enters, reveal the top seven cards of your library. You may put a planeswalker card from among them into your hand. Put the rest on the bottom of your library in a random order.
+Whenever this creature attacks, you may activate the loyalty abilities of target planeswalker you control an additional time this turn.
+
+Jukebox of Mysteries
+pt: 6/6 => 5/5
+
+Delegation Fixers
+pt: 4/4 => 3/3
+
+Endless Soloist
+rules_text: At the beginning of your end step, you may put a reprise counter on this creature, then return up to one target nonland permanent card with mana value equal to the number of reprise counters on this creature from your graveyard to the battlefield. => At the beginning of your end step, you may put a reprise counter on this creature. When you do, return up to one target nonland permanent with mana value equal to the number of reprise counters on this creature from your graveyard to the battlefield.
+pt: 4/5 => 4/3
+
+Feedback Loop
+pt: 6/4 => 5/4
+
+Nekaru, Tyrannic Emcee
+rules_text: Legendary creatures you control have haste.
+[+1]: Up to one target creature you control that isn't onstage takes the stage. [i](Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)[/i]
+[-2]: Nekaru deals damage equal to the number of legendary permanents you control to any target.
+[-4]: You may cast a copy of a legendary spell on the other face of a legendary permanent you control without paying its mana cost. => [+1]: Up to one target creature you control gains haste until end of turn. You may have it take the stage if it isn't onstage. [i](Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)[/i]
+[-2]: Nekaru deals 2 damage to any target.
+[-3]: Gain control of target creature until end of turn. Untap it. It gains haste until end of turn. You may have it take the stage if it isn't onstage.
+special_text: Legendary creatures you control have haste.
+[+1]: Up to one target creature you control that isn't onstage takes the stage. [i](Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)[/i]
+[-2]: Nekaru deals damage equal to the number of legendary permanents you control to any target.
+[-4]: You may cast a copy of a legendary spell on the other face of a legendary permanent you control without paying its mana cost. => [+1]: Up to one target creature you control gains haste until end of turn. You may have it take the stage if it isn't onstage. [i](Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)[/i]
+[-2]: Nekaru deals 2 damage to any target.
+[-3]: Gain control of target creature until end of turn. Untap it. It gains haste until end of turn. You may have it take the stage if it isn't onstage.
+
+Staff of Moresso
+rules_text: Equipped creature gets +4/+4 and has hexproof from monocolored.
+At the beginning of combat on your turn, if you cast a spell with four or more mana symbols in its mana cost this turn, you may attach this equipment to a creature you control.
+Equip {5} => Equipped creature gets +4/+4 and has “Spells your opponents cast that target this creature that would cost less than four mana to cast cost four mana to cast.”
+At the beginning of combat on your turn, if you cast a spell with four or more mana symbols in its mana cost this turn, you may attach this Equipment to a creature you control.
+Equip {5}
+
+Octopus
+pt:  => 8/8
+
+
+VERSION 5 CHANGELOG
 ====================
 
 Scorching Duet added.

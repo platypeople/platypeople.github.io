@@ -33,8 +33,8 @@
 		{
 			"name": "Flash Mob",
 			"rarity": "uncommon",
-			"mana_cost": "{1}{W}",
-			"type": "Sorcery",
+			"mana_cost": "{2}{W}",
+			"type": "Instant",
 			"collector_number": "20",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/3.png"
@@ -89,7 +89,7 @@
 			"rarity": "common",
 			"mana_cost": "{3}{W}",
 			"type": "Creature — Human Advisor",
-			"collector_number": "35",
+			"collector_number": "34",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/7.png"
 			}
@@ -235,11 +235,11 @@
 			}
 		},
 		{
-			"name": "The Song That Changed It All",
+			"name": "The Winner Takes It All",
 			"rarity": "rare",
-			"mana_cost": "{6}{W}",
+			"mana_cost": "{4}{W}{W}",
 			"type": "Instant",
-			"collector_number": "34",
+			"collector_number": "40",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/22.png"
 			}
@@ -357,7 +357,7 @@
 		{
 			"name": "Tight Turnaround",
 			"rarity": "uncommon",
-			"mana_cost": "{2}{U}",
+			"mana_cost": "{U}",
 			"type": "Instant",
 			"collector_number": "77",
 			"image_uris": {
@@ -924,7 +924,7 @@
 			}
 		},
 		{
-			"name": "Halami the Dextrous",
+			"name": "Halami the Dexterous",
 			"rarity": "rare",
 			"mana_cost": "{2}{G}{G}",
 			"type": "Legendary Creature — Spirit Bard",
@@ -1081,8 +1081,8 @@
 		{
 			"name": "Group Power Pose",
 			"rarity": "uncommon",
-			"mana_cost": "{2}{W}",
-			"type": "Instant",
+			"mana_cost": "{1}{W}",
+			"type": "Sorcery",
 			"collector_number": "22",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/98.png"
@@ -1190,7 +1190,7 @@
 			"rarity": "uncommon",
 			"mana_cost": "{2}{W}{W}",
 			"type": "Legendary Planeswalker — Voo",
-			"collector_number": "40",
+			"collector_number": "39",
 			"back": {
 				"name": "",
 				"type": "",
@@ -1303,7 +1303,7 @@
 			"name": "Ishi's Prismwing",
 			"rarity": "uncommon",
 			"mana_cost": "{1}{U}",
-			"type": "Creature — Bird",
+			"type": "Creature — Elemental Bird",
 			"collector_number": "61",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/118.png"
@@ -1549,7 +1549,7 @@
 			"rarity": "common",
 			"mana_cost": "{3}{W}",
 			"type": "Enchantment",
-			"collector_number": "36",
+			"collector_number": "35",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/139.png"
 			}
@@ -1569,7 +1569,7 @@
 			"rarity": "common",
 			"mana_cost": "{1}{W}",
 			"type": "Artifact Creature — Performer",
-			"collector_number": "39",
+			"collector_number": "38",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/141.png"
 			}
@@ -2092,7 +2092,7 @@
 			}
 		},
 		{
-			"name": "Guerilla Promoter",
+			"name": "Guerrilla Promoter",
 			"rarity": "uncommon",
 			"mana_cost": "{2}{B}",
 			"type": "Creature — Human Rogue",
@@ -2146,7 +2146,7 @@
 			"rarity": "uncommon",
 			"mana_cost": "{1}{W}",
 			"type": "Instant",
-			"collector_number": "38",
+			"collector_number": "37",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/198.png"
 			}
@@ -2334,7 +2334,7 @@
 		{
 			"name": "Bandwagon",
 			"rarity": "mythic",
-			"mana_cost": "{2}{W}",
+			"mana_cost": "{1}{W}",
 			"type": "Artifact — Vehicle",
 			"collector_number": "5",
 			"image_uris": {
@@ -2344,7 +2344,7 @@
 		{
 			"name": "Vanity Dragster",
 			"rarity": "mythic",
-			"mana_cost": "{2}{R}",
+			"mana_cost": "{3}{R}",
 			"type": "Artifact — Vehicle",
 			"collector_number": "155",
 			"image_uris": {
@@ -2375,7 +2375,7 @@
 			"name": "Closing Ceremony",
 			"rarity": "rare",
 			"mana_cost": "{S}{S}{G}{G}",
-			"type": "Instant",
+			"type": "Sorcery",
 			"collector_number": "165",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/221.png"
@@ -2420,7 +2420,7 @@
 			"rarity": "rare",
 			"mana_cost": "{S}{S}{W}",
 			"type": "Sorcery",
-			"collector_number": "37",
+			"collector_number": "36",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/224.png"
 			}
@@ -3086,7 +3086,7 @@
 			}
 		},
 		{
-			"name": "Zalek, the Brutalizer",
+			"name": "Zalek, Lightspeed",
 			"rarity": "mythic",
 			"mana_cost": "{3}{U}{U}",
 			"type": "Legendary Planeswalker — Zalek",
@@ -3117,7 +3117,7 @@
 [rare(1)]
 	2 Surprise Feature
 	2 Silencer of Critics
-	2 The Song That Changed It All
+	2 The Winner Takes It All
 	1 Kaleidoscamp
 	1 Hypnotic Formation
 	2 Construction Zone
@@ -3126,7 +3126,7 @@
 	2 Morashan Wasteland
 	2 Eco Rave
 	2 Extended Outro
-	2 Halami the Dextrous
+	2 Halami the Dexterous
 	2 LonJon, Dynamic Duo
 	2 Ingrained Memory
 	2 Ezri, Starmaking Producer
@@ -3194,7 +3194,7 @@
 	1 Staff of Moresso
 	1 Overclocked Spinmaster
 	2 Trained Showdragon
-	1 Zalek, the Brutalizer
+	1 Zalek, Lightspeed
 [uncommon(3)]
 	4 Cloistered Harmonizer
 	4 Flash Mob
@@ -3278,7 +3278,7 @@
 	4 Vivacious Host
 	4 Mashup Machine
 	4 Morashan Mischief Makers
-	4 Guerilla Promoter
+	4 Guerrilla Promoter
 	4 Phantom of the Amplifier
 	4 Oddsmaking Oracle
 	4 Stage Fright
@@ -3492,7 +3492,7 @@
 	12 Sudden Inspiration
 	12 Brooding Ascetic
 	12 Knock Your Socks Off
-	2 The Song That Changed It All
+	2 The Winner Takes It All
 	1 Kaleidoscamp
 	12 Beloved PrismaVeteran
 	12 Recurrent Virus
@@ -3556,7 +3556,7 @@
 	6 Mai Lim, Defending Champ
 	6 Tempo Accelerator
 	6 The Apocalypse Sisters
-	2 Halami the Dextrous
+	2 Halami the Dexterous
 	6 Anomaly DX397
 	6 Highly-Anticipated Collab
 	6 Lightvein Overdriver
@@ -3658,7 +3658,7 @@
 	6 Vivacious Host
 	6 Mashup Machine
 	6 Morashan Mischief Makers
-	6 Guerilla Promoter
+	6 Guerrilla Promoter
 	6 Phantom of the Amplifier
 	6 Oddsmaking Oracle
 	6 Stage Fright
@@ -3735,7 +3735,7 @@
 	1 Staff of Moresso
 	1 Overclocked Spinmaster
 	2 Trained Showdragon
-	1 Zalek, the Brutalizer
+	1 Zalek, Lightspeed
 [wildcard(1)]
 	6 Action Close-Up
 	7 Surprise Feature
@@ -3759,7 +3759,7 @@
 	6 Sudden Inspiration
 	6 Brooding Ascetic
 	6 Knock Your Socks Off
-	7 The Song That Changed It All
+	7 The Winner Takes It All
 	4 Kaleidoscamp
 	6 Beloved PrismaVeteran
 	6 Recurrent Virus
@@ -3823,7 +3823,7 @@
 	15 Mai Lim, Defending Champ
 	15 Tempo Accelerator
 	15 The Apocalypse Sisters
-	7 Halami the Dextrous
+	7 Halami the Dexterous
 	15 Anomaly DX397
 	15 Highly-Anticipated Collab
 	15 Lightvein Overdriver
@@ -3925,7 +3925,7 @@
 	15 Vivacious Host
 	15 Mashup Machine
 	15 Morashan Mischief Makers
-	15 Guerilla Promoter
+	15 Guerrilla Promoter
 	15 Phantom of the Amplifier
 	15 Oddsmaking Oracle
 	15 Stage Fright
@@ -4002,4 +4002,4 @@
 	4 Staff of Moresso
 	4 Overclocked Spinmaster
 	7 Trained Showdragon
-	4 Zalek, the Brutalizer
+	4 Zalek, Lightspeed
