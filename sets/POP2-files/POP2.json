@@ -1985,7 +1985,7 @@
             "alias2": "",
             "rules_text3": "",
             "rotated": false,
-            "notes": "https://www.artstation.com/artwork/Lek6yP?collection_id=2721737\nhttps://www.artstation.com/artwork/AB5Az?collection_id=2721737"
+            "notes": "https://www.artstation.com/artwork/Lek6yP?collection_id=2721737\nhttps://www.artstation.com/artwork/AB5Az?collection_id=2721737\n!tag wishlist"
         },
         {
             "card_name": "Highly-Anticipated Collab",
@@ -2453,7 +2453,7 @@
             "alias": "",
             "position": "107",
             "rotated": false,
-            "notes": "https://www.artstation.com/artwork/Xn0bOL"
+            "notes": "https://www.artstation.com/artwork/Xn0bOL\n!tag wishlist"
         },
         {
             "card_name": "Voo Won, Indisputable",
@@ -4754,7 +4754,7 @@
             "alias": "",
             "position": "212",
             "rotated": false,
-            "notes": "https://www.artstation.com/artwork/EaWqEK?collection_id=2721737\n!tag wishlist"
+            "notes": "https://www.artstation.com/artwork/EaWqEK?collection_id=2721737"
         },
         {
             "card_name": "Clear the Stage",
@@ -4775,7 +4775,7 @@
             "alias": "",
             "position": "213",
             "rotated": false,
-            "notes": "https://www.artstation.com/artwork/gJ3mQQ\n!tag wishlist"
+            "notes": "https://www.artstation.com/artwork/gJ3mQQ"
         },
         {
             "card_name": "Judge of Impeccable Taste",
@@ -5840,7 +5840,7 @@
             "alias": "",
             "position": "258",
             "rotated": false,
-            "notes": "https://www.artstation.com/artwork/QKglE?collection_id=2721737"
+            "notes": "https://www.artstation.com/artwork/QKglE?collection_id=2721737\n!tag wishlist"
         },
         {
             "card_name": "Endless Soloist",
@@ -6422,7 +6422,7 @@
             "alias2": "",
             "rules_text3": "",
             "rotated": false,
-            "notes": "https://www.artstation.com/artwork/aorxez?collection_id=2721737\nhttps://www.artstation.com/artwork/WK5moG\n!tag wishlist"
+            "notes": "https://www.artstation.com/artwork/aorxez?collection_id=2721737\nhttps://www.artstation.com/artwork/WK5moG\n"
         },
         {
             "card_name": "Octopus",
@@ -6446,5 +6446,5 @@
             "notes": "https://www.artstation.com/artwork/YeZGYK"
         }
     ],
-    "version": 6
+    "version": 7
 }

@@ -1,4 +1,22 @@
-﻿VERSION 6 CHANGELOG
+﻿VERSION 7 CHANGELOG
+====================
+
+
+
+Anomaly DX397
+
+Reckless Drifter
+
+Hornswoggler
+
+Clear the Stage
+
+Delegation Fixers
+
+Zalek, Lightspeed
+
+
+VERSION 6 CHANGELOG
 ====================
 
 The Winner Takes It All added.
