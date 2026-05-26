@@ -5,7 +5,7 @@
 			<name>POP2</name>
 			<longname>Prismavision</longname>
 			<settype>Custom</settype>
-			<releasedate>2026-05-19</releasedate>
+			<releasedate>2026-05-25</releasedate>
 		</set>
 	</sets>
 	<cards>
@@ -231,8 +231,8 @@ Choreography (Then you may exile this spell card taught to a creature you contro
 		<card>
 			<name>Silencer of Critics</name>
 			<text>Flying
-{1}{W}: If Silencer of Critics isn&apos;t onstage, it takes the stage. (Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)
-When Silencer of Critics takes the stage, noncreature spells your opponents cast cost {2} more to cast until your next turn.</text>
+{1}{W}: If this creature isn&apos;t onstage, it takes the stage. (Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)
+When this creature takes the stage, noncreature spells your opponents cast cost {2} more to cast until your next turn.</text>
 			<set rarity="rare" picurl="https://platypeople.github.io/sets/POP2-files/img/10.png" num="33">POP2</set>
 			<prop>
 				<layout>normal</layout>
@@ -265,8 +265,8 @@ Choreography (Then you may exile this spell card taught to a creature you contro
 			<tablerow>3</tablerow>
 		</card>
 		<card>
-			<name>Smokescreen</name>
-			<text>Smokescreen deals 1 damage to any target.
+			<name>Stage Fireworks</name>
+			<text>Stage Fireworks deals 1 damage to any target.
 Choreography (Then you may exile this spell card taught to a creature you control. Whenever that creature attacks, you may cast a copy of this spell. You still pay its costs.)</text>
 			<set rarity="uncommon" picurl="https://platypeople.github.io/sets/POP2-files/img/12.png" num="150">POP2</set>
 			<prop>
@@ -424,7 +424,7 @@ When this creature takes the stage, draw a card.</text>
 		</card>
 		<card>
 			<name>Knock Your Socks Off</name>
-			<text>Choose target creature you control. If it&apos;s offstage, it takes the stage. Then it fights up to one target creature you don&apos;t control. (Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)</text>
+			<text>Choose target creature you control. If it isn&apos;t onstage, it takes the stage. Then it fights up to one target creature you don&apos;t control. (Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)</text>
 			<set rarity="common" picurl="https://platypeople.github.io/sets/POP2-files/img/21.png" num="180">POP2</set>
 			<prop>
 				<layout>normal</layout>
@@ -670,7 +670,7 @@ Choreography (Then you may exile this spell card taught to a creature you contro
 		<card>
 			<name>Bravi, the City Alive</name>
 			<text>Vigilance, reach, haste
-Whenever Bravi, the City Alive attacks, target creature has base power and toughness 8/8 until end of turn.
+Whenever Bravi attacks, target creature has base power and toughness 8/8 until end of turn.
 ---
 (Back): One World, Our World</text>
 			<set rarity="uncommon" picurl="https://platypeople.github.io/sets/POP2-files/img/35_front.png" num="161a">POP2</set>
@@ -710,7 +710,7 @@ Search your library for a land card, put it onto the battlefield tapped, then sh
 		</card>
 		<card>
 			<name>Ravek Glade Busker</name>
-			<text>{1}{W}: If Ravek Glade Busker is offstage, it takes the stage. (Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)
+			<text>{1}{W}: If this creature isn&apos;t onstage, it takes the stage. (Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)
 Whenever a legendary creature you control enters or a creature you control takes the stage, you gain 2 life.</text>
 			<set rarity="common" picurl="https://platypeople.github.io/sets/POP2-files/img/36.png" num="31">POP2</set>
 			<prop>
@@ -817,7 +817,7 @@ Whenever this creature attacks, if creatures you control have total could power 
 		</card>
 		<card>
 			<name>Death-Defying Stunt</name>
-			<text>Until end of turn, target creature gains &quot;When this creature dies, return it to the battlefield tapped. When it does, it takes the stage.&quot; (Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)</text>
+			<text>Until end of turn, target creature gains &quot;When this creature dies, return it to the battlefield tapped. When it enters this way, it takes the stage.&quot; (Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)</text>
 			<set rarity="common" picurl="https://platypeople.github.io/sets/POP2-files/img/42.png" num="84">POP2</set>
 			<prop>
 				<layout>normal</layout>
@@ -1085,7 +1085,7 @@ Enchanted creature loses all abilities and has base power and toughness 1/1.</te
 		<card>
 			<name>Mic Passer</name>
 			<text>Haste
-When this creature enters, up to one other target creature you control that&apos;s not onstage takes the stage. (Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)</text>
+When this creature enters, up to one other target creature you control that isn&apos;t onstage takes the stage. (Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)</text>
 			<set rarity="common" picurl="https://platypeople.github.io/sets/POP2-files/img/57.png" num="139">POP2</set>
 			<prop>
 				<layout>normal</layout>
@@ -1244,8 +1244,8 @@ Once each turn, when you cast an instant or sorcery spell, you may draw a card. 
 		<card>
 			<name>Meryel of Two Realities</name>
 			<text>Menace
-Whenever Meryel of Two Realities attacks, target player mills two cards.
-Meryel of Two Realities gets +2/+0 as long as a graveyard has eight or more cards in it.
+Whenever Meryel attacks, target player mills two cards.
+Meryel gets +2/+0 as long as a graveyard has eight or more cards in it.
 ---
 (Back): Reprise From Below</text>
 			<set rarity="uncommon" picurl="https://platypeople.github.io/sets/POP2-files/img/66_front.png" num="100a">POP2</set>
@@ -1285,9 +1285,9 @@ Return any number of target creature cards with total mana value 8 or less from 
 		</card>
 		<card>
 			<name>Construction Zone</name>
-			<text>Construction Zone enters tapped.
+			<text>This land enters tapped.
 {T}: Add {U}, {R}, or {W}.
-{S}{S}{S}{S}, Discard Construction Zone: Target creature gains deathtouch and indestructible until end of turn. (Spend a different color of mana on each {S}.)</text>
+{S}{S}{S}{S}, Discard this land: Target creature gains deathtouch and indestructible until end of turn. (Spend a different color of mana on each {S}.)</text>
 			<set rarity="rare" picurl="https://platypeople.github.io/sets/POP2-files/img/67.png" num="247">POP2</set>
 			<prop>
 				<layout>normal</layout>
@@ -1302,9 +1302,9 @@ Return any number of target creature cards with total mana value 8 or less from 
 		</card>
 		<card>
 			<name>Burgeoning Linktree</name>
-			<text>Burgeoning Linktree enters tapped.
+			<text>This land enters tapped.
 {T}: Add {G}, {U}, or {R}.
-{S}{S}{S}{S}, Discard Burgeoning Linktree: Target creature gets +3/+3 and gains lifelink until end of turn. (Spend a different color of mana on each {S}.)</text>
+{S}{S}{S}{S}, Discard this land: Target creature gets +3/+3 and gains lifelink until end of turn. (Spend a different color of mana on each {S}.)</text>
 			<set rarity="rare" picurl="https://platypeople.github.io/sets/POP2-files/img/68.png" num="246">POP2</set>
 			<prop>
 				<layout>normal</layout>
@@ -1319,9 +1319,9 @@ Return any number of target creature cards with total mana value 8 or less from 
 		</card>
 		<card>
 			<name>Hit Factory</name>
-			<text>Hit Factory enters tapped.
+			<text>This land enters tapped.
 {T}: Add {W}, {B}, or {G}.
-{S}{S}{S}{S}, Discard Hit Factory: Target creature gets +0/+5 until end of turn. Then you may switch its power and toughness until end of turn. (Spend a different color of mana on each {S}.)</text>
+{S}{S}{S}{S}, Discard this land: Target creature gets +0/+5 until end of turn. Then you may switch its power and toughness until end of turn. (Spend a different color of mana on each {S}.)</text>
 			<set rarity="rare" picurl="https://platypeople.github.io/sets/POP2-files/img/69.png" num="250">POP2</set>
 			<prop>
 				<layout>normal</layout>
@@ -1336,9 +1336,9 @@ Return any number of target creature cards with total mana value 8 or less from 
 		</card>
 		<card>
 			<name>Morashan Wasteland</name>
-			<text>Morashan Wasteland enters tapped.
+			<text>This land enters tapped.
 {T}: Add {R}, {W}, or {B}.
-{S}{S}{S}{S}, Discard Morashan Wasteland: Target creature gets +3/+3 and gains hexproof until end of turn. (Spend a different color of mana on each {S}.)</text>
+{S}{S}{S}{S}, Discard this land: Target creature gets +3/+3 and gains hexproof until end of turn. (Spend a different color of mana on each {S}.)</text>
 			<set rarity="rare" picurl="https://platypeople.github.io/sets/POP2-files/img/70.png" num="251">POP2</set>
 			<prop>
 				<layout>normal</layout>
@@ -1353,9 +1353,9 @@ Return any number of target creature cards with total mana value 8 or less from 
 		</card>
 		<card>
 			<name>Eco Rave</name>
-			<text>Eco Rave enters tapped.
+			<text>This land enters tapped.
 {T}: Add {B}, {G}, or {U}.
-{S}{S}{S}{S}, Discard Eco Rave: Target creature gets +1/+1 and gains double strike until end of turn. (Spend a different color of mana on each {S}.)</text>
+{S}{S}{S}{S}, Discard this land: Target creature gets +1/+1 and gains double strike until end of turn. (Spend a different color of mana on each {S}.)</text>
 			<set rarity="rare" picurl="https://platypeople.github.io/sets/POP2-files/img/71.png" num="249">POP2</set>
 			<prop>
 				<layout>normal</layout>
@@ -1496,7 +1496,7 @@ Draw a card for each attacking creature. If this spell was kicked, it deals 2 da
 			<tablerow>3</tablerow>
 		</card>
 		<card>
-			<name>Deep Sea Diva</name>
+			<name>Deep-Sea Diva</name>
 			<text>{U}: If this creature isn&apos;t onstage, it takes the stage. (Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)
 When this creature takes the stage, target land becomes the basic land of its controller&apos;s choice for as long as you control this creature.</text>
 			<set rarity="uncommon" picurl="https://platypeople.github.io/sets/POP2-files/img/78.png" num="49">POP2</set>
@@ -1590,8 +1590,8 @@ Legendary creatures you control have &quot;{T}: Add two mana of different colors
 		</card>
 		<card>
 			<name>Baril, Static Selector</name>
-			<text>Whenever Baril, Static Selector becomes the target of a spell or ability, create a Treasure token. This ability triggers only once each turn.
-{4}{R}{G}: Baril, Static Selector deals 3 damage to target player or planeswalker.
+			<text>Whenever Baril becomes the target of a spell or ability, create a Treasure token. This ability triggers only once each turn.
+{4}{R}{G}: Baril deals 3 damage to target player or planeswalker.
 ---
 (Back): Blow Out The Speakers</text>
 			<set rarity="uncommon" picurl="https://platypeople.github.io/sets/POP2-files/img/82_front.png" num="201a">POP2</set>
@@ -1632,8 +1632,8 @@ Target creature you control gets +3/+2 until end of turn. Then it fights up to o
 		<card>
 			<name>Mai Lim, Defending Champ</name>
 			<text>Flying
-As long as Mai Lim, Defending Champ is untapped, it has hexproof.
-As long as Mai Lim, Defending Champ is tapped, it has lifelink.
+As long as Mai Lim is untapped, it has hexproof.
+As long as Mai Lim is tapped, it has lifelink.
 ---
 (Back): One Precious Moment</text>
 			<set rarity="uncommon" picurl="https://platypeople.github.io/sets/POP2-files/img/83_front.png" num="218a">POP2</set>
@@ -1674,7 +1674,7 @@ Draw a card.
 		</card>
 		<card>
 			<name>Tempo Accelerator</name>
-			<text>When Tempo Accelerator enters, build hype. (Create a tapped 3/2 red Fan creature token. Put a stun counter on it. If it would become untapped, remove a stun counter from it instead.)
+			<text>When this creature enters, build hype. (Create a tapped 3/2 red Fan creature token. Put a stun counter on it. If it would become untapped, remove a stun counter from it instead.)
 Untap each Fan you control during each other player&apos;s untap step.</text>
 			<set rarity="uncommon" picurl="https://platypeople.github.io/sets/POP2-files/img/84.png" num="234">POP2</set>
 			<prop>
@@ -1692,7 +1692,7 @@ Untap each Fan you control during each other player&apos;s untap step.</text>
 		</card>
 		<card>
 			<name>The Apocalypse Sisters</name>
-			<text>Whenever another creature dies, put a +1/+1 counter on this creature. If this is the second time this ability has triggered this turn, draw a card.
+			<text>Whenever another creature dies, put a +1/+1 counter on The Apocalypse Sisters. If this is the second time this ability has triggered this turn, draw a card.
 ---
 (Back): No Tomorrow</text>
 			<set rarity="uncommon" picurl="https://platypeople.github.io/sets/POP2-files/img/85_front.png" num="200a">POP2</set>
@@ -1796,7 +1796,7 @@ Choose target creature you control. Create X 1/1 white Performer creature tokens
 		<card>
 			<name>The Other Side</name>
 			<text>(You may cast a legendary sorcery only if you control a legendary creature or planeswalker.)
-Creature spells you cast this turn enter with an additional +1/+1 counter on them for each color of mana spent to cast them.
+Until end of turn, creatures you control enter with an additional +1/+1 counter on them for each color of mana spent to cast them.
 Draw a card.
 ---
 (Front): Anomaly DX397</text>
@@ -2203,7 +2203,7 @@ When this creature enters, you gain 4 life. If creatures you control have total 
 		<card>
 			<name>Grand Dissonance</name>
 			<text>(This card is black. Spend a different nonblack color of mana on each {S}.)
-For each nonland permanent type, choose up to one target permanent of that type. Destroy those permanents. You lose 1 life for each permanent exiled this way. (The nonland permanent types are artifact, battle, creature, enchantment, and planeswalker.)</text>
+For each nonland permanent type, choose up to one target permanent of that type. Destroy those permanents. You lose 1 life for each permanent destroyed this way. (The nonland permanent types are artifact, battle, creature, enchantment, and planeswalker.)</text>
 			<set rarity="rare" picurl="https://platypeople.github.io/sets/POP2-files/img/105.png" num="88">POP2</set>
 			<prop>
 				<layout>normal</layout>
@@ -2315,7 +2315,7 @@ At the beginning of combat on your turn, you may remove a counter from another a
 		<card>
 			<name>Auditory Agitator</name>
 			<text>Haste
-{R}: If Auditory Agitator isn&apos;t onstage, it takes the stage. (Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)
+{R}: If this creature isn&apos;t onstage, it takes the stage. (Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)
 When this creature takes the stage, target creature can&apos;t block this turn.</text>
 			<set rarity="uncommon" picurl="https://platypeople.github.io/sets/POP2-files/img/110.png" num="123">POP2</set>
 			<prop>
@@ -2427,7 +2427,7 @@ Exhaust — {12}: The next two spells you cast this turn can be cast without pay
 		</card>
 		<card>
 			<name>Expert Stagehand</name>
-			<text>When this creature becomes the target of a spell or ability you control, if it isn&apos;t onstage, you may have it take the stage. (Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)
+			<text>Whenever this creature becomes the target of a spell or ability you control, if it isn&apos;t onstage, you may have it take the stage. (Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)
 When this creature takes the stage, exile the top card of your library. You may play that card until the end of your next turn.</text>
 			<set rarity="uncommon" picurl="https://platypeople.github.io/sets/POP2-files/img/115.png" num="128">POP2</set>
 			<prop>
@@ -2570,8 +2570,8 @@ Choreography (Then you may exile this spell card taught to a creature you contro
 		</card>
 		<card>
 			<name>Sinthia, the Mindrazer</name>
-			<text>Sinthia, the Mindrazer can&apos;t be blocked.
-When Sinthia, the Mindrazer enters, target opponent reveals their hand. You may choose a nonland card from it. That player discards that card.
+			<text>Sinthia can&apos;t be blocked.
+When Sinthia enters, target opponent reveals their hand. You may choose a nonland card from it. That player discards that card.
 ---
 (Back): Unforgettable</text>
 			<set rarity="uncommon" picurl="https://platypeople.github.io/sets/POP2-files/img/123_front.png" num="230a">POP2</set>
@@ -3874,7 +3874,7 @@ When this creature leaves the battlefield, up to one target creature you control
 		<card>
 			<name>Morashan Mischief Makers</name>
 			<text>{4}{B}: If this creature isn&apos;t onstage, it takes the stage. (Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)
-When this creature takes the stage, target opponent sacrifices a nontoken creature.</text>
+When this creature takes the stage, target opponent sacrifices a nontoken creature of their choice.</text>
 			<set rarity="uncommon" picurl="https://platypeople.github.io/sets/POP2-files/img/192.png" num="102">POP2</set>
 			<prop>
 				<layout>normal</layout>
@@ -4285,7 +4285,7 @@ Exhaust — {12}: Exile cards from the top of your library until you exile two n
 		<card>
 			<name>Judge of Moving Rhythm</name>
 			<text>Whenever this creature enters or attacks, search your library for a land card, put it onto the battlefield tapped, then shuffle.
-Exhaust — {12}: Up to two target lands you control become 5/5 Elemental creatures with hexproof and haste that are still lands. This ability costs {1} less to activate for each differently named land you control. (Activate each exhaust ability only once.)</text>
+Exhaust — {12}: Up to two target lands you control each become 5/5 Elemental creatures with hexproof and haste that are still lands. This ability costs {1} less to activate for each differently named land you control. (Activate each exhaust ability only once.)</text>
 			<set rarity="mythic" picurl="https://platypeople.github.io/sets/POP2-files/img/215.png" num="176">POP2</set>
 			<prop>
 				<layout>normal</layout>
@@ -4378,7 +4378,7 @@ Crew 2</text>
 		<card>
 			<name>Joyride Offroader</name>
 			<text>Trample
-Whenever this vehicle attacks, add {W}{U}{B}{R}{G}. Until end of turn, you don&apos;t lose this mana as steps and phases end.
+Whenever this Vehicle attacks, add {W}{U}{B}{R}{G}. Until end of turn, you don&apos;t lose this mana as steps and phases end.
 Crew 2</text>
 			<set rarity="mythic" picurl="https://platypeople.github.io/sets/POP2-files/img/220.png" num="175">POP2</set>
 			<prop>
@@ -4454,8 +4454,8 @@ Choose target creature you control. You gain X life and draw X cards, where X is
 		</card>
 		<card>
 			<name>BXB Fessy</name>
-			<text>This creature has deathtouch during your turn.
-Whenever this creature deals combat damage to a player, put a charge counter on it. If it already has a charge counter on it, instead remove all charge counters from it and build hype. (Create a tapped 3/2 red Fan creature token. Put a stun counter on it. If it would become untapped, remove a stun counter from it instead.)
+			<text>BXB Fessy has deathtouch during your turn.
+Whenever BXB Fessy deals combat damage to a player, put a charge counter on it. If it already has a charge counter on it, instead remove all charge counters from it and build hype. (Create a tapped 3/2 red Fan creature token. Put a stun counter on it. If it would become untapped, remove a stun counter from it instead.)
 ---
 (Back): On Notice</text>
 			<set rarity="rare" picurl="https://platypeople.github.io/sets/POP2-files/img/223_front.png" num="82a">POP2</set>
@@ -4530,7 +4530,7 @@ Scry 2.</text>
 		</card>
 		<card>
 			<name>Four on the Floor</name>
-			<text>Whenever you attack, create a 4/4 creature token. That token gains &quot;Sacrifice this creature at the beginning of the next end step&quot; unless you control exactly four attacking creatures.</text>
+			<text>Whenever you attack, create a 4/4 Illusion creature token that&apos;s all colors, tapped, and attacking. Then, unless you control exactly four attacking creatures that token gains &quot;Exile this creature at end of combat.&quot;</text>
 			<set rarity="rare" picurl="https://platypeople.github.io/sets/POP2-files/img/226.png" num="211">POP2</set>
 			<prop>
 				<layout>normal</layout>
@@ -4547,7 +4547,7 @@ Scry 2.</text>
 		<card>
 			<name>Aka&apos;a, Street Battler</name>
 			<text>Menace
-When this creature enters, exile the top two cards of your library. You may play those cards until the end of your next turn.
+When Aka&apos;a enters, exile the top two cards of your library. You may play those cards until the end of your next turn.
 Whenever you play a nonlegendary card from your hand, this creature deals 4 damage to you.
 ---
 (Back): Down Side Up</text>
@@ -4588,7 +4588,7 @@ Exchange control of two target nonland permanents that share a card type.
 		</card>
 		<card>
 			<name>Maxime Maximalist</name>
-			<text>When this creature enters, build hype. (Create a tapped 3/2 red Fan creature token. Put a stun counter on it. If it would become untapped, remove a stun counter from it instead.)
+			<text>When Maxime Maximalist enters, build hype. (Create a tapped 3/2 red Fan creature token. Put a stun counter on it. If it would become untapped, remove a stun counter from it instead.)
 At the beginning of your end step, if creatures you control have total power 8 or greater, draw a card.
 ---
 (Back): Rapsody in Q Minor</text>
@@ -4859,7 +4859,7 @@ When this creature enters, you may return target spell or nonland permanent to i
 		<card>
 			<name>Otto Mollusco</name>
 			<text>{T}: Draw a card, then discard a card.
-At the beginning of your end step, you may exile any number of cards from your graveyard with total mana value 8 or greater. If you do, put a +1/+1 counter on this creature and untap it.
+At the beginning of your end step, you may exile any number of cards from your graveyard with total mana value 8 or greater. If you do, put a +1/+1 counter on Otto Mollusco and untap it.
 ---
 (Back): Nautical Nonsense</text>
 			<set rarity="rare" picurl="https://platypeople.github.io/sets/POP2-files/img/241_front.png" num="66a">POP2</set>
@@ -5114,7 +5114,7 @@ Target player draws three cards and loses 3 life.
 			<name>Engineered Virus</name>
 			<text>As this artifact enters, choose a nonland card name.
 Activated abilities of sources with the chosen name cost {3} more to activate unless they&apos;re mana abilities.
-Whenever a triggered ability of a source with the chosen name triggers, counter it unless its controller pays {3}.</text>
+Whenever a triggered ability of a source with the chosen name triggers, counter that ability unless its controller pays {3}.</text>
 			<set rarity="rare" picurl="https://platypeople.github.io/sets/POP2-files/img/250.png" num="240">POP2</set>
 			<prop>
 				<layout>normal</layout>
@@ -5205,7 +5205,7 @@ Each player chooses a creature or planeswalker they control. The chosen permanen
 			<name>Holocrafter</name>
 			<text>Flash
 Flying
-When this creature enters, counter target spell. It&apos;s controller creates a 3/3 green Centaur creature token with trample.</text>
+When this creature enters, counter target spell. Its controller creates a 3/3 green Centaur creature token.</text>
 			<set rarity="rare" picurl="https://platypeople.github.io/sets/POP2-files/img/254.png" num="212">POP2</set>
 			<prop>
 				<layout>normal</layout>
@@ -5316,7 +5316,7 @@ Creatures have &quot;{2}: If this creature isn&apos;t onstage, it takes the stag
 		</card>
 		<card>
 			<name>Familiar-Blessed Folkist</name>
-			<text>Whenever you put one or more +1/+1 counters on an offstage creature you control, you may have that creature take the stage. (Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)
+			<text>Whenever you put one or more +1/+1 counters on a creature you control that isn&apos;t onstage, you may have that creature take the stage. (Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)
 Whenever a creature you control takes the stage, put a +1/+1 counter on it if it doesn&apos;t have a +1/+1 counter on it.</text>
 			<set rarity="rare" picurl="https://platypeople.github.io/sets/POP2-files/img/260.png" num="208">POP2</set>
 			<prop>
@@ -5537,7 +5537,7 @@ Whenever this creature attacks, you may cast a copy of each instant or sorcery c
 		<card>
 			<name>Fan POP2</name>
 			<text></text>
-			<set rarity="common" picurl="https://platypeople.github.io/sets/POP2-files/img/270.png" num="7">POP2</set>
+			<set rarity="common" picurl="https://platypeople.github.io/sets/POP2-files/img/270.png" num="6">POP2</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -5555,7 +5555,7 @@ Whenever this creature attacks, you may cast a copy of each instant or sorcery c
 		<card>
 			<name>Performer POP2</name>
 			<text></text>
-			<set rarity="common" picurl="https://platypeople.github.io/sets/POP2-files/img/271.png" num="3">POP2</set>
+			<set rarity="common" picurl="https://platypeople.github.io/sets/POP2-files/img/271.png" num="2">POP2</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -5573,7 +5573,7 @@ Whenever this creature attacks, you may cast a copy of each instant or sorcery c
 		<card>
 			<name>Noble POP2</name>
 			<text></text>
-			<set rarity="common" picurl="https://platypeople.github.io/sets/POP2-files/img/272.png" num="5">POP2</set>
+			<set rarity="common" picurl="https://platypeople.github.io/sets/POP2-files/img/272.png" num="4">POP2</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -5607,7 +5607,7 @@ Whenever this creature attacks, you may cast a copy of each instant or sorcery c
 		<card>
 			<name>Fan POP2</name>
 			<text></text>
-			<set rarity="common" picurl="https://platypeople.github.io/sets/POP2-files/img/274.png" num="8">POP2</set>
+			<set rarity="common" picurl="https://platypeople.github.io/sets/POP2-files/img/274.png" num="7">POP2</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -5625,7 +5625,7 @@ Whenever this creature attacks, you may cast a copy of each instant or sorcery c
 		<card>
 			<name>Fan POP2</name>
 			<text></text>
-			<set rarity="common" picurl="https://platypeople.github.io/sets/POP2-files/img/275.png" num="9">POP2</set>
+			<set rarity="common" picurl="https://platypeople.github.io/sets/POP2-files/img/275.png" num="8">POP2</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -5643,7 +5643,7 @@ Whenever this creature attacks, you may cast a copy of each instant or sorcery c
 		<card>
 			<name>Fan POP2</name>
 			<text></text>
-			<set rarity="common" picurl="https://platypeople.github.io/sets/POP2-files/img/276.png" num="10">POP2</set>
+			<set rarity="common" picurl="https://platypeople.github.io/sets/POP2-files/img/276.png" num="9">POP2</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -5661,7 +5661,7 @@ Whenever this creature attacks, you may cast a copy of each instant or sorcery c
 		<card>
 			<name>Mutant POP2</name>
 			<text></text>
-			<set rarity="common" picurl="https://platypeople.github.io/sets/POP2-files/img/277.png" num="4">POP2</set>
+			<set rarity="common" picurl="https://platypeople.github.io/sets/POP2-files/img/277.png" num="3">POP2</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -5679,7 +5679,7 @@ Whenever this creature attacks, you may cast a copy of each instant or sorcery c
 		<card>
 			<name>Elemental POP2</name>
 			<text></text>
-			<set rarity="common" picurl="https://platypeople.github.io/sets/POP2-files/img/278.png" num="12">POP2</set>
+			<set rarity="common" picurl="https://platypeople.github.io/sets/POP2-files/img/278.png" num="11">POP2</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -5697,7 +5697,7 @@ Whenever this creature attacks, you may cast a copy of each instant or sorcery c
 		<card>
 			<name>Illusion POP2</name>
 			<text></text>
-			<set rarity="common" picurl="https://platypeople.github.io/sets/POP2-files/img/279.png" num="2">POP2</set>
+			<set rarity="common" picurl="https://platypeople.github.io/sets/POP2-files/img/279.png" num="12">POP2</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -5705,8 +5705,6 @@ Whenever this creature attacks, you may cast a copy of each instant or sorcery c
 				<maintype>Creature</maintype>
 				<manacost></manacost>
 				<cmc>0</cmc>
-				<colors>W</colors>
-				<coloridentity>W</coloridentity>
 				<pt>4/4</pt>
 			</prop>
 			<tablerow>2</tablerow>
@@ -5745,7 +5743,7 @@ Whenever this creature attacks, you may cast a copy of each instant or sorcery c
 		<card>
 			<name>Centaur POP2</name>
 			<text></text>
-			<set rarity="common" picurl="https://platypeople.github.io/sets/POP2-files/img/282.png" num="11">POP2</set>
+			<set rarity="common" picurl="https://platypeople.github.io/sets/POP2-files/img/282.png" num="10">POP2</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -5821,7 +5819,7 @@ Each player shuffles their graveyard and hand into their library. You draw seven
 		<card>
 			<name>Octopus POP2</name>
 			<text>Menace</text>
-			<set rarity="common" picurl="https://platypeople.github.io/sets/POP2-files/img/285.png" num="6">POP2</set>
+			<set rarity="common" picurl="https://platypeople.github.io/sets/POP2-files/img/285.png" num="5">POP2</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>

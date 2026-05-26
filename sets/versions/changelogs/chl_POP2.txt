@@ -1,4 +1,193 @@
-﻿VERSION 7 CHANGELOG
+﻿VERSION 8 CHANGELOG
+====================
+
+Stage Fireworks added.
+Deep-Sea Diva added.
+
+Smokescreen removed.
+Deep Sea Diva removed.
+
+Silencer of Critics
+rules_text: Flying
+{1}{W}: If Silencer of Critics isn't onstage, it takes the stage. [i](Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)[/i]
+When Silencer of Critics takes the stage, noncreature spells your opponents cast cost {2} more to cast until your next turn. => Flying
+{1}{W}: If this creature isn't onstage, it takes the stage. [i](Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)[/i]
+When this creature takes the stage, noncreature spells your opponents cast cost {2} more to cast until your next turn.
+
+Knock Your Socks Off
+rules_text: Choose target creature you control. If it's offstage, it takes the stage. Then it fights up to one target creature you don't control. [i](Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)[/i] => Choose target creature you control. If it isn't onstage, it takes the stage. Then it fights up to one target creature you don't control. [i](Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)[/i]
+
+Bravi, the City Alive
+rules_text: Vigilance, reach, haste
+Whenever Bravi, the City Alive attacks, target creature has base power and toughness 8/8 until end of turn. => Vigilance, reach, haste
+Whenever Bravi attacks, target creature has base power and toughness 8/8 until end of turn.
+
+Ravek Glade Busker
+rules_text: {1}{W}: If Ravek Glade Busker is offstage, it takes the stage. [i](Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)[/i]
+Whenever a legendary creature you control enters or a creature you control takes the stage, you gain 2 life. => {1}{W}: If this creature isn't onstage, it takes the stage. [i](Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)[/i]
+Whenever a legendary creature you control enters or a creature you control takes the stage, you gain 2 life.
+
+Death-Defying Stunt
+rules_text: Until end of turn, target creature gains “When this creature dies, return it to the battlefield tapped. When it does, it takes the stage.” [i](Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)[/i] => Until end of turn, target creature gains “When this creature dies, return it to the battlefield tapped. When it enters this way, it takes the stage.” [i](Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)[/i]
+
+Mic Passer
+rules_text: Haste
+When this creature enters, up to one other target creature you control that's not onstage takes the stage. [i](Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)[/i] => Haste
+When this creature enters, up to one other target creature you control that isn't onstage takes the stage. [i](Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)[/i]
+
+Meryel of Two Realities
+rules_text: Menace
+Whenever Meryel of Two Realities attacks, target player mills two cards.
+Meryel of Two Realities gets +2/+0 as long as a graveyard has eight or more cards in it. => Menace
+Whenever Meryel attacks, target player mills two cards.
+Meryel gets +2/+0 as long as a graveyard has eight or more cards in it.
+
+Construction Zone
+rules_text: Construction Zone enters tapped.
+{T}: Add {U}, {R}, or {W}.
+{S}{S}{S}{S}, Discard Construction Zone: Target creature gains deathtouch and indestructible until end of turn. [i](Spend a different color of mana on each {S}.)[/i] => This land enters tapped.
+{T}: Add {U}, {R}, or {W}.
+{S}{S}{S}{S}, Discard this land: Target creature gains deathtouch and indestructible until end of turn. [i](Spend a different color of mana on each {S}.)[/i]
+
+Burgeoning Linktree
+rules_text: Burgeoning Linktree enters tapped.
+{T}: Add {G}, {U}, or {R}.
+{S}{S}{S}{S}, Discard Burgeoning Linktree: Target creature gets +3/+3 and gains lifelink until end of turn. [i](Spend a different color of mana on each {S}.)[/i] => This land enters tapped.
+{T}: Add {G}, {U}, or {R}.
+{S}{S}{S}{S}, Discard this land: Target creature gets +3/+3 and gains lifelink until end of turn. [i](Spend a different color of mana on each {S}.)[/i]
+
+Hit Factory
+rules_text: Hit Factory enters tapped.
+{T}: Add {W}, {B}, or {G}.
+{S}{S}{S}{S}, Discard Hit Factory: Target creature gets +0/+5 until end of turn. Then you may switch its power and toughness until end of turn. [i](Spend a different color of mana on each {S}.)[/i] => This land enters tapped.
+{T}: Add {W}, {B}, or {G}.
+{S}{S}{S}{S}, Discard this land: Target creature gets +0/+5 until end of turn. Then you may switch its power and toughness until end of turn. [i](Spend a different color of mana on each {S}.)[/i]
+
+Morashan Wasteland
+rules_text: Morashan Wasteland enters tapped.
+{T}: Add {R}, {W}, or {B}.
+{S}{S}{S}{S}, Discard Morashan Wasteland: Target creature gets +3/+3 and gains hexproof until end of turn. [i](Spend a different color of mana on each {S}.)[/i] => This land enters tapped.
+{T}: Add {R}, {W}, or {B}.
+{S}{S}{S}{S}, Discard this land: Target creature gets +3/+3 and gains hexproof until end of turn. [i](Spend a different color of mana on each {S}.)[/i]
+
+Eco Rave
+rules_text: Eco Rave enters tapped.
+{T}: Add {B}, {G}, or {U}.
+{S}{S}{S}{S}, Discard Eco Rave: Target creature gets +1/+1 and gains double strike until end of turn. [i](Spend a different color of mana on each {S}.)[/i] => This land enters tapped.
+{T}: Add {B}, {G}, or {U}.
+{S}{S}{S}{S}, Discard this land: Target creature gets +1/+1 and gains double strike until end of turn. [i](Spend a different color of mana on each {S}.)[/i]
+
+Baril, Static Selector
+rules_text: Whenever Baril, Static Selector becomes the target of a spell or ability, create a Treasure token. This ability triggers only once each turn.
+{4}{R}{G}: Baril, Static Selector deals 3 damage to target player or planeswalker. => Whenever Baril becomes the target of a spell or ability, create a Treasure token. This ability triggers only once each turn.
+{4}{R}{G}: Baril deals 3 damage to target player or planeswalker.
+
+Mai Lim, Defending Champ
+rules_text: Flying
+As long as Mai Lim, Defending Champ is untapped, it has hexproof.
+As long as Mai Lim, Defending Champ is tapped, it has lifelink. => Flying
+As long as Mai Lim is untapped, it has hexproof.
+As long as Mai Lim is tapped, it has lifelink.
+
+Tempo Accelerator
+rules_text: When Tempo Accelerator enters, build hype. [i](Create a tapped 3/2 red Fan creature token. Put a stun counter on it. If it would become untapped, remove a stun counter from it instead.)[/i]
+Untap each Fan you control during each other player's untap step. => When this creature enters, build hype. [i](Create a tapped 3/2 red Fan creature token. Put a stun counter on it. If it would become untapped, remove a stun counter from it instead.)[/i]
+Untap each Fan you control during each other player's untap step.
+
+The Apocalypse Sisters
+rules_text: Whenever another creature dies, put a +1/+1 counter on this creature. If this is the second time this ability has triggered this turn, draw a card. => Whenever another creature dies, put a +1/+1 counter on The Apocalypse Sisters. If this is the second time this ability has triggered this turn, draw a card.
+
+Anomaly DX397
+
+Grand Dissonance
+rules_text: [i](This card is black. Spend a different nonblack color of mana on each {S}.)[/i]
+For each nonland permanent type, choose up to one target permanent of that type. Destroy those permanents. You lose 1 life for each permanent exiled this way. [i](The nonland permanent types are artifact, battle, creature, enchantment, and planeswalker.)[/i] => [i](This card is black. Spend a different nonblack color of mana on each {S}.)[/i]
+For each nonland permanent type, choose up to one target permanent of that type. Destroy those permanents. You lose 1 life for each permanent destroyed this way. [i](The nonland permanent types are artifact, battle, creature, enchantment, and planeswalker.)[/i]
+
+Auditory Agitator
+rules_text: Haste
+{R}: If Auditory Agitator isn't onstage, it takes the stage. [i](Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)[/i]
+When this creature takes the stage, target creature can't block this turn. => Haste
+{R}: If this creature isn't onstage, it takes the stage. [i](Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)[/i]
+When this creature takes the stage, target creature can't block this turn.
+
+Expert Stagehand
+rules_text: When this creature becomes the target of a spell or ability you control, if it isn't onstage, you may have it take the stage. [i](Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)[/i]
+When this creature takes the stage, exile the top card of your library. You may play that card until the end of your next turn. => Whenever this creature becomes the target of a spell or ability you control, if it isn't onstage, you may have it take the stage. [i](Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)[/i]
+When this creature takes the stage, exile the top card of your library. You may play that card until the end of your next turn.
+
+Sinthia, the Mindrazer
+rules_text: Sinthia, the Mindrazer can't be blocked.
+When Sinthia, the Mindrazer enters, target opponent reveals their hand. You may choose a nonland card from it. That player discards that card. => Sinthia can't be blocked.
+When Sinthia enters, target opponent reveals their hand. You may choose a nonland card from it. That player discards that card.
+
+Morashan Mischief Makers
+rules_text: {4}{B}: If this creature isn't onstage, it takes the stage. [i](Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)[/i]
+When this creature takes the stage, target opponent sacrifices a nontoken creature. => {4}{B}: If this creature isn't onstage, it takes the stage. [i](Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)[/i]
+When this creature takes the stage, target opponent sacrifices a nontoken creature of their choice.
+
+Judge of Moving Rhythm
+rules_text: Whenever this creature enters or attacks, search your library for a land card, put it onto the battlefield tapped, then shuffle.
+Exhaust — {12}: Up to two target lands you control become 5/5 Elemental creatures with hexproof and haste that are still lands. This ability costs {1} less to activate for each differently named land you control. [i](Activate each exhaust ability only once.)[/i] => Whenever this creature enters or attacks, search your library for a land card, put it onto the battlefield tapped, then shuffle.
+Exhaust — {12}: Up to two target lands you control each become 5/5 Elemental creatures with hexproof and haste that are still lands. This ability costs {1} less to activate for each differently named land you control. [i](Activate each exhaust ability only once.)[/i]
+
+Joyride Offroader
+rules_text: Trample
+Whenever this vehicle attacks, add {W}{U}{B}{R}{G}. Until end of turn, you don't lose this mana as steps and phases end.
+Crew 2 => Trample
+Whenever this Vehicle attacks, add {W}{U}{B}{R}{G}. Until end of turn, you don't lose this mana as steps and phases end.
+Crew 2
+
+BXB Fessy
+rules_text: This creature has deathtouch during your turn.
+Whenever this creature deals combat damage to a player, put a charge counter on it. If it already has a charge counter on it, instead remove all charge counters from it and build hype. [i](Create a tapped 3/2 red Fan creature token. Put a stun counter on it. If it would become untapped, remove a stun counter from it instead.)[/i] => BXB Fessy has deathtouch during your turn.
+Whenever BXB Fessy deals combat damage to a player, put a charge counter on it. If it already has a charge counter on it, instead remove all charge counters from it and build hype. [i](Create a tapped 3/2 red Fan creature token. Put a stun counter on it. If it would become untapped, remove a stun counter from it instead.)[/i]
+
+Four on the Floor
+rules_text: Whenever you attack, create a 4/4 creature token. That token gains “Sacrifice this creature at the beginning of the next end step” unless you control exactly four attacking creatures. => Whenever you attack, create a 4/4 Illusion creature token that's all colors, tapped, and attacking. Then, unless you control exactly four attacking creatures that token gains “Exile this creature at end of combat.”
+
+Aka'a, Street Battler
+rules_text: Menace
+When this creature enters, exile the top two cards of your library. You may play those cards until the end of your next turn.
+Whenever you play a nonlegendary card from your hand, this creature deals 4 damage to you. => Menace
+When Aka'a enters, exile the top two cards of your library. You may play those cards until the end of your next turn.
+Whenever you play a nonlegendary card from your hand, this creature deals 4 damage to you.
+
+Maxime Maximalist
+rules_text: When this creature enters, build hype. [i](Create a tapped 3/2 red Fan creature token. Put a stun counter on it. If it would become untapped, remove a stun counter from it instead.)[/i]
+At the beginning of your end step, if creatures you control have total power 8 or greater, draw a card. => When Maxime Maximalist enters, build hype. [i](Create a tapped 3/2 red Fan creature token. Put a stun counter on it. If it would become untapped, remove a stun counter from it instead.)[/i]
+At the beginning of your end step, if creatures you control have total power 8 or greater, draw a card.
+
+Otto Mollusco
+rules_text: {T}: Draw a card, then discard a card.
+At the beginning of your end step, you may exile any number of cards from your graveyard with total mana value 8 or greater. If you do, put a +1/+1 counter on this creature and untap it. => {T}: Draw a card, then discard a card.
+At the beginning of your end step, you may exile any number of cards from your graveyard with total mana value 8 or greater. If you do, put a +1/+1 counter on Otto Mollusco and untap it.
+
+Engineered Virus
+rules_text: As this artifact enters, choose a nonland card name.
+Activated abilities of sources with the chosen name cost {3} more to activate unless they're mana abilities.
+Whenever a triggered ability of a source with the chosen name triggers, counter it unless its controller pays {3}. => As this artifact enters, choose a nonland card name.
+Activated abilities of sources with the chosen name cost {3} more to activate unless they're mana abilities.
+Whenever a triggered ability of a source with the chosen name triggers, counter that ability unless its controller pays {3}.
+
+Holocrafter
+rules_text: Flash
+Flying
+When this creature enters, counter target spell. It's controller creates a 3/3 green Centaur creature token with trample. => Flash
+Flying
+When this creature enters, counter target spell. Its controller creates a 3/3 green Centaur creature token.
+
+Familiar-Blessed Folkist
+rules_text: Whenever you put one or more +1/+1 counters on an offstage creature you control, you may have that creature take the stage. [i](Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)[/i]
+Whenever a creature you control takes the stage, put a +1/+1 counter on it if it doesn't have a +1/+1 counter on it. => Whenever you put one or more +1/+1 counters on a creature you control that isn't onstage, you may have that creature take the stage. [i](Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)[/i]
+Whenever a creature you control takes the stage, put a +1/+1 counter on it if it doesn't have a +1/+1 counter on it.
+
+Illusion
+
+Zalek, Lightspeed
+
+
+VERSION 7 CHANGELOG
 ====================
 
 

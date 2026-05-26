@@ -135,7 +135,7 @@
 			}
 		},
 		{
-			"name": "Smokescreen",
+			"name": "Stage Fireworks",
 			"rarity": "uncommon",
 			"mana_cost": "{R}",
 			"type": "Instant",
@@ -816,7 +816,7 @@
 			}
 		},
 		{
-			"name": "Deep Sea Diva",
+			"name": "Deep-Sea Diva",
 			"rarity": "uncommon",
 			"mana_cost": "{U}",
 			"type": "Creature — Merfolk",
@@ -2950,7 +2950,7 @@
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Fan",
-			"collector_number": "7",
+			"collector_number": "6",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/270.png"
 			}
@@ -2960,7 +2960,7 @@
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Performer",
-			"collector_number": "3",
+			"collector_number": "2",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/271.png"
 			}
@@ -2970,7 +2970,7 @@
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Noble",
-			"collector_number": "5",
+			"collector_number": "4",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/272.png"
 			}
@@ -2990,7 +2990,7 @@
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Fan",
-			"collector_number": "8",
+			"collector_number": "7",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/274.png"
 			}
@@ -3000,7 +3000,7 @@
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Fan",
-			"collector_number": "9",
+			"collector_number": "8",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/275.png"
 			}
@@ -3010,7 +3010,7 @@
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Fan",
-			"collector_number": "10",
+			"collector_number": "9",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/276.png"
 			}
@@ -3020,7 +3020,7 @@
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Mutant",
-			"collector_number": "4",
+			"collector_number": "3",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/277.png"
 			}
@@ -3030,7 +3030,7 @@
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Elemental",
-			"collector_number": "12",
+			"collector_number": "11",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/278.png"
 			}
@@ -3040,7 +3040,7 @@
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Illusion",
-			"collector_number": "2",
+			"collector_number": "12",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/279.png"
 			}
@@ -3070,7 +3070,7 @@
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Centaur",
-			"collector_number": "11",
+			"collector_number": "10",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/282.png"
 			}
@@ -3107,7 +3107,7 @@
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Octopus",
-			"collector_number": "6",
+			"collector_number": "5",
 			"image_uris": {
 				"en": "https://platypeople.github.io/sets/POP2-files/img/285.png"
 			}
@@ -3202,7 +3202,7 @@
 	4 Boma, Miss Worldwide
 	4 Unsettling Seance
 	4 Beckon the Clapalong
-	4 Smokescreen
+	4 Stage Fireworks
 	4 Tight Turnaround
 	4 Bravi, the City Alive
 	4 Lightkin Conjurer
@@ -3212,7 +3212,7 @@
 	4 Put in Their Place
 	4 Beat Switch
 	4 Fervent Schooling
-	4 Deep Sea Diva
+	4 Deep-Sea Diva
 	4 Harsh Criticism
 	4 Ishi, WeSing Star
 	4 A Star is Born
@@ -3482,7 +3482,7 @@
 	6 Beckon the Clapalong
 	2 Silencer of Critics
 	12 Improvised Solo
-	6 Smokescreen
+	6 Stage Fireworks
 	12 Disarming Lilt
 	12 Festival Greeter
 	12 Swooping Socialite
@@ -3548,7 +3548,7 @@
 	6 Put in Their Place
 	6 Beat Switch
 	6 Fervent Schooling
-	6 Deep Sea Diva
+	6 Deep-Sea Diva
 	6 Harsh Criticism
 	6 Ishi, WeSing Star
 	6 A Star is Born
@@ -3749,7 +3749,7 @@
 	15 Beckon the Clapalong
 	7 Silencer of Critics
 	6 Improvised Solo
-	15 Smokescreen
+	15 Stage Fireworks
 	6 Disarming Lilt
 	6 Festival Greeter
 	6 Swooping Socialite
@@ -3815,7 +3815,7 @@
 	15 Put in Their Place
 	15 Beat Switch
 	15 Fervent Schooling
-	15 Deep Sea Diva
+	15 Deep-Sea Diva
 	15 Harsh Criticism
 	15 Ishi, WeSing Star
 	15 A Star is Born

@@ -528,7 +528,7 @@
         "position": "202"
     },
     {
-        "card_name": "Deep Sea Diva",
+        "card_name": "Deep-Sea Diva",
         "number": 49,
         "shape": "normal",
         "set": "POP2",
@@ -824,7 +824,7 @@
         "position": "99"
     },
     {
-        "card_name": "Smokescreen",
+        "card_name": "Stage Fireworks",
         "number": 150,
         "shape": "normal",
         "set": "POP2",
@@ -2315,6 +2315,14 @@
         "position": "283"
     },
     {
+        "card_name": "Illusion",
+        "number": 12,
+        "shape": "token",
+        "set": "POP2",
+        "rotated": false,
+        "position": "279"
+    },
+    {
         "card_name": "Servo",
         "number": 13,
         "shape": "token",
@@ -2339,16 +2347,8 @@
         "position": "280"
     },
     {
-        "card_name": "Illusion",
-        "number": 2,
-        "shape": "token",
-        "set": "POP2",
-        "rotated": false,
-        "position": "279"
-    },
-    {
         "card_name": "Performer",
-        "number": 3,
+        "number": 2,
         "shape": "token",
         "set": "POP2",
         "rotated": false,
@@ -2356,7 +2356,7 @@
     },
     {
         "card_name": "Mutant",
-        "number": 4,
+        "number": 3,
         "shape": "token",
         "set": "POP2",
         "rotated": false,
@@ -2364,7 +2364,7 @@
     },
     {
         "card_name": "Noble",
-        "number": 5,
+        "number": 4,
         "shape": "token",
         "set": "POP2",
         "rotated": false,
@@ -2372,7 +2372,7 @@
     },
     {
         "card_name": "Octopus",
-        "number": 6,
+        "number": 5,
         "shape": "token",
         "set": "POP2",
         "rotated": false,
@@ -2380,7 +2380,7 @@
     },
     {
         "card_name": "Fan",
-        "number": 7,
+        "number": 6,
         "shape": "token",
         "set": "POP2",
         "rotated": false,
@@ -2388,7 +2388,7 @@
     },
     {
         "card_name": "Fan",
-        "number": 8,
+        "number": 7,
         "shape": "token",
         "set": "POP2",
         "rotated": false,
@@ -2396,7 +2396,7 @@
     },
     {
         "card_name": "Fan",
-        "number": 9,
+        "number": 8,
         "shape": "token",
         "set": "POP2",
         "rotated": false,
@@ -2404,7 +2404,7 @@
     },
     {
         "card_name": "Fan",
-        "number": 10,
+        "number": 9,
         "shape": "token",
         "set": "POP2",
         "rotated": false,
@@ -2412,7 +2412,7 @@
     },
     {
         "card_name": "Centaur",
-        "number": 11,
+        "number": 10,
         "shape": "token",
         "set": "POP2",
         "rotated": false,
@@ -2420,7 +2420,7 @@
     },
     {
         "card_name": "Elemental",
-        "number": 12,
+        "number": 11,
         "shape": "token",
         "set": "POP2",
         "rotated": false,
