@@ -5,7 +5,7 @@
 			<name>POP2</name>
 			<longname>Prismavision</longname>
 			<settype>Custom</settype>
-			<releasedate>2026-06-14</releasedate>
+			<releasedate>2026-07-14</releasedate>
 		</set>
 	</sets>
 	<cards>
@@ -84,7 +84,7 @@ Choreography (Then you may exile this spell card taught to a creature you contro
 
 ---
 (Back): No One Stands in My Way</text>
-			<set rarity="uncommon" picurl="https://platypeople.github.io/sets/POP2-files/img/4_front.png" num="50a">POP2</set>
+			<set rarity="uncommon" picurl="https://platypeople.github.io/sets/POP2-files/img/4_front.png" num="49a">POP2</set>
 			<prop>
 				<layout>transform</layout>
 				<side>front</side>
@@ -105,7 +105,7 @@ Choreography (Then you may exile this spell card taught to a creature you contro
 Tap target creature. Put five stun counters on it.
 ---
 (Front): Devrinn, Pitch Perfect</text>
-			<set rarity="uncommon" picurl="https://platypeople.github.io/sets/POP2-files/img/4_back.png" num="50b">POP2</set>
+			<set rarity="uncommon" picurl="https://platypeople.github.io/sets/POP2-files/img/4_back.png" num="49b">POP2</set>
 			<prop>
 				<layout>transform</layout>
 				<side>back</side>
@@ -285,7 +285,7 @@ Choreography (Then you may exile this spell card taught to a creature you contro
 			<name>Disarming Lilt</name>
 			<text>Up to one target creature gets -3/-0 until end of turn. Scry 1.
 Choreography (Then you may exile this spell card taught to a creature you control. Whenever that creature attacks, you may cast a copy of this spell. You still pay its costs.)</text>
-			<set rarity="common" picurl="https://platypeople.github.io/sets/POP2-files/img/13.png" num="51">POP2</set>
+			<set rarity="common" picurl="https://platypeople.github.io/sets/POP2-files/img/13.png" num="50">POP2</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -800,7 +800,7 @@ Whenever one or more Fans you control attack, put a +1/+1 counter on this creatu
 		<card>
 			<name>Stage Invaders</name>
 			<text>This creature can&apos;t be blocked by nonlegendary creatures.
-Whenever this creature attacks, if creatures you control have total could power 8 or greater, this creature gains deathtouch and lifelink until end of turn.</text>
+Whenever this creature attacks, if creatures you control have total power 8 or greater, this creature gains deathtouch and lifelink until end of turn.</text>
 			<set rarity="common" picurl="https://platypeople.github.io/sets/POP2-files/img/41.png" num="113">POP2</set>
 			<prop>
 				<layout>normal</layout>
@@ -1033,7 +1033,7 @@ When this creature enters, you gain 2 life and draw a card.</text>
 			<name>Brief Appearance</name>
 			<text>The owner of target nonland permanent puts it into their library second from the top or on the bottom.
 Build hype. (Create a tapped 3/2 red Fan creature token. Put a stun counter on it. If it would become untapped, remove a stun counter from it instead.)</text>
-			<set rarity="common" picurl="https://platypeople.github.io/sets/POP2-files/img/54.png" num="45">POP2</set>
+			<set rarity="common" picurl="https://platypeople.github.io/sets/POP2-files/img/54.png" num="44">POP2</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1119,13 +1119,13 @@ When this creature enters, up to one other target creature you control that isn&
 			<tablerow>2</tablerow>
 		</card>
 		<card>
-			<name>Botnet Engineer</name>
+			<name>Dulcimer Diva</name>
 			<text>{T}: Untap another target creature or land. Activate only outside of combat.</text>
-			<set rarity="common" picurl="https://platypeople.github.io/sets/POP2-files/img/59.png" num="44">POP2</set>
+			<set rarity="common" picurl="https://platypeople.github.io/sets/POP2-files/img/59.png" num="51">POP2</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
-				<type>Creature — Human Artificer</type>
+				<type>Creature — Siren Performer</type>
 				<maintype>Creature</maintype>
 				<manacost>2U</manacost>
 				<cmc>3</cmc>
@@ -1499,7 +1499,7 @@ Draw a card for each attacking creature. If this spell was kicked, it deals 2 da
 			<name>Deep-Sea Diva</name>
 			<text>{U}: If this creature isn&apos;t onstage, it takes the stage. (Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)
 When this creature takes the stage, target land becomes the basic land of its controller&apos;s choice for as long as you control this creature.</text>
-			<set rarity="uncommon" picurl="https://platypeople.github.io/sets/POP2-files/img/78.png" num="49">POP2</set>
+			<set rarity="uncommon" picurl="https://platypeople.github.io/sets/POP2-files/img/78.png" num="48">POP2</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -1746,7 +1746,7 @@ Whenever a creature you control becomes the target of a spell or ability an oppo
 				<cmc>4</cmc>
 				<colors>G</colors>
 				<coloridentity>WG</coloridentity>
-				<pt>2/7</pt>
+				<pt>2/5</pt>
 			</prop>
 			<tablerow>2</tablerow>
 			<related attach="transform">Your Power</related>
@@ -1773,7 +1773,7 @@ Choose target creature you control. Create X 1/1 white Performer creature tokens
 		</card>
 		<card>
 			<name>Anomaly DX397</name>
-			<text>At the beginning of your end step, if you&apos;ve spent {W}{U}{B}{R}{G} to cast spells this turn, draw a card.
+			<text>At the beginning of your end step, if you&apos;ve spent {W}{U}{B}{R}{G} to cast spells this turn, put a +1/+1 counter on target creature you control.
 [-2]: Until end of turn, creatures you control gain &quot;{T}: Add one mana of any color.&quot;
 
 ---
@@ -1796,7 +1796,7 @@ Choose target creature you control. Create X 1/1 white Performer creature tokens
 		<card>
 			<name>The Other Side</name>
 			<text>(You may cast a legendary sorcery only if you control a legendary creature or planeswalker.)
-Until end of turn, creatures you control enter with an additional +1/+1 counter on them for each color of mana spent to cast them.
+Until end of turn, creatures you control enter with an additional +1/+1 counter on them for each of their colors.
 Draw a card.
 ---
 (Front): Anomaly DX397</text>
@@ -2073,8 +2073,8 @@ Neon Blitz deals 4 damage to any target. If this spell was kicked, instead it de
 		</card>
 		<card>
 			<name>Polya, Duchess of Grime</name>
-			<text>If a card would be put into an opponent&apos;s graveyard from anywhere other than their hand, exile it instead.
-[-1]: Target opponent discards a card, then you discard a card. Draw a card if you discarded the card with the highest mana value among those cards.
+			<text>If a card would be put into an opponent&apos;s graveyard from anywhere, exile it instead.
+[-1]: Target opponent exiles a card from their hand.
 
 ---
 (Back): Underground Sound</text>
@@ -2133,7 +2133,7 @@ Target creature you control deals damage equal to its power to target creature o
 		<card>
 			<name>Cast Down</name>
 			<text>Destroy target nonlegendary creature.</text>
-			<set rarity="common" picurl="https://platypeople.github.io/sets/POP2-files/img/101.png" num="83">POP2</set>
+			<set rarity="uncommon" picurl="https://platypeople.github.io/sets/POP2-files/img/101.png" num="83">POP2</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -2344,7 +2344,7 @@ When this creature takes the stage, target creature can&apos;t block this turn.<
 				<cmc>3</cmc>
 				<colors>R</colors>
 				<coloridentity>R</coloridentity>
-				<pt>4/3</pt>
+				<pt>4/2</pt>
 			</prop>
 			<tablerow>2</tablerow>
 		</card>
@@ -2822,8 +2822,7 @@ Return up to one creature card of each color from your graveyard to your hand.
 		<card>
 			<name>Toxic Shredder</name>
 			<text>Deathtouch
-{T}: Add one mana of any color. 
-Whenever you tap this creature for mana while creatures you control have total power 8 or greater, each opponent loses 2 life.</text>
+Whenever this creature attacks while creatures you control have total power 8 or greater, each opponent loses 2 life.</text>
 			<set rarity="uncommon" picurl="https://platypeople.github.io/sets/POP2-files/img/132.png" num="235">POP2</set>
 			<prop>
 				<layout>normal</layout>
@@ -2834,7 +2833,7 @@ Whenever you tap this creature for mana while creatures you control have total p
 				<cmc>2</cmc>
 				<colors>BG</colors>
 				<coloridentity>BG</coloridentity>
-				<pt>1/2</pt>
+				<pt>2/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
 		</card>
@@ -3158,12 +3157,12 @@ When this creature enters, target creature gets +2/+0 and gains indestructible u
 		<card>
 			<name>Understudy&apos;s Envy</name>
 			<text>Exile target creature or planeswalker. If that permanent was legendary, you may have up to one creature you control take the stage. (Onstage creatures are legendary, get +1/+1, and must be blocked before offstage creatures if able.)</text>
-			<set rarity="uncommon" picurl="https://platypeople.github.io/sets/POP2-files/img/150.png" num="115">POP2</set>
+			<set rarity="common" picurl="https://platypeople.github.io/sets/POP2-files/img/150.png" num="115">POP2</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
-				<type>Instant</type>
-				<maintype>Instant</maintype>
+				<type>Sorcery</type>
+				<maintype>Sorcery</maintype>
 				<manacost>1BB</manacost>
 				<cmc>3</cmc>
 				<colors>B</colors>
@@ -4251,7 +4250,7 @@ Crew 1</text>
 			<name>Clear the Stage</name>
 			<text>(This card is blue. Spend a different nonblue color of mana on each {S}.)
 Return all nonland permanents to their owners&apos; hands. Create a tapped Treasure token for each card returned to your hand this way.</text>
-			<set rarity="rare" picurl="https://platypeople.github.io/sets/POP2-files/img/213.png" num="46">POP2</set>
+			<set rarity="rare" picurl="https://platypeople.github.io/sets/POP2-files/img/213.png" num="45">POP2</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -4567,7 +4566,7 @@ Scry 2.</text>
 		<card>
 			<name>Down Side Up</name>
 			<text>(You may cast a legendary sorcery only if you control a legendary creature or planeswalker.)
-Tap target permanent. You may move any number of stun counters from among permanents you control onto that permanent.
+Tap target nonland permanent. You may move any number of stun counters from among permanents you control onto that permanent.
 Draw a card.
 ---
 (Front): Aka&apos;a, Street Battler</text>
@@ -4577,8 +4576,8 @@ Draw a card.
 				<side>back</side>
 				<type>Legendary Instant</type>
 				<maintype>Instant</maintype>
-				<manacost>1U</manacost>
-				<cmc>2</cmc>
+				<manacost>U</manacost>
+				<cmc>1</cmc>
 				<colors>U</colors>
 				<coloridentity>UR</coloridentity>
 			</prop>
@@ -4841,7 +4840,7 @@ The next creature spell with mana value 3 or less you cast this turn can be cast
 			<text>Flash
 Flying
 When this creature enters, you may return target spell or nonland permanent to its owner&apos;s hand. If you do, tap this creature and put a stun counter on it.</text>
-			<set rarity="rare" picurl="https://platypeople.github.io/sets/POP2-files/img/240.png" num="48">POP2</set>
+			<set rarity="rare" picurl="https://platypeople.github.io/sets/POP2-files/img/240.png" num="47">POP2</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -4901,7 +4900,7 @@ Create an 8/8 black Octopus creature token with menace.
 			<name>Cross-Promotion</name>
 			<text>When this enchantment enters, build hype. (Create a tapped 3/2 red Fan creature token. Put a stun counter on it. If it would become untapped, remove a stun counter from it instead.)
 Whenever you cast a legendary spell, you may return this enchantment to its owner&apos;s hand.</text>
-			<set rarity="rare" picurl="https://platypeople.github.io/sets/POP2-files/img/242.png" num="47">POP2</set>
+			<set rarity="rare" picurl="https://platypeople.github.io/sets/POP2-files/img/242.png" num="46">POP2</set>
 			<prop>
 				<layout>normal</layout>
 				<side>front</side>
@@ -5059,8 +5058,8 @@ Search your library for a legendary card not named The Artist with No Name, reve
 				<side>back</side>
 				<type>Legendary Sorcery</type>
 				<maintype>Sorcery</maintype>
-				<manacost>2W</manacost>
-				<cmc>3</cmc>
+				<manacost>1W</manacost>
+				<cmc>2</cmc>
 				<colors>W</colors>
 				<coloridentity>W</coloridentity>
 			</prop>
@@ -5215,7 +5214,7 @@ When this creature enters, counter target spell. Its controller creates a 3/3 gr
 				<cmc>4</cmc>
 				<colors>UG</colors>
 				<coloridentity>UG</coloridentity>
-				<pt>4/4</pt>
+				<pt>4/3</pt>
 			</prop>
 			<tablerow>2</tablerow>
 		</card>
@@ -5360,11 +5359,11 @@ When this creature dies, return it to the battlefield tapped with a finality cou
 				<side>front</side>
 				<type>Creature — Horror</type>
 				<maintype>Creature</maintype>
-				<manacost>3BG</manacost>
-				<cmc>5</cmc>
+				<manacost>5BG</manacost>
+				<cmc>7</cmc>
 				<colors>BG</colors>
 				<coloridentity>BG</coloridentity>
-				<pt>5/4</pt>
+				<pt>8/6</pt>
 			</prop>
 			<tablerow>2</tablerow>
 		</card>

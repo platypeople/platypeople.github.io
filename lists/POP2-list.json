@@ -169,7 +169,7 @@
     },
     {
         "card_name": "Clear the Stage",
-        "number": 46,
+        "number": 45,
         "shape": "normal",
         "set": "POP2",
         "rotated": false,
@@ -209,7 +209,7 @@
     },
     {
         "card_name": "Cross-Promotion",
-        "number": 47,
+        "number": 46,
         "shape": "normal",
         "set": "POP2",
         "rotated": false,
@@ -249,7 +249,7 @@
     },
     {
         "card_name": "Dazzling Lanternshark",
-        "number": 48,
+        "number": 47,
         "shape": "normal",
         "set": "POP2",
         "rotated": false,
@@ -416,12 +416,12 @@
         "position": "76"
     },
     {
-        "card_name": "Flanger Flayer",
-        "number": 87,
+        "card_name": "Cast Down",
+        "number": 83,
         "shape": "normal",
         "set": "POP2",
         "rotated": false,
-        "position": "103"
+        "position": "101"
     },
     {
         "card_name": "Apalana, Apasionada",
@@ -456,12 +456,12 @@
         "position": "183"
     },
     {
-        "card_name": "Guerrilla Promoter",
-        "number": 89,
+        "card_name": "Flanger Flayer",
+        "number": 87,
         "shape": "normal",
         "set": "POP2",
         "rotated": false,
-        "position": "193"
+        "position": "103"
     },
     {
         "card_name": "Apocalypse Sharkjumper",
@@ -496,12 +496,12 @@
         "position": "102"
     },
     {
-        "card_name": "Hardlight Tailor",
-        "number": 91,
+        "card_name": "Guerrilla Promoter",
+        "number": 89,
         "shape": "normal",
         "set": "POP2",
         "rotated": false,
-        "position": "120"
+        "position": "193"
     },
     {
         "card_name": "Auditory Agitator",
@@ -529,19 +529,19 @@
     },
     {
         "card_name": "Deep-Sea Diva",
-        "number": 49,
+        "number": 48,
         "shape": "normal",
         "set": "POP2",
         "rotated": false,
         "position": "78"
     },
     {
-        "card_name": "Harsh Criticism",
-        "number": 92,
+        "card_name": "Hardlight Tailor",
+        "number": 91,
         "shape": "normal",
         "set": "POP2",
         "rotated": false,
-        "position": "79"
+        "position": "120"
     },
     {
         "card_name": "Disco Inferno",
@@ -569,19 +569,19 @@
     },
     {
         "card_name": "Devrinn, Pitch Perfect",
-        "number": 50,
+        "number": 49,
         "shape": "modal double faced",
         "set": "POP2",
         "rotated": false,
         "position": "4"
     },
     {
-        "card_name": "Mashup Machine",
-        "number": 99,
+        "card_name": "Harsh Criticism",
+        "number": 92,
         "shape": "normal",
         "set": "POP2",
         "rotated": false,
-        "position": "191"
+        "position": "79"
     },
     {
         "card_name": "Expert Stagehand",
@@ -616,12 +616,12 @@
         "position": "77"
     },
     {
-        "card_name": "Meryel of Two Realities",
-        "number": 100,
-        "shape": "modal double faced",
+        "card_name": "Mashup Machine",
+        "number": 99,
+        "shape": "normal",
         "set": "POP2",
         "rotated": false,
-        "position": "66"
+        "position": "191"
     },
     {
         "card_name": "Holographic Mirror",
@@ -656,12 +656,12 @@
         "position": "80"
     },
     {
-        "card_name": "Morashan Mischief Makers",
-        "number": 102,
-        "shape": "normal",
+        "card_name": "Meryel of Two Realities",
+        "number": 100,
+        "shape": "modal double faced",
         "set": "POP2",
         "rotated": false,
-        "position": "192"
+        "position": "66"
     },
     {
         "card_name": "Jurjurian Ritualists",
@@ -696,12 +696,12 @@
         "position": "118"
     },
     {
-        "card_name": "Oddsmaking Oracle",
-        "number": 105,
+        "card_name": "Morashan Mischief Makers",
+        "number": 102,
         "shape": "normal",
         "set": "POP2",
         "rotated": false,
-        "position": "195"
+        "position": "192"
     },
     {
         "card_name": "The Masked Rider",
@@ -736,12 +736,12 @@
         "position": "56"
     },
     {
-        "card_name": "Phantom of the Amplifier",
-        "number": 107,
+        "card_name": "Oddsmaking Oracle",
+        "number": 105,
         "shape": "normal",
         "set": "POP2",
         "rotated": false,
-        "position": "194"
+        "position": "195"
     },
     {
         "card_name": "Neon Blitz",
@@ -776,12 +776,12 @@
         "position": "75"
     },
     {
-        "card_name": "Phosphorescent Patrician",
-        "number": 108,
+        "card_name": "Phantom of the Amplifier",
+        "number": 107,
         "shape": "normal",
         "set": "POP2",
         "rotated": false,
-        "position": "152"
+        "position": "194"
     },
     {
         "card_name": "Scorched-Earth Songstress",
@@ -816,12 +816,12 @@
         "position": "184"
     },
     {
-        "card_name": "Polya, Duchess of Grime",
-        "number": 109,
-        "shape": "modal double faced",
+        "card_name": "Phosphorescent Patrician",
+        "number": 108,
+        "shape": "normal",
         "set": "POP2",
         "rotated": false,
-        "position": "99"
+        "position": "152"
     },
     {
         "card_name": "Stage Fireworks",
@@ -856,12 +856,12 @@
         "position": "73"
     },
     {
-        "card_name": "Stage Fright",
-        "number": 112,
-        "shape": "normal",
+        "card_name": "Polya, Duchess of Grime",
+        "number": 109,
+        "shape": "modal double faced",
         "set": "POP2",
         "rotated": false,
-        "position": "196"
+        "position": "99"
     },
     {
         "card_name": "Starmaker Mic",
@@ -896,12 +896,12 @@
         "position": "34"
     },
     {
-        "card_name": "Understudy's Envy",
-        "number": 115,
+        "card_name": "Stage Fright",
+        "number": 112,
         "shape": "normal",
         "set": "POP2",
         "rotated": false,
-        "position": "150"
+        "position": "196"
     },
     {
         "card_name": "Tympanic Titan",
@@ -968,12 +968,12 @@
         "position": "143"
     },
     {
-        "card_name": "Botnet Engineer",
+        "card_name": "Brief Appearance",
         "number": 44,
         "shape": "normal",
         "set": "POP2",
         "rotated": false,
-        "position": "59"
+        "position": "54"
     },
     {
         "card_name": "Brooding Ascetic",
@@ -1008,20 +1008,20 @@
         "position": "30"
     },
     {
-        "card_name": "Brief Appearance",
-        "number": 45,
+        "card_name": "Disarming Lilt",
+        "number": 50,
         "shape": "normal",
         "set": "POP2",
         "rotated": false,
-        "position": "54"
+        "position": "13"
     },
     {
-        "card_name": "Cast Down",
-        "number": 83,
+        "card_name": "Death-Defying Stunt",
+        "number": 84,
         "shape": "normal",
         "set": "POP2",
         "rotated": false,
-        "position": "101"
+        "position": "42"
     },
     {
         "card_name": "Blazing Spotlight",
@@ -1048,20 +1048,20 @@
         "position": "24"
     },
     {
-        "card_name": "Disarming Lilt",
+        "card_name": "Dulcimer Diva",
         "number": 51,
         "shape": "normal",
         "set": "POP2",
         "rotated": false,
-        "position": "13"
+        "position": "59"
     },
     {
-        "card_name": "Death-Defying Stunt",
-        "number": 84,
+        "card_name": "Disrupt the Program",
+        "number": 85,
         "shape": "normal",
         "set": "POP2",
         "rotated": false,
-        "position": "42"
+        "position": "151"
     },
     {
         "card_name": "Cabaret Aspirant",
@@ -1096,12 +1096,12 @@
         "position": "63"
     },
     {
-        "card_name": "Disrupt the Program",
-        "number": 85,
+        "card_name": "Guttural Scream",
+        "number": 90,
         "shape": "normal",
         "set": "POP2",
         "rotated": false,
-        "position": "151"
+        "position": "122"
     },
     {
         "card_name": "Camerawise Crooner",
@@ -1136,12 +1136,12 @@
         "position": "28"
     },
     {
-        "card_name": "Guttural Scream",
-        "number": 90,
+        "card_name": "Highrise Vagrant",
+        "number": 93,
         "shape": "normal",
         "set": "POP2",
         "rotated": false,
-        "position": "122"
+        "position": "148"
     },
     {
         "card_name": "Flamboyant Dresser",
@@ -1176,12 +1176,12 @@
         "position": "53"
     },
     {
-        "card_name": "Highrise Vagrant",
-        "number": 93,
+        "card_name": "Inescapable Earworm",
+        "number": 95,
         "shape": "normal",
         "set": "POP2",
         "rotated": false,
-        "position": "148"
+        "position": "149"
     },
     {
         "card_name": "Hard Rock Hailers",
@@ -1216,12 +1216,12 @@
         "position": "62"
     },
     {
-        "card_name": "Inescapable Earworm",
-        "number": 95,
+        "card_name": "Lightseeker",
+        "number": 98,
         "shape": "normal",
         "set": "POP2",
         "rotated": false,
-        "position": "149"
+        "position": "145"
     },
     {
         "card_name": "Hip Choreographer",
@@ -1256,12 +1256,12 @@
         "position": "38"
     },
     {
-        "card_name": "Lightseeker",
-        "number": 98,
+        "card_name": "Moonlighting Stagehand",
+        "number": 101,
         "shape": "normal",
         "set": "POP2",
         "rotated": false,
-        "position": "145"
+        "position": "144"
     },
     {
         "card_name": "Improvised Solo",
@@ -1296,12 +1296,12 @@
         "position": "65"
     },
     {
-        "card_name": "Moonlighting Stagehand",
-        "number": 101,
+        "card_name": "Nightlife Lurkers",
+        "number": 104,
         "shape": "normal",
         "set": "POP2",
         "rotated": false,
-        "position": "144"
+        "position": "147"
     },
     {
         "card_name": "Masked Street Drummer",
@@ -1336,12 +1336,12 @@
         "position": "48"
     },
     {
-        "card_name": "Nightlife Lurkers",
-        "number": 104,
+        "card_name": "Party Monster",
+        "number": 106,
         "shape": "normal",
         "set": "POP2",
         "rotated": false,
-        "position": "147"
+        "position": "146"
     },
     {
         "card_name": "Mic Passer",
@@ -1376,12 +1376,12 @@
         "position": "60"
     },
     {
-        "card_name": "Party Monster",
-        "number": 106,
+        "card_name": "Posthumous Hologram",
+        "number": 110,
         "shape": "normal",
         "set": "POP2",
         "rotated": false,
-        "position": "146"
+        "position": "18"
     },
     {
         "card_name": "Online Teaser",
@@ -1416,12 +1416,12 @@
         "position": "39"
     },
     {
-        "card_name": "Posthumous Hologram",
-        "number": 110,
+        "card_name": "Sinister Spinner",
+        "number": 111,
         "shape": "normal",
         "set": "POP2",
         "rotated": false,
-        "position": "18"
+        "position": "50"
     },
     {
         "card_name": "Scorching Duet",
@@ -1456,12 +1456,12 @@
         "position": "16"
     },
     {
-        "card_name": "Sinister Spinner",
-        "number": 111,
+        "card_name": "Stage Invaders",
+        "number": 113,
         "shape": "normal",
         "set": "POP2",
         "rotated": false,
-        "position": "50"
+        "position": "41"
     },
     {
         "card_name": "Supersonic Drummer",
@@ -1496,12 +1496,12 @@
         "position": "55"
     },
     {
-        "card_name": "Stage Invaders",
-        "number": 113,
+        "card_name": "Understudy's Envy",
+        "number": 115,
         "shape": "normal",
         "set": "POP2",
         "rotated": false,
-        "position": "41"
+        "position": "150"
     },
     {
         "card_name": "Surgeon for the Stars",

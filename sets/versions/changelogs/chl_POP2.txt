@@ -1,4 +1,86 @@
-﻿VERSION 9 CHANGELOG
+﻿VERSION 10 CHANGELOG
+====================
+
+Dulcimer Diva added.
+
+Botnet Engineer removed.
+
+Stage Invaders
+rules_text: This creature can't be blocked by nonlegendary creatures.
+Whenever this creature attacks, if creatures you control have total could power 8 or greater, this creature gains deathtouch and lifelink until end of turn. => This creature can't be blocked by nonlegendary creatures.
+Whenever this creature attacks, if creatures you control have total power 8 or greater, this creature gains deathtouch and lifelink until end of turn.
+
+Halami the Dexterous
+pt: 2/7 => 2/5
+
+Anomaly DX397
+rules_text: At the beginning of your end step, if you've spent {W}{U}{B}{R}{G} to cast spells this turn, draw a card.
+[-2]: Until end of turn, creatures you control gain “{T}: Add one mana of any color.”
+ => At the beginning of your end step, if you've spent {W}{U}{B}{R}{G} to cast spells this turn, put a +1/+1 counter on target creature you control.
+[-2]: Until end of turn, creatures you control gain “{T}: Add one mana of any color.”
+
+special_text: At the beginning of your end step, if you've spent {W}{U}{B}{R}{G} to cast spells this turn, draw a card.
+[-2]: Until end of turn, creatures you control gain “{T}: Add one mana of any color.”
+ => At the beginning of your end step, if you've spent {W}{U}{B}{R}{G} to cast spells this turn, put a +1/+1 counter on target creature you control.
+[-2]: Until end of turn, creatures you control gain “{T}: Add one mana of any color.”
+
+
+Polya, Duchess of Grime
+rules_text: If a card would be put into an opponent's graveyard from anywhere other than their hand, exile it instead.
+[-1]: Target opponent discards a card, then you discard a card. Draw a card if you discarded the card with the highest mana value among those cards.
+ => If a card would be put into an opponent's graveyard from anywhere, exile it instead.
+[-1]: Target opponent exiles a card from their hand.
+
+special_text: If a card would be put into an opponent's graveyard from anywhere other than their hand, exile it instead.
+[-1]: Target opponent discards a card, then you discard a card. Draw a card if you discarded the card with the highest mana value among those cards.
+ => If a card would be put into an opponent's graveyard from anywhere, exile it instead.
+[-1]: Target opponent exiles a card from their hand.
+
+
+Cast Down
+
+Scorched-Earth Songstress
+pt: 4/3 => 4/2
+
+Guttural Scream
+
+Toxic Shredder
+rules_text: Deathtouch
+{T}: Add one mana of any color. 
+Whenever you tap this creature for mana while creatures you control have total power 8 or greater, each opponent loses 2 life. => Deathtouch
+Whenever this creature attacks while creatures you control have total power 8 or greater, each opponent loses 2 life.
+pt: 1/2 => 2/3
+
+Understudy's Envy
+type: Instant => Sorcery
+
+Thriving Isle
+
+Thriving Bluff
+
+Thriving Moor
+
+Thriving Heath
+
+Thriving Grove
+
+Oddsmaking Oracle
+
+Aka'a, Street Battler
+
+Irana, Viral Sensation
+
+The Artist with No Name
+
+Holocrafter
+pt: 4/4 => 4/3
+
+Feedback Loop
+cost: {3}{B}{G} => {5}{B}{G}
+pt: 5/4 => 8/6
+
+
+VERSION 9 CHANGELOG
 ====================
 
 
